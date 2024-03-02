@@ -1,0 +1,51 @@
+2024-03-02T10:03:37+00:00 CRITICAL Uncaught PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php:59
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(59): PDOStatement->execute(NULL)
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(519): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(1929): MailPoetVendor\Idiorm\ORM::_execute('SELECT `tasks`....', Array, 'default')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(738): MailPoetVendor\Idiorm\ORM->_run()
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(727): MailPoetVendor\Idiorm\ORM->_find_many()
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Paris\paris.php(164): MailPoetVendor\Idiorm\ORM->find_many()
+#6 [internal function]: MailPoetVendor\Paris\ORMWrapper->find_many()
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(2290): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Tasks\Sending.php(316): MailPoetVendor\Idiorm\ORM->__call('findMany', Array)
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\Workers\Scheduler.php(331): MailPoet\Tasks\Sending::getScheduledQueues(5)
+#10 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\Triggers\WordPress.php(136): MailPoet\Cron\Workers\Scheduler::getScheduledQueues()
+#11 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\ActionScheduler\Actions\DaemonRun.php(84): MailPoet\Cron\Triggers\WordPress->checkExecutionRequirements()
+#12 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): MailPoet\Cron\ActionScheduler\Actions\DaemonRun->afterProcess('')
+#13 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(141): do_action('action_schedule...')
+#16 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\ActionScheduler\RemoteExecutorHandler.php(48): ActionScheduler_QueueRunner->run()
+#17 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): MailPoet\Cron\ActionScheduler\RemoteExecutorHandler->runActionScheduler('')
+#18 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#19 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#20 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#21 {main}
+
+Next MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away in E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDO\Exception.php:10
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDOStatement.php(61): MailPoetVendor\Doctrine\DBAL\Driver\PDO\Exception::new(Object(PDOException))
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(519): MailPoetVendor\Doctrine\DBAL\Driver\PDOStatement->execute()
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(1929): MailPoetVendor\Idiorm\ORM::_execute('SELECT `tasks`....', Array, 'default')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(738): MailPoetVendor\Idiorm\ORM->_run()
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(727): MailPoetVendor\Idiorm\ORM->_find_many()
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Paris\paris.php(164): MailPoetVendor\Idiorm\ORM->find_many()
+#6 [internal function]: MailPoetVendor\Paris\ORMWrapper->find_many()
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib-3rd-party\Idiorm\idiorm.php(2290): call_user_func_array(Array, Array)
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Tasks\Sending.php(316): MailPoetVendor\Idiorm\ORM->__call('findMany', Array)
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\Workers\Scheduler.php(331): MailPoet\Tasks\Sending::getScheduledQueues(5)
+#10 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\Triggers\WordPress.php(136): MailPoet\Cron\Workers\Scheduler::getScheduledQueues()
+#11 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\ActionScheduler\Actions\DaemonRun.php(84): MailPoet\Cron\Triggers\WordPress->checkExecutionRequirements()
+#12 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): MailPoet\Cron\ActionScheduler\Actions\DaemonRun->afterProcess('')
+#13 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#14 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#15 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(141): do_action('action_schedule...')
+#16 E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\lib\Cron\ActionScheduler\RemoteExecutorHandler.php(48): ActionScheduler_QueueRunner->run()
+#17 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): MailPoet\Cron\ActionScheduler\RemoteExecutorHandler->runActionScheduler('')
+#18 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#19 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#20 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#21 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\mailpoet\vendor-prefixed\doctrine\dbal\lib\Doctrine\DBAL\Driver\PDO\Exception.php on line 10
+

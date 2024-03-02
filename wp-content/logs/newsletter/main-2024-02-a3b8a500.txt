@@ -1,0 +1,4 @@
+28-02-2024 11:16:47 - ERROR - 7.8.5 - 102.4 MB/512 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by E:\xampp\htdocs\paczka/;DESKTOP-1JP1NMA
+28-02-2024 12:36:35 - ERROR - 7.8.5 - 102.3 MB/512 MB - [cron] > Blocked by transient newsletter_main_engine set 1 seconds ago by E:\xampp\htdocs\paczka/;DESKTOP-1JP1NMA
+28-02-2024 13:01:24 - ERROR - 7.8.5 - 102.3 MB/512 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by E:\xampp\htdocs\paczka/;DESKTOP-1JP1NMA
+29-02-2024 11:17:07 - ERROR - 7.8.5 - 102.4 MB/512 MB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by E:\xampp\htdocs\paczka/;DESKTOP-1JP1NMA

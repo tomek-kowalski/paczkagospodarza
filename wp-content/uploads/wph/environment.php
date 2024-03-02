@@ -1,0 +1,2 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+$environment_variable = '{"theme":{"folder_name":"burge","mapped_name":"catering"},"allowed_paths":["E:\/xampp\/htdocs\/paczka\/wp-content\/themes"],"cache_path":"E:\/xampp\/htdocs\/paczka\/wp-content\/cache\/wph\/","wordpress_directory":"","site_relative_path":"\/paczka\/"}'; ?>

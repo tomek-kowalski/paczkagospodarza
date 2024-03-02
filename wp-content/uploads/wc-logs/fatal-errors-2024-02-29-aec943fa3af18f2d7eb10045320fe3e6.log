@@ -1,0 +1,30 @@
+2024-02-29T00:30:35+00:00 CRITICAL Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php:51
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php(51): error_log('query: ', 'WP_Query Object...')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Search->product_search('')
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php on line 51
+
+2024-02-29T00:30:35+00:00 CRITICAL Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php:51
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php(51): error_log('query: ', 'WP_Query Object...')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Search->product_search('')
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php on line 51
+
+2024-02-29T00:30:35+00:00 CRITICAL Uncaught TypeError: error_log(): Argument #2 ($message_type) must be of type int, string given in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php:51
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php(51): error_log('query: ', 'WP_Query Object...')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Search->product_search('')
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\search\search_init.php on line 51
+

@@ -1,0 +1,125 @@
+
+---Downloaded files---
+The import files for: Default Demo were successfully downloaded!
+Initial max execution time = 600
+Files info:
+Site URL = https://www.catering.nt-media.pl
+Data file = /home/dackqezpyg/domains/nt-media.pl/public_html/catering/wp-content/themes/burge/demo-content/default/burge.wordpress.xml
+Widget file = /home/dackqezpyg/domains/nt-media.pl/public_html/catering/wp-content/themes/burge/demo-content/default/burge_widgets_settings.wie
+Customizer file = /home/dackqezpyg/domains/nt-media.pl/public_html/catering/wp-content/themes/burge/demo-content/default/burge_customizer_export.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Shop Sidebar : 
+
+Kategorie produktów - Shop By Categories - Imported
+Filtr produktów wg ceny - Filter by price - Imported
+Chmurka tagów produktów - Product Tags - Imported
+Lista produktów wg oceny - Top rated products - Imported
+TM - Left Banner Widget - No Title - Imported
+
+Main Sidebar : 
+
+Wyszukiwanie - No Title - Imported
+Ostatnie wpisy - No Title - Imported
+Najnowsze komentarze - No Title - Imported
+Archiwa - No Title - Imported
+Kategorie - No Title - Imported
+Meta - No Title - Imported
+
+Header Shopping Cart Widget Area : 
+
+Koszyk - Cart - Imported
+
+Header Search Widget Area : 
+
+Wyszukiwanie produktu - No Title - Imported
+
+Header Contact Widget Area : 
+
+TM - Header Contact Widget - Need Help ? - Imported
+
+First Footer Widget Area : 
+
+TM - Footer Contact Us Widget - Store information - Imported
+
+Second Footer Widget Area : 
+
+TM - Static Links Widget - Products - Imported
+
+Third Footer Widget Area : 
+
+TM - Static Links Widget - Information - Imported
+
+Forth Footer Widget Area : 
+
+TM - Static Links Widget -  Extra Information - Imported
+
+Footer Middle Widget Area : 
+
+Newsletter - Subscribe To Newsletter - Imported
+
+Footer Social Icons Widget Area : 
+
+TM - Follow Us Widget - No Title - Imported
+
+Payment Methods Icons Widget Area : 
+
+WooCommerce Accepted Payment Methods - No Title - Imported
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+Slider processed

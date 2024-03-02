@@ -1,0 +1,1 @@
+09-08-2023 09:41:13 - ERROR - 7.8.5 - 32,3 MB/1 GB - [cron] > Blocked by transient newsletter_main_engine set 0 seconds ago by /home/dackqezpyg/domains/paczkagospodarza.pl/public_html/;s122.cyber-folks.pl

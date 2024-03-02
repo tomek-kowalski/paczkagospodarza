@@ -1,0 +1,265 @@
+[27-Feb-2024 15:03:06 UTC] cat: Array
+(
+    [0] => 15
+)
+
+[27-Feb-2024 15:08:41 UTC] cat: Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 15
+            [name] => Paczki Gospodarza
+            [slug] => paczki-gospodarza
+            [term_group] => 0
+            [term_taxonomy_id] => 15
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 179
+            [filter] => raw
+        )
+
+)
+
+[27-Feb-2024 15:15:07 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[27-Feb-2024 15:15:14 UTC] cat: Array
+(
+    [0] => WP_Term Object
+        (
+            [term_id] => 15
+            [name] => Paczki Gospodarza
+            [slug] => paczki-gospodarza
+            [term_group] => 0
+            [term_taxonomy_id] => 15
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 179
+            [filter] => raw
+        )
+
+    [1] => WP_Term Object
+        (
+            [term_id] => 122
+            [name] => Dania gotowe
+            [slug] => dania-gotowe
+            [term_group] => 0
+            [term_taxonomy_id] => 122
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [2] => WP_Term Object
+        (
+            [term_id] => 123
+            [name] => Kasze, mąki
+            [slug] => kasze-maki
+            [term_group] => 0
+            [term_taxonomy_id] => 123
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [3] => WP_Term Object
+        (
+            [term_id] => 62
+            [name] => Luther Burger
+            [slug] => luther-burger
+            [term_group] => 0
+            [term_taxonomy_id] => 62
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [4] => WP_Term Object
+        (
+            [term_id] => 118
+            [name] => Mięso
+            [slug] => mieso
+            [term_group] => 0
+            [term_taxonomy_id] => 118
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [5] => WP_Term Object
+        (
+            [term_id] => 116
+            [name] => Nabiał, jaja
+            [slug] => nabial-jaja
+            [term_group] => 0
+            [term_taxonomy_id] => 116
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [6] => WP_Term Object
+        (
+            [term_id] => 125
+            [name] => Przekąski
+            [slug] => przekaski
+            [term_group] => 0
+            [term_taxonomy_id] => 125
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [7] => WP_Term Object
+        (
+            [term_id] => 121
+            [name] => Przetwory
+            [slug] => przetwory
+            [term_group] => 0
+            [term_taxonomy_id] => 121
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [8] => WP_Term Object
+        (
+            [term_id] => 69
+            [name] => Rice burger
+            [slug] => rice-burger
+            [term_group] => 0
+            [term_taxonomy_id] => 69
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [9] => WP_Term Object
+        (
+            [term_id] => 119
+            [name] => Ryby
+            [slug] => ryby
+            [term_group] => 0
+            [term_taxonomy_id] => 119
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [10] => WP_Term Object
+        (
+            [term_id] => 120
+            [name] => Słodkości
+            [slug] => slodkosci
+            [term_group] => 0
+            [term_taxonomy_id] => 120
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [11] => WP_Term Object
+        (
+            [term_id] => 72
+            [name] => Slugburger
+            [slug] => slugburger
+            [term_group] => 0
+            [term_taxonomy_id] => 72
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [12] => WP_Term Object
+        (
+            [term_id] => 75
+            [name] => Uncategorized
+            [slug] => uncategorized
+            [term_group] => 0
+            [term_taxonomy_id] => 75
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+    [13] => WP_Term Object
+        (
+            [term_id] => 117
+            [name] => Wędliny
+            [slug] => wedliny
+            [term_group] => 0
+            [term_taxonomy_id] => 117
+            [taxonomy] => product_cat
+            [description] => 
+            [parent] => 0
+            [count] => 0
+            [filter] => raw
+        )
+
+)
+
+[27-Feb-2024 15:17:10 UTC] cat: Array
+(
+    [0] => 15
+    [1] => 122
+    [2] => 123
+    [3] => 62
+    [4] => 118
+    [5] => 116
+    [6] => 125
+    [7] => 121
+    [8] => 69
+    [9] => 119
+    [10] => 120
+    [11] => 72
+    [12] => 75
+    [13] => 117
+)
+
+[27-Feb-2024 15:51:38 UTC] cat: Array
+(
+    [0] => 15
+    [1] => 122
+    [2] => 123
+    [3] => 62
+    [4] => 118
+    [5] => 116
+    [6] => 125
+    [7] => 121
+    [8] => 69
+    [9] => 119
+    [10] => 120
+    [11] => 72
+    [12] => 75
+    [13] => 117
+)
+
+[27-Feb-2024 18:01:26 UTC] Cron reschedule event error for hook: newsletter, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"newsletter","args":[],"interval":300}
+[27-Feb-2024 18:01:26 UTC] Cron reschedule event error for hook: newsletter, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"newsletter","args":[],"interval":300}
+[27-Feb-2024 18:01:27 UTC] Cron unschedule event error for hook: newsletter, Error code: could_not_set, Error message: The cron event list could not be saved., Data: {"schedule":"newsletter","args":[],"interval":300}
+[27-Feb-2024 18:02:31 UTC] PHP Warning:  Undefined array key "price" in E:\xampp\htdocs\paczka\wp-content\plugins\omnibus-\includes\iworks\omnibus\class-iworks-omnibus-integration.php on line 126
+[27-Feb-2024 18:02:31 UTC] PHP Warning:  Undefined array key "price" in E:\xampp\htdocs\paczka\wp-content\plugins\omnibus-\includes\iworks\omnibus\class-iworks-omnibus-integration.php on line 128

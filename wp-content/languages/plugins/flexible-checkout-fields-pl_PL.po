@@ -1,0 +1,1151 @@
+# Translation of Plugins - Flexible Checkout Fields for WooCommerce &#8211; WooCommerce Checkout Manager - Stable (latest release) in Polish
+# This file is distributed under the same license as the Plugins - Flexible Checkout Fields for WooCommerce &#8211; WooCommerce Checkout Manager - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-10-12 10:24:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.0-alpha.4\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - Flexible Checkout Fields for WooCommerce &#8211; WooCommerce Checkout Manager - Stable (latest release)\n"
+
+#: templates/notices/flexible-wishlist.php:44
+msgid "Do not show again"
+msgstr "Nie pokazuj ponownie"
+
+#: templates/notices/flexible-wishlist.php:40
+msgid "Try for free"
+msgstr "Wypróbuj za darmo"
+
+#. translators: %1$s: open strong tag, %2$s: open strong tag, %3$s: heart icon,
+#. %4$s: open anchor tag, %5$s: open anchor tag
+#: templates/notices/flexible-wishlist.php:27
+msgid "Introducing our new %1$sWooCommerce Wishlist plugin%2$s %3$s It's lightweight. It's free. Fits any theme. 100%% customizable and flexible. %4$sRead more%5$s and try it now. Uninstall any time with just one click."
+msgstr "Poznaj naszą nową %1$swtyczkę do tworzenia listy życzeń w WooCommerce%2$s %3$s Lekka i prosta w obsłudze. Darmowa. Kompatybilna z każdym motywem. Personalizowalna w 100%%. %4$sPrzeczytaj więcej%5$s i wypróbuj ją teraz. Możesz ją odinstalować w dowolnej chwili jednym kliknięciem."
+
+#: templates/notices/flexible-wishlist.php:20
+msgid "New free plugin by WP Desk: Flexible Wishlist for WooCommerce"
+msgstr "Nowa darmowa wtyczka WP Desk: Flexible Wishlist for WooCommerce"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/templates/modal.php:122
+msgid "Skip and Deactivate"
+msgstr "Pomiń i wyłącz"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/templates/modal.php:113
+msgid "Submit and Deactivate"
+msgstr "Wyślij i wyłącz"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/FormTemplate.php:28
+msgid "If you have a moment, please let us know why you are deactivating plugin (anonymous feedback):"
+msgstr "Jeśli masz chwilę, prosimy, daj nam znać, dlaczego wyłączasz wtyczkę (anonimowa opinia):"
+
+#. translators: %1$s: plugin name
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/FormTemplate.php:25
+msgid "You are deactivating %1$s plugin"
+msgstr "Wyłączasz wtyczkę %1$s"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:277
+msgid "The &#8220;%1$s&#8221; plugin requires at least %2$s version of %3$s to work correctly. Please update it to its latest release."
+msgstr "Do poprawnego działania wtyczki &#8222;%1$s&#8221; wymagana jest wtyczka %3$s w wersji co najmniej %2$s. Proszę zaktualizować do najnowszej wersji."
+
+#. translators: %$1s: love icon, %$2s: anchor opening tag, %$3s: anchor closing
+#. tag, %$4s: anchor opening tag, %$5s: anchor closing tag
+#: templates/views/admin-page.php:65
+msgid "Created with %1$s by Rangers from %2$sWP Desk%3$s - if you like FCF %4$srate us%5$s"
+msgstr "Stworzone z %1$s przez zespół Rangers z %2$sWP Desk%3$s - jeśli lubisz FCF, %4$soceń nas%5$s"
+
+#: templates/notices/review.php:39
+msgid "I added review, do not show again"
+msgstr "Recenzja została dodana, nie pokazuj ponownie"
+
+#: templates/notices/review.php:35
+msgid "Add review"
+msgstr "Dodaj recenzję"
+
+#. translators: %1$s: dashicon, %2$s: break-line tag
+#: templates/notices/review.php:24
+msgid "We are glad that (with our little help %1$s) the shop is now better suited to the needs. We will be grateful for the rating and feedback. %2$sIt will take less than reading this and it will help us a lot!"
+msgstr "Cieszymy się, że (z naszą małą pomocą %1$s) sklep jest teraz lepiej dostosowany do twoich potrzeb. Będziemy wdzięczni, jeżeli ocenisz naszą wtyczkę. %2$sZajmie to mniej czasu niż przeczytanie tego tekstu, a bardzo nam pomoże!"
+
+#: templates/notices/review.php:17
+msgid "Thanks for using the free version of Flexible Checkout Fields!"
+msgstr "Dziękujemy za korzystanie z darmowej wersji Flexible Checkout Fields!"
+
+#. translators: %1$s: field label, %2$s: divider
+#: src/Validator/Error/NumberStepError.php:18
+msgid "The value of the %1$s field should be divisible by %2$s."
+msgstr "Wartość dla pola %1$s powinna być podzielna przez %2$s."
+
+#. translators: %1$s: field label, %2$s: minimum value
+#: src/Validator/Error/NumberMinError.php:18
+msgid "The minimum value for the %1$s field is %2$s."
+msgstr "Minimalna wartość dla pola %1$s wynosi %2$s."
+
+#. translators: %1$s: field label, %2$s: minimum value
+#: src/Validator/Error/NumberMaxError.php:18
+msgid "The maximum value for the %1$s field is %2$s."
+msgstr "Maksymalna wartość dla pola %1$s wynosi %2$s."
+
+#. translators: %1$s: field label
+#: src/Validator/Error/InvalidValueError.php:16
+msgid "The value provided is not valid for the %1$s field."
+msgstr "Podana wartość nie jest prawidłowa dla pola %1$s."
+
+#. translators: %1$s: field label
+#: src/Validator/Error/InvalidUrlError.php:16
+msgid "The URL address provided is not valid for the %1$s field."
+msgstr "Podany adres URL nie jest prawidłowy dla pola %1$s."
+
+#. translators: %1$s: field label
+#: src/Validator/Error/InvalidEmailError.php:16
+msgid "The e-mail address provided is not valid for the %1$s field."
+msgstr "Podany adres e-mail nie jest prawidłowy dla pola %1$s."
+
+#: src/Tracker/DeactivationTracker.php:119
+msgid "Please tell us what made you click this option."
+msgstr "Napisz proszę, co skłoniło cię do wybrania tej opcji."
+
+#: src/Tracker/DeactivationTracker.php:110
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:21
+msgid "It's a temporary deactivation (I'm just debugging an issue)"
+msgstr "Dezaktywacja jest tymczasowa (debuguję problem)"
+
+#: src/Tracker/DeactivationTracker.php:103
+msgid "What is the reason for that?"
+msgstr "Z jakiego powodu nie jest już potrzebna?"
+
+#: src/Tracker/DeactivationTracker.php:101
+msgid "The plugin is no longer needed"
+msgstr "Wtyczka nie jest już potrzebna"
+
+#: src/Tracker/DeactivationTracker.php:94
+msgid "Please write what plugin is it and what was the reason for choosing it."
+msgstr "Napisz proszę, o jaką wtyczkę chodzi i pod jakim względem okazała się lepsza."
+
+#: src/Tracker/DeactivationTracker.php:85
+msgid "Please write what function is missing."
+msgstr "Napisz proszę, jakiej funkcji brakuje."
+
+#: src/Tracker/DeactivationTracker.php:83
+msgid "The plugin does not meet all the requirements"
+msgstr "Wtyczka nie spełnia wszystkich moich potrzeb"
+
+#: src/Tracker/DeactivationTracker.php:76
+msgid "How can we do it better? Please write what was problematic."
+msgstr "Jak możemy to poprawić? Napisz, co sprawiło tobie problem."
+
+#. translators: %1$s: anchor opening tag, %2$s: anchor closing tag, %3$s:
+#. anchor opening tag, %4$s: anchor closing tag
+#: src/Tracker/DeactivationTracker.php:70
+msgid "Check %1$sthe documentation%2$s or contact us on %3$sthe support forum%4$s for help."
+msgstr "Przeczytaj %1$sdokumentację%2$s lub skontaktuj się z nami na %3$sforum pomocy technicznej%4$s."
+
+#: src/Tracker/DeactivationTracker.php:67
+msgid "The plugin is difficult to use"
+msgstr "Wtyczka jest trudna w obsłudze"
+
+#: src/Tracker/DeactivationTracker.php:60
+msgid "Please tell us what was the problem."
+msgstr "Napisz proszę, na czym polegał problem."
+
+#. translators: %1$s: anchor opening tag, %2$s: anchor closing tag, %3$s:
+#. anchor opening tag, %4$s: anchor closing tag
+#: src/Tracker/DeactivationTracker.php:54
+msgid "Contact us on %1$sthe support forum%2$s or read %3$sthe plugin FAQ%4$s for help."
+msgstr "Skontaktuj się z nami na %1$sforum pomocy technicznej%2$s lub przeczytaj %3$sFAQ wtyczki%4$s."
+
+#: src/Tracker/DeactivationTracker.php:51
+msgid "The plugin does not work properly"
+msgstr "Wtyczka nie działa prawidłowo"
+
+#: src/Settings/Tab/PricingTab.php:23
+msgid "Pricing"
+msgstr "Cena"
+
+#: src/Settings/Tab/LogicTab.php:23
+msgid "Conditional Logic"
+msgstr "Logika warunkowa"
+
+#: src/Settings/Route/RouteIntegration.php:76
+msgid "An unknown error occurred while processing the request."
+msgstr "Wystąpił nieznany błąd podczas przetwarzania żądania."
+
+#: src/Settings/Page.php:228
+msgid "Failed to connect to WordPress REST API."
+msgstr "Błąd połączenia z WordPress REST API."
+
+#: src/Settings/Page.php:227
+msgid "No fields available."
+msgstr "Pola ceny są dostępne."
+
+#: src/Settings/Page.php:217
+msgid "No options."
+msgstr "Brak opcji."
+
+#: src/Settings/Page.php:216
+msgid "Loading..."
+msgstr "Wczytywanie…"
+
+#: src/Settings/Page.php:215
+msgid "Select..."
+msgstr "Wybierz…"
+
+#: src/Settings/Page.php:213
+msgid "This value is too long."
+msgstr "Ta wartość jest zbyt długa."
+
+#: src/Settings/Page.php:208
+msgid "Select color"
+msgstr "Kolor"
+
+#: src/Settings/Page.php:207
+msgid "Upload image"
+msgstr "Prześlij obrazek"
+
+#: src/Settings/Page.php:204
+msgid "Read more"
+msgstr "Czytaj dalej"
+
+#: src/Settings/Page.php:201
+msgid "Add New"
+msgstr "Dodaj nowy"
+
+#: src/Settings/Page.php:199
+msgid "Edit settings"
+msgstr "Edytuj ustawienia"
+
+#: src/Settings/Page.php:196
+msgid "Edit form"
+msgstr "Edytuj formularz"
+
+#: src/Settings/Page.php:152
+msgid "Other Fields"
+msgstr "Pozostałe pola"
+
+#: src/Settings/Page.php:148
+msgid "Picker Fields"
+msgstr "Pola otwarte"
+
+#: src/Settings/Page.php:144
+msgid "Option Fields"
+msgstr "Pola z opcjami"
+
+#: src/Settings/Page.php:140
+msgid "Text Fields"
+msgstr "Pola tekstowe"
+
+#: src/Settings/Option/ValueStepOption.php:39
+msgid "Step value"
+msgstr "Wartość kroku"
+
+#: src/Settings/Option/ValueMinOption.php:39
+msgid "Min value"
+msgstr "Wartość minimalna"
+
+#: src/Settings/Option/ValueMaxOption.php:39
+msgid "Max value"
+msgstr "Wartość maksymalna"
+
+#. translators: %1$s: anchor opening tag, %2$s: anchor closing tag
+#: src/Settings/Option/ValidationInfoOption.php:42
+msgid "You can to add custom validation in the functions.php file. %1$sRead more%2$s"
+msgstr "Możesz dodać niestandardową walidację w pliku functions.php. %1$sCzytaj więcej%2$s"
+
+#: src/Settings/Option/SettingSectionsAdvOption.php:37
+msgid "Upgrade to PRO"
+msgstr "Ulepsz do wersji pro"
+
+#: src/Settings/Option/SettingSectionsAdvOption.php:35
+msgid "Add a fixed or percentage price to the field and set the tax on this price."
+msgstr "Dodaj cenę stałą lub procentową do pola i ustaw podatek od tej ceny."
+
+#: src/Settings/Option/SettingSectionsAdvOption.php:34
+msgid "Add conditional logic based on products and categories as well as FCF fields and shipping methods."
+msgstr "Dodaj logikę warunkową opartą na produktach i kategoriach, polach FCF oraz metodach wysyłki."
+
+#: src/Settings/Option/SettingSectionsAdvOption.php:33
+msgid "Extend the form with additional fields. Insert Text inputs and Headings. Add Checkboxes and fields with options like DropDown or Radio."
+msgstr "Rozszerz formularz o dodatkowe pola. Wstaw pola tekstowe i nagłówki. Dodaj pola wyboru (checkbox) i pola z opcjami takimi jak Lista rozwijana lub Radio."
+
+#: src/Settings/Option/SettingJqueryOption.php:30
+msgid "jQuery UI"
+msgstr "jQuery UI"
+
+#: src/Settings/Option/RequiredOption.php:39
+msgid "Required field"
+msgstr "Pole wymagane"
+
+#: src/Settings/Option/RegexPhoneOption.php:46
+msgid "Enter the number format using the regex code. Our documentation contains sample formats."
+msgstr "Wpisz format numeru używając kodu regex. W naszej dokumentacji znajdują się przykładowe formaty."
+
+#: src/Settings/Option/RegexPhoneOption.php:39
+msgid "Validation regex"
+msgstr "Wyrażenie regularne walidacji"
+
+#. translators: %s field label
+#: src/Settings/Option/RegexMessageOption.php:47
+msgid "The value for the %s field should conform to the required format."
+msgstr "Wartość pola %s powinna być zgodna z wymaganym formatem."
+
+#: src/Settings/Option/RegexMessageOption.php:39
+msgid "Validation error message"
+msgstr "Komunikat o błędzie walidacji"
+
+#. translators: %1$s: break line, %2$s: anchor opening tag, %3$s: anchor
+#. closing tag
+#: src/Settings/Option/PricingAdvOption.php:42
+msgid "Add a fixed or percentage price to the field and set the tax on this price.%1$s %2$sUpgrade to PRO%3$s"
+msgstr "Dodaj cenę stałą lub procentową do pola i ustaw podatek od tej ceny. %1$s %2$sUaktualnij do PRO%3$s"
+
+#: src/Settings/Option/PlaceholderCheckboxOption.php:23
+msgid "Value"
+msgstr "Wartość"
+
+#: src/Settings/Option/NameOption.php:46
+msgid "Meta name"
+msgstr "Nazwa meta"
+
+#: src/Settings/Option/ImageWidthOption.php:48
+msgid "Image width (in pixels)"
+msgstr "Rozmiar grafiki (w pikselach)"
+
+#: src/Settings/Option/ImageOption.php:40
+#: src/Settings/Option/ImageWidthOption.php:40
+#: src/Settings/Option/LabelOption.php:40 src/Settings/Page.php:212
+msgid "This field is required."
+msgstr "Pole wymagane."
+
+#: src/Settings/Option/FormattingNewLineOption.php:30
+msgid "Display the field on a new line"
+msgstr "Wyświetl pole w nowej linii"
+
+#: src/Settings/Option/ExternalFieldInfoOption.php:48
+msgid "Another plugin has added this field but FCF is taking control of it. Editing is OK but keep in mind the functioning of the plugin that uses it."
+msgstr "Inna wtyczka dodała to pole, ale FCF przejmuje nad nim kontrolę. Edytując je miej na uwadze działanie wtyczki używającej tego pola."
+
+#: src/Settings/Option/CssOption.php:46
+msgid "Enter CSS classes separated by a space."
+msgstr "Wpisz klasy CSS oddzielone spacją."
+
+#: src/Settings/Menu.php:34
+msgid "Checkout Sections"
+msgstr "Dodatkowe sekcje"
+
+#: src/Field/Type/Wc/WcAddress2Type.php:43
+#: src/Field/Type/Wc/WcContactType.php:42
+#: src/Field/Type/Wc/WcCountryType.php:42
+#: src/Field/Type/Wc/WcDefaultType.php:43 src/Field/Type/Wc/WcNotesType.php:42
+#: src/Field/Type/Wc/WcPostcodeType.php:43 src/Field/Type/Wc/WcStateType.php:43
+msgid "WooCommerce Default Field"
+msgstr "Domyślne pole WooCommerce"
+
+#: src/Field/Type/UrlType.php:49
+msgid "URL"
+msgstr "Adres URL"
+
+#: src/Field/Type/TextType.php:50
+msgid "Text"
+msgstr "Tekst"
+
+#: src/Field/Type/TextareaType.php:50
+msgid "Textarea"
+msgstr "Obszar tekstowy"
+
+#: src/Field/Type/SelectType.php:28
+msgid "Select"
+msgstr "Select (Lista rozwijana)"
+
+#: src/Field/Type/RadioType.php:25
+msgid "Radio"
+msgstr "Pole wyboru"
+
+#: src/Field/Type/RadioImagesType.php:25
+msgid "Radio with images"
+msgstr "Radio z obrazkami"
+
+#: src/Field/Type/RadioColorsType.php:25
+msgid "Radio with colors"
+msgstr "Radio z kolorami"
+
+#: src/Field/Type/ParagraphType.php:38
+msgid "Paragraph"
+msgstr "Akapit"
+
+#: src/Field/Type/NumberType.php:52
+msgid "Number"
+msgstr "Liczba"
+
+#: src/Field/Type/MultiCheckboxType.php:25
+msgid "Multi-checkbox"
+msgstr "Multi-checkbox"
+
+#: src/Field/Type/ImageType.php:39 src/Settings/Option/ImageOption.php:48
+msgid "Image"
+msgstr "Obrazek"
+
+#: src/Field/Type/HeadingType.php:38
+msgid "Heading"
+msgstr "Nagłówek"
+
+#: src/Field/Type/EmailType.php:49
+#: src/Settings/Option/ValidationPostcodeOption.php:17
+#: src/Settings/Option/ValidationWcOption.php:17
+msgid "E-mail"
+msgstr "E-mail"
+
+#: src/Field/Type/DefaultType.php:46
+msgid "Default Field"
+msgstr "Pole domyślne"
+
+#: src/Field/Type/ColorType.php:47
+msgid "Color"
+msgstr "Kolor"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:72
+msgid "The WordPress version your shop is currently using is deprecated. We highly advise to upgrade it to at least %s since the support for this one will be dropped soon."
+msgstr "Twój sklep korzysta aktualnie z przestarzałej wersji WordPress, która wkrótce przestanie być wspierana. W związku z powyższym, zalecamy jej aktualizacje co najmniej do wersji %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:69
+msgid "The WooCommerce version your shop is currently using is deprecated. We highly advise to upgrade it to at least %s since the support for this one will be dropped soon."
+msgstr "Twój sklep korzysta aktualnie z przestarzałej wersji WooCommerce, która wkrótce przestanie być wspierana. W związku z powyższym, zalecamy jej aktualizacje co najmniej do wersji %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/UpgradeSoonNotice.php:66
+msgid "The PHP version your shop is currently using is deprecated. We highly advise to upgrade it to at least %s since the support for this one will be dropped soon."
+msgstr "Twój sklep korzysta aktualnie z przestarzałej wersji PHP, która wkrótce przestanie być wspierana. W związku z powyższym, zalecamy jej aktualizacje co najmniej do wersji %s."
+
+#: src/Settings/Page.php:206
+msgid "No"
+msgstr "Nie"
+
+#: src/Settings/Page.php:205
+msgid "Yes"
+msgstr "Tak"
+
+#: src/Settings/Page.php:214
+msgid "Field name should contains only lowercase letters, numbers and underscore sign."
+msgstr "Błędna nazwa pola. Nazwa pola może zawierać jedynie małe litery, cyfry oraz znak podkreślenia."
+
+#: src/Settings/Option/FormattingStateOption.php:39
+msgid "State/County formatting"
+msgstr "Formatowanie stanu/województwa"
+
+#: src/Settings/Option/FormattingStateCommaOption.php:30
+msgid "Display a comma before if the field is not on a new line"
+msgstr "Wyświetl przecinek przed polem w przypadku, gdy pole nie jest w nowej linii"
+
+#: src/Settings/Option/FormattingStateAbbrOption.php:30
+msgid "Display state abbreviations"
+msgstr "Wyświetl kod stanu"
+
+#: src/Settings/Option/FormattingFieldLabelOption.php:30
+msgid "Display field label"
+msgstr "Wyświetl etykietę pola"
+
+#: src/Settings/Option/FormattingOption.php:39
+msgid "Formatting on pages/e-mails"
+msgstr "Formatowanie na stronach/w e-mailach"
+
+#: src/Settings/Option/DisplayOnOption.php:39
+msgid "Pages/e-mails"
+msgstr "Strony/e-maile"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager.php:209
+msgid " <a target='_blank' href='%s'>Enter a valid subscription key for automatic updates.</a>"
+msgstr " <a target='_blank' href='%s'>Wprowadź poprawny klucz subskrypcji, aby umożliwić automatyczne aktualizacje.</a>"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/HelperRemoveNotice.php:56
+msgid "We recommend to <a href=\"%s\">remove</a> the \"WP Desk Helper\" plugin as it is no longer required by WP Desk plugins"
+msgstr "<a href=\"%s\">Włącz wtyczkę WP Desk Helper</a>, aby aktywować i otrzymywać aktualizacje wtyczek WP Desk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/HelperRemoveNotice.php:43
+msgid "We recommend to <a href=\"%s\">deactivate and remove</a> the \"WP Desk Helper\" plugin as it is no longer required by WP Desk plugins"
+msgstr "<a href=\"%s\">Włącz wtyczkę WP Desk Helper</a>, aby aktywować i otrzymywać aktualizacje wtyczek WP Desk"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:470
+msgid "The &#8220;%s&#8221; plugin cannot run without %s PHP setting set to %s. Please contact your host and ask them to set %s."
+msgstr "Wtyczka &#8222;%s&#8221; nie może zostać włączona bez %s, aby ustawić %s. Proszę skontaktować się z administratorem, aby ustawić %s."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:445
+msgid "The &#8220;%s&#8221; plugin cannot run without %s PHP module installed. Please contact your host and ask them to install %s."
+msgstr "Wtyczka &#8222;%s&#8221; nie może działać bez modułu PHP: %s. Proszę skontaktować się z hostingodawcą w celu zainstalowania %s."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:404
+msgid "The &#8220;%s&#8221; plugin requires activating %s plugin. <a href=\"%s\">Activate %s →</a>"
+msgstr "Wtyczka &#8220;%s&#8221; wymaga aktywnej wtyczki %s. <a href=\"%s\">Aktywuj %s →</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:398
+msgid "The &#8220;%s&#8221; plugin requires free %s plugin. <a href=\"%s\">Install %s →</a>"
+msgstr "Wtyczka &#8220;%s&#8221; wymaga bezpłatnej wtyczki %s. <a href=\"%s\">Zainstaluj %s →</a>"
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:349
+msgid "The &#8220;%s&#8221; plugin cannot run without %s active. Please install and activate %s plugin."
+msgstr "Wtyczka &#8222;%s&#8221; nie może działać bez włączenia %s. Zainstaluj i włącz wtyczkę %s."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:190
+msgid "The &#8220;%s&#8221; plugin cannot run without OpenSSL module version at least %s. Please update OpenSSL module."
+msgstr "Wtyczka &#8222;%s&#8221; nie może działać bez OpenSSL co najmniej w wersji %s. Proszę zaktualizować moduł OpenSSL."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:187
+msgid "The &#8220;%s&#8221; plugin cannot run on WooCommerce versions older than %s. Please update WooCommerce."
+msgstr "Wtyczka &#8222;%s&#8221; nie może działać z WooCommerce w wersji starszej niż %s. Proszę zaktualizować WooCommerce."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:184
+msgid "The &#8220;%s&#8221; plugin cannot run on WordPress versions older than %s. Please update WordPress."
+msgstr "Wtyczka &#8220;%s&#8221; nie działa z wersją WordPress’a starszą niż %s. Skontaktuj się proszę z administratorem strony, aby zaktualizować wersję."
+
+#: vendor_prefixed/wpdesk/wp-basic-requirements/src/Basic_Requirement_Checker.php:181
+msgid "The &#8220;%s&#8221; plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade."
+msgstr "Wtyczka &#8222;%s&#8221; nie może działać w wersji PHP starszej niż %s. Skontaktuj się z administratorem hostingu i poproś o aktualizację."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Page/LibraryDebugPage.php:29
+msgid "Library report"
+msgstr "Biblioteka zgłoszonych błędów"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Page/SettingsPage.php:58
+msgid "WP Desk Helper Settings"
+msgstr "Ustawienia WP Desk Helper’a"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/TrackerIntegration.php:76
+msgid "No sensitive data is tracked, %sread more%s."
+msgstr "Żadne wrażliwe dane nie są śledzone, %sprzeczytaj więcej%s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/TrackerIntegration.php:52
+msgid "Allow WP Desk to track plugin usage"
+msgstr "Zezwól WP Desk na śledzenie użytkowania wtyczki"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/TrackerIntegration.php:51
+msgid "Plugin usage tracking"
+msgstr "Dane użytkowania wtyczek"
+
+#. Translators: link.
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/LogsIntegration.php:92
+msgid "WP Desk Debug Log is enabled. %1$sPlease disable it after testing%2$s."
+msgstr "Dziennik błędów WP Desk jest włączony. %1$sProszę wyłączyć go po skończonych testach%2$s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/LogsIntegration.php:64
+msgid "Writes error log to %s."
+msgstr "Zapisuje dziennik błędów do %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/LogsIntegration.php:60
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/TrackerIntegration.php:71
+msgid "Enable"
+msgstr "Włącz"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/LogsIntegration.php:37
+msgid "WP Desk Debug Log"
+msgstr "Dziennik błędów WP Desk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:454
+msgid "You changed the subscription for %s, so you will need to enter your new API Key in the settings page. The API Key should have arrived in your email inbox, if not you can get it by logging into your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Zmieniłeś subskrypcję %s, więc musisz wprowadzić nowy klucz API na stronie ustawień. Klucz API powinien dotrzeć do Twojej skrzynki odbiorczej. Jeśli nie, możesz go uzyskać, zaloguj się do panelu <a href=\"%s\" target=\"_blank\"> moje konto </a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:443
+msgid "%s has not been activated. Go to the settings page and enter the API key and subscription email to activate %s."
+msgstr "%s nie został aktywowany. Przejdź do ustawień strony i wprowadź klucz API i email, aby aktywować wtyczkę %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:432
+msgid "Download permission for %s has been revoked possibly due to a API key or subscription expiring. You can reactivate or purchase a API key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Uprawnienie do pobierania%s zostało odwołane prawdopodobnie z powodu wygaśnięcia klucza API lub wygaśnięcia subskrypcji. Możesz ponownie aktywować lub kupić klucz  w panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:421
+msgid "A API key for %s could not be found. Maybe you forgot to enter a API key when setting up %s, or the key was deactivated in your account. You can reactivate or purchase a subscription key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Klucz API wtyczki %s nie został znaleziony. Istnieje szansa, że zapomniałeś/aś wprowadzić klucz API podczas konfiguracji %s lub klucz jest dezaktywowany w Twoim koncie. Możesz dokonać reaktywacji lub zamówić nowy klucz API w panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:410
+msgid "A subscription for %s could not be found. You can purchase a subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Subskrypcja %s nie może zostać odnaleziona. Możesz zamówić nową subskrypcję w panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:399
+msgid "The subscription for %s has been placed in the trash and will be deleted soon. You can purchase a new subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Subskrypcja %s została przeniesiona do kosza i zostanie wkrótce usunięta. Możesz zamówić nową subskrypcję w panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:388
+msgid "The subscription for %s is still pending. You can check on the status of the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Subskrypcja na %s jest nadal przetwarzana. Można sprawdzić jej stan na <a href=\"%s\" target=\"_blank\">kokpicie</a> swojego konta."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:377
+msgid "The subscription for %s has been suspended. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Subskrypcja %s została zawieszona. Możesz reaktywować subskrypcję z panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:366
+msgid "The subscription for %s has expired. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Subskrypcja %s wygasła. Możesz reaktywować subskrypcję z panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:355
+msgid "The subscription for %s has been cancelled. You can renew the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>. A new API key will be emailed to you after your order has been completed."
+msgstr "Subskrypcja %s jest anulowana. Możesz reaktywować subskrypcję z panelu <a href=\"%s\" target=\"_blank\">moje konto</a>. Nowy klucz API zostanie wysłany do Ciebie mailem, po złożeniu i opłaceniu zamówienia."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:344
+msgid "The subscription for %s is on-hold. You can reactivate the subscription from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Subskrypcja %s została wstrzymana. Można reaktywować subskrypcję ze <a href=\"%s\" target=\"_blank\">swojego konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-plugin-update.php:333
+msgid "The API key for %s has expired. You can reactivate or purchase a API key from your account <a href=\"%s\" target=\"_blank\">dashboard</a>."
+msgstr "Klucz API stracił dla %s ważność. Możesz go reaktywować lub odnowić klucz API z panelu <a href=\"%s\" target=\"_blank\">moje konto</a>."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager.php:350
+msgid "<b>Warning!</b> You're blocking external requests which means you won't be able to get %s updates. Please add %s to %s."
+msgstr "<b>Uwaga!</b> Twoja strona blokuje zewnętrzne żądania, co oznacza, że nie jest możliwe pobranie aktualizacji wtyczki %s. Dodaj proszę %s do %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager.php:333
+msgid "The %s%s%s API Key has not been activated, so you won't be supported and your plugin won't be updated! %sClick here%s to activate the API key and the plugin."
+msgstr "Klucz API wtyczki %s%s%s nie został aktywowany, więc nie otrzymasz wsparcia i aktualizacji wtyczki. %sKliknij tutaj%s, aby aktywować klucz API wtyczki."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager.php:145
+msgid "Subscription Deactivation"
+msgstr "Dezaktywacja subskrypcji"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager.php:144
+msgid "Subscription Activation"
+msgstr "Aktywacja subskrypcji"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:309
+msgid "Deactivates an API Key so it can be used on another blog."
+msgstr "Dezaktywuje klucz API, dzięki czemu może być użyty w innej witrynie."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:226
+msgid "The subscription could not be deactivated. Use the Subscription Deactivation tab to manually deactivate the subscription before activating a new subscription."
+msgstr "Subskrypcja nie mogła być reaktywowana. Przejdź do zakładki Deaktywuj Subskrypcję, aby ręcznie ją reaktywować przed wprowadzeniem nowej subskrypcji."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:154
+msgid "Connection failed to the API Key server. Try again later."
+msgstr "Nieudane połączenie z serwem klucza API. Spróbuj ponownie później."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:84
+msgid "Deactivate API Key"
+msgstr "Dezaktywuj klucz API"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:83
+msgid "API Key Deactivation"
+msgstr "Dezaktywacja klucza API"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:80
+msgid "API Subscription email"
+msgstr "Email subskrypcji API"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:79
+msgid "API Subscription Key"
+msgstr "Klucz subskrypcji API"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:78
+msgid "API Key Status"
+msgstr "Status klucza API"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:77
+msgid "API Key Activation"
+msgstr "Aktywacja Klucza API"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/LicensePage.php:41
+msgid "Subscriptions"
+msgstr "Subskrypcje"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/licenses.php:37
+msgid "Get your subscription keys <a href=\"%s\" target=\"_blank\">here</a>. You can activate/deactivate API keys <strong>unlimited times on different domains</strong> as long as you have an active subscription."
+msgstr "Zdobądź swoje klucze subskrypcyjne <a href=\"%s\" target=\"_blank\">tutaj</a>. Możesz aktywować/dezaktywować klucze licencyjne <strong>nieograniczoną liczbę razy na wielu domenach</strong> tak długo, jak tylko masz aktywną subskrypcję."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/licenses.php:27
+msgid "WP Desk Subscriptions"
+msgstr "Subskrypcje WP Desk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:58
+msgid "Activated"
+msgstr "Włączono"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:56
+msgid "Deactivated"
+msgstr "Wyłączono"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Subscription Data"
+msgstr "Dane subskrypcji"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Subscription Status"
+msgstr "Status subskrypcji"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:39
+msgid "Plugin"
+msgstr "Wtyczka"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/class-wpdesk-helper-list-table.php:27
+msgid "No WP Desk plugins found."
+msgstr "Nie znaleziono wtyczek WP Desk."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:47
+msgid "Deactivate"
+msgstr "Wyłącz"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:41
+msgid "Activate"
+msgstr "Aktywuj"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:25
+msgid "Email:"
+msgstr "Adres e-mail:"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/views/license-actions.php:14
+msgid "Key:"
+msgstr "Klucz:"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:247
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseDeactivation.php:31
+msgid "Plugin subscription deactivated. "
+msgstr "Subskrypcja wtyczki dezaktywowana. "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:149
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseActivation.php:141
+msgid "Plugin activated. "
+msgstr "Wtyczka została włączona. "
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/Page/License/Action/LicenseActivation.php:132
+msgid "Connection failed to the Subscription Key API server. Try again later."
+msgstr "Połączenie z serwerem klucza API nie powiodło się . Spróbuj ponownie później."
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:36
+msgid "Can not enable WP Desk Debug log! Cannot create file %s!"
+msgstr "Nie można włączyć logowania błędów za pomocą WP Desk Debug! Nie można utworzyć pliku %s!"
+
+#. Translators: directory.
+#: vendor_prefixed/wpdesk/wp-logs/src/WP/WPCapture.php:23
+msgid "Can not enable WP Desk Debug log! Cannot create directory %s or this directory is not writeable!"
+msgstr "Nie można włączyć WP Desk Debug log! Nie można utworzyć katalogu %s lub brak uprawnień do zapisu w tym katalogu!"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Integration/LogsIntegration.php:36
+msgid "Debug"
+msgstr "Debugowanie"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Info"
+msgstr "Informacja"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Notice"
+msgstr "Powiadomienie"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Warning"
+msgstr "Ostrzeżenie"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Error"
+msgstr "Błąd"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Critical"
+msgstr "Krytyczny"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Alert"
+msgstr "Alarm"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Emergency"
+msgstr "Nagła awaria"
+
+#: vendor_prefixed/wpdesk/wp-logs/src/deprecated/wpdesk-logger.php:59
+msgid "Disabled"
+msgstr "Wyłączone"
+
+#: src/Settings/Option/RequiredWcHiddenOption.php:14
+msgid "Requirement of this field is controlled by WooCommerce and cannot be changed."
+msgstr "Wymagalność tego pola jest kontrolowana przez WooCommerce i nie może być zmieniona."
+
+#: src/Field/Type/MultiSelectType.php:25
+msgid "Multi-select"
+msgstr "Multi-select"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:22
+msgid "We need your help to improve <strong>WP Desk plugins</strong>, so they are more useful for you and the rest of <strong>30,000+ users</strong>. By collecting data on how you use our plugins, you will help us a lot. We will not collect any sensitive data, so you can feel safe."
+msgstr "Potrzebujemy Twojej pomocy, aby ulepszyć <strong> wtyczki WP Desk </strong>, tak aby były bardziej przydatne dla Ciebie i pozostałych <strong> ponad 30 000 użytkowników </strong>. Udstępniając dane o tym, jak korzystasz z naszych wtyczek, bardzo nam pomożesz. Nie będziemy gromadzić żadnych wrażliwych danych, więc możesz czuć się bezpiecznie."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:73
+msgid "Anonymized and non-sensitive store usage information"
+msgstr "Anonimowe i niewrażliwe informacje o użytkowaniu sklepu"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:51
+msgid "WP version, PHP info"
+msgstr "Wersja WP, wersja PHP"
+
+#: classes/filed-validation.php:36
+msgid "%s is a required field."
+msgstr "%s jest wymaganym polem."
+
+#: src/Settings/Page.php:226
+msgid "Do you really want to reset section settings? Resetting a section remove all added fields from orders."
+msgstr "Czy na pewno chcesz zresetować ustawienia sekcji? Usunie to wszystkie dodane pola z zamówień."
+
+#: src/Settings/Page.php:225
+msgid "Are you sure you want to delete this field? Deleting a field will remove it from all orders."
+msgstr "Czy na pewno chcesz usunąć to pole? Doprowadzi to do usunięcia pola również we wszystkich zamówieniach."
+
+#: src/Settings/Option/ValidationOption.php:39
+msgid "Validation"
+msgstr "Walidacja"
+
+#: src/Settings/Tab/DisplayTab.php:23
+msgid "Display On"
+msgstr "Wyświetlanie"
+
+#: src/Settings/Page.php:211
+msgid "Name"
+msgstr "Nazwa"
+
+#: src/Settings/Option/DisplayOnEmailsOption.php:30
+msgid "E-mails"
+msgstr "E-maile"
+
+#: src/Settings/Option/DisplayOnAccountOrderOption.php:30
+msgid "My Account - order"
+msgstr "Moje konto - zamówienie"
+
+#: src/Settings/Option/DisplayOnAccountAddressOption.php:30
+msgid "My Account - address"
+msgstr "Moje konto - adres"
+
+#: src/Settings/Option/DisplayOnThankYouOption.php:30
+msgid "Thank You Page"
+msgstr "Strona podziękowania"
+
+#: classes/filed-validation.php:95
+#: src/Settings/Option/ValidationPostcodeOption.php:19
+msgid "Postcode"
+msgstr "Kod pocztowy"
+
+#: classes/filed-validation.php:92 src/Field/Type/PhoneType.php:51
+#: src/Settings/Option/ValidationPostcodeOption.php:18
+#: src/Settings/Option/ValidationWcOption.php:18
+msgid "Phone"
+msgstr "Numer telefonu"
+
+#: classes/filed-validation.php:91
+msgid "Email"
+msgstr "Email"
+
+#: classes/filed-validation.php:90
+#: src/Settings/Option/ValidationPostcodeOption.php:16
+#: src/Settings/Option/ValidationWcOption.php:16
+msgid "None"
+msgstr "Brak"
+
+#: classes/filed-validation.php:89 src/Settings/Option/ValidationOption.php:47
+#: src/Settings/Option/ValidationPostcodeOption.php:15
+#: src/Settings/Option/ValidationWcOption.php:15
+msgid "Default"
+msgstr "Domyślna"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-opt-out-notice.php:11
+msgid "You successfully opted out of collecting usage data by WP Desk. If you change your mind, you can always opt in later in the plugin's quick links."
+msgstr "Zrezygnowałeś z gromadzenia danych użytkowania przez WP Desk. Jeśli zmienisz zdanie, zawsze możesz wyrazić zgodę później, korzystając z szybkich łączy wtyczki."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:41
+msgid "Allow"
+msgstr "Zezwól"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:126
+msgid "Submit &amp; Deactivate"
+msgstr "Wyślij i wyłącz"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:107
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:110
+msgid "Skip &amp; Deactivate"
+msgstr "Pomiń i wyłącz"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:22
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:98
+msgid "Kindly tell us the reason so we can improve"
+msgstr "Napisz jaka jest przyczyna, abyśmy mogli poprawić wtyczkę"
+
+#: src/Tracker/DeactivationTracker.php:117
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:22
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:93
+msgid "Other"
+msgstr "Inne"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:83
+msgid "It's a temporary deactivation. I'm just debugging an issue."
+msgstr "Tymczasowe wyłączenie w ramach debugowania problemu."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:20
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:73
+msgid "I no longer need the plugin"
+msgstr "Wtyczka nie jest już mi dłużej potrzebna"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:19
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:63
+msgid "I only needed the plugin for a short period"
+msgstr "Wtyczka była potrzebna tylko przez krótki okres"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:18
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:53
+msgid "What's the plugin's name?"
+msgstr "Jaka jest nazwa tej wtyczki?"
+
+#: src/Tracker/DeactivationTracker.php:92
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:18
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:48
+msgid "I found a better plugin"
+msgstr "Mam lepszą wtyczkę"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:17
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:38
+msgid "The plugin broke my site"
+msgstr "Wtyczka zepsuła moją stronę"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-deactivation-modal/src/Model/DefaultFormOptions.php:16
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:28
+msgid "The plugin suddenly stopped working"
+msgstr "Wtyczka nagle przestała działać"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:19
+msgid " If you have a moment, please let us know why you are deactivating plugin (anonymous feedback):"
+msgstr "Jeśli masz chwilę, prosimy daj nam znać dlaczego wtyczkę została wyłączona (anonimowo):"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-deactivate.php:11
+msgid "You are deactivating %s plugin."
+msgstr "Dezaktywujesz wtyczkę %s."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:83
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:27
+msgid "Find out more &raquo;"
+msgstr "Wyszukaj więcej &raquo;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:70
+msgid "Your Store Overview"
+msgstr "Przegląd Twojego sklepu"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:62
+msgid "Current settings and usage information of WP Desk plugins"
+msgstr "Bieżące ustawienia i informacje o użyciu wtyczek WP Desk"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:59
+msgid "Plugin Usage"
+msgstr "Dane użytkowania wtyczki"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:48
+msgid "Your Site Overview"
+msgstr "Przegląd Twojej witryny"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:39
+msgid "What permissions are being granted?"
+msgstr "Jakie uprawnienia są przyznawane?"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:32
+msgid "Skip"
+msgstr "Pomiń"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:27
+msgid "Allow & Continue &rarr;"
+msgstr "Pozwól i kontynuuj &rarr;"
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:18
+msgid "Please help us improve our plugins! If you opt-in, we will collect some non-sensitive data and usage information anonymously. If you skip this, that's okay! All plugins will work just fine."
+msgstr "Pomóż proszę ulepszyć nam nasze wtyczki! Jeśli wyrazisz zgodę, będziemy anonimowo gromadzić niektóre dane niewrażliwe i informacje o użytkowaniu naszych wtyczek. Jeśli to pominiesz, w porządku! Wszystkie wtyczki będą działać poprawnie."
+
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-connect.php:15
+#: vendor_prefixed/wpdesk/wp-wpdesk-tracker/src/views/tracker-notice.php:19
+msgid "Hey %s,"
+msgstr "Cześć %s,"
+
+#: classes/plugin.php:947
+msgid "Upgrade"
+msgstr "Kup PRO"
+
+#: classes/tracker.php:330
+msgid "Opt-out"
+msgstr "Opt-out"
+
+#: classes/tracker.php:326
+msgid "Opt-in"
+msgstr "Opt-in"
+
+#: src/Field/Type/FileType.php:25
+msgid "File Upload"
+msgstr "Przesyłanie pliku"
+
+#: src/Field/Type/HtmlType.php:38
+msgid "HTML"
+msgstr "HTML"
+
+#: src/Field/Type/TimeType.php:25
+msgid "Time"
+msgstr "Godzina"
+
+#: src/Field/Type/DateType.php:25
+msgid "Date"
+msgstr "Data"
+
+#: src/Field/Type/CheckboxType.php:44
+msgid "Checkbox"
+msgstr "Pole zaznaczenia"
+
+#: src/Settings/Option/SettingSectionsAdvOption.php:31
+msgid "Get Flexible Checkout Fields PRO to use Custom Sections"
+msgstr "Kup wtyczkę Flexible Chcekout Fields PRO, aby używać dodatkowych sekcji"
+
+#: src/Settings/Tab/AdvancedTab.php:23
+msgid "Advanced"
+msgstr "Zaawansowane"
+
+#: src/Settings/Page.php:203
+msgid "Reset Section Settings"
+msgstr "Resetuj ustawienia sekcji"
+
+#: src/Settings/Tab/AppearanceTab.php:23
+msgid "Appearance"
+msgstr "Wygląd"
+
+#: src/Settings/Tab/GeneralTab.php:23
+msgid "General"
+msgstr "Ogólne"
+
+#. Author URI of the plugin
+msgid "https://www.wpdesk.net/"
+msgstr "https://www.wpdesk.pl/"
+
+#. Author of the plugin
+msgid "WP Desk"
+msgstr "WP Desk"
+
+#. Description of the plugin
+msgid "Manage your WooCommerce checkout fields. Change order, labels, placeholders and add new fields."
+msgstr "Zarządzaj polami formularza WooCommerce. Zmień kolejność, etykiety, teksty zastępcze i dodaj nowe pola."
+
+#. Plugin URI of the plugin
+msgid "https://www.wpdesk.net/products/flexible-checkout-fields-pro-woocommerce/"
+msgstr " https://www.wpdesk.net/products/flexible-checkout-fields-pro-woocommerce/"
+
+#. Plugin Name of the plugin
+#: classes/settings.php:26 classes/settings.php:29 classes/settings.php:32
+#: classes/settings.php:36 classes/settings.php:40
+#: templates/views/admin-page.php:19
+msgid "Flexible Checkout Fields"
+msgstr "Flexible Checkout Fields"
+
+#: classes/plugin.php:943
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:191
+msgid "Support"
+msgstr "Wsparcie"
+
+#: classes/plugin.php:942
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:194
+msgid "Docs"
+msgstr "Dokumentacja"
+
+#: classes/display-options.php:103
+msgid "Additional Information"
+msgstr "Dodatkowe informacje"
+
+#: classes/plugin.php:920
+msgid "Previous"
+msgstr "Poprzedni"
+
+#: classes/plugin.php:919
+msgid "Next"
+msgstr "Następny"
+
+#: classes/plugin.php:916
+msgid "Today"
+msgstr "Dzisiaj"
+
+#: classes/plugin.php:915
+msgid "Close"
+msgstr "Zamknij"
+
+#: classes/plugin.php:868
+msgid "Uploading file..."
+msgstr "Przesyłanie pliku..."
+
+#: classes/plugin.php:313 src/Settings/Menu.php:70
+msgid "Order"
+msgstr "Zamówienie"
+
+#: classes/plugin.php:306 src/Settings/Menu.php:69
+msgid "Shipping"
+msgstr "Wysyłka"
+
+#: classes/plugin.php:299 src/Settings/Menu.php:68
+msgid "Billing"
+msgstr "Płatność"
+
+#: src/Settings/Option/SettingJqueryCssOption.php:39
+msgid "Remember that some fields, i.e. datepicker use jQuery UI CSS. The plugin adds a default CSS but sometimes it can create some visual glitches."
+msgstr "Pamiętaj, że niektóre pola formularza jak np. datepicker korzystają z CSS jQuery UI. Wtyczka dodaje standardowe style CSS, jednak czasem może mieć to wpływ na wygląd twojej strony."
+
+#: src/Settings/Option/SettingJqueryCssOption.php:30
+msgid "Disable jquery-ui.css on the frontend"
+msgstr "Wyłącz jquery-ui.css na stronie"
+
+#: src/Settings/Option/CssOption.php:39
+msgid "CSS class"
+msgstr "Klasa CSS"
+
+#: src/Settings/Option/PlaceholderOption.php:39
+msgid "Placeholder"
+msgstr "Symbol zastępczy"
+
+#: templates/fields/colorpicker.php:22 templates/fields/email.php:22
+#: templates/fields/inspirecheckbox.php:33 templates/fields/number.php:22
+#: templates/fields/phone.php:22 templates/fields/text.php:22
+#: templates/fields/textarea.php:22 templates/fields/url.php:22
+msgid "Required Field"
+msgstr "Pole wymagane"
+
+#: src/Settings/Option/EnabledOption.php:39
+msgid "Enable field"
+msgstr "Włącz pole"
+
+#: src/Settings/Page.php:202
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:59
+#: vendor_prefixed/wpdesk/wp-wpdesk-license/src/ApiManager/class-wc-api-manager-menu.php:64
+msgid "Save Changes"
+msgstr "Zapisz zmiany"
+
+#: src/Settings/Page.php:198
+msgid "Edit section"
+msgstr "Edytuj sekcję"
+
+#: src/Settings/Page.php:200
+msgid "Add Field"
+msgstr "Dodaj pole"
+
+#: src/Settings/Option/LabelOption.php:48 src/Settings/Page.php:210
+msgid "Label"
+msgstr "Etykieta"
+
+#: src/Settings/Page.php:209
+msgid "Field Type"
+msgstr "Rodzaj pola"
+
+#: src/Settings/Page.php:197
+msgid "Add new field"
+msgstr "Dodaj nowe pole"
+
+#: classes/plugin.php:941 src/Settings/Menu.php:33
+#: vendor_prefixed/wpdesk/wp-builder/src/Plugin/AbstractPlugin.php:198
+#: vendor_prefixed/wpdesk/wp-wpdesk-helper/src/Page/SettingsPage.php:46
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: src/Settings/Form/EditFieldsForm.php:78
+msgid "Notes about your order, e.g. special notes for delivery."
+msgstr "Notatka do twojego zamówienia, np. informacje o dostarczeniu przesyłki."
+
+#: src/Settings/Form/EditFieldsForm.php:77
+msgid "Order Notes"
+msgstr "Uwagi do zamówienia"
+
+#: src/Settings/Page.php:60
+msgid "Checkout Fields"
+msgstr "Pola zamówienia"
+
+#: src/Settings/Page.php:59
+msgid "Checkout Fields Settings"
+msgstr "Ustawienia pól zamówienia"

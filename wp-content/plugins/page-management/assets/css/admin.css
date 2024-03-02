@@ -1,0 +1,15 @@
+.btn-plugin {
+width:250px;
+}
+
+.first-cell {
+    width: 750px;
+}
+.menu-img-frame {
+    display: flex;
+    flex-direction: row;
+}
+.btn-plugin-menu {
+    width:250px;  
+    margin-right:2rem!important;
+}

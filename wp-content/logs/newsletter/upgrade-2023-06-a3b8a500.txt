@@ -1,0 +1,30 @@
+16-06-2023 15:20:37 - INFO  - 7.8.5 - 30,3 MB/1 GB - [cron] > Start upgrade from 7.0.0
+16-06-2023 15:20:37 - INFO  - 7.8.5 - 33,3 MB/1 GB - [cron] > Array
+(
+    [`wp_newsletter_emails`] => Created table `wp_newsletter_emails`
+)
+
+16-06-2023 15:20:37 - INFO  - 7.8.5 - 33,3 MB/1 GB - [cron] > Array
+(
+    [`wp_newsletter_sent`] => Created table `wp_newsletter_sent`
+)
+
+16-06-2023 15:20:37 - INFO  - 7.8.5 - 33,3 MB/1 GB - [cron] > Array
+(
+    [`wp_newsletter`] => Created table `wp_newsletter`
+    [wp_newsletter.source] => Added column wp_newsletter.source
+)
+
+16-06-2023 15:20:37 - INFO  - 7.8.5 - 33,3 MB/1 GB - [cron] > Array
+(
+    [`wp_newsletter_user_logs`] => Created table `wp_newsletter_user_logs`
+)
+
+16-06-2023 15:20:37 - INFO  - 7.8.5 - 33,3 MB/1 GB - [cron] > Array
+(
+    [`wp_newsletter_stats`] => Created table `wp_newsletter_stats`
+)
+
+16-06-2023 15:20:38 - INFO  - 7.8.5 - 33,3 MB/1 GB - [cron] > Backing up options of 7.0.0
+16-06-2023 15:20:38 - INFO  - 7.8.5 - 33,4 MB/1 GB - [cron] > Migration to 7.8.0
+16-06-2023 15:20:38 - INFO  - 7.8.5 - 33,5 MB/1 GB - [cron] > End

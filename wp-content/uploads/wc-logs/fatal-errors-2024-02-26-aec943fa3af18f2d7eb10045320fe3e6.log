@@ -1,0 +1,32 @@
+2024-02-26T16:55:57+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "tmpmela_register_sidebars" not found or invalid function name in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\widgets.php(1858): do_action('widgets_init')
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): wp_widgets_init('')
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\paczka\wp-settings.php(643): do_action('init')
+#7 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-02-26T16:56:03+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "pm_register_sidebars" not found or invalid function name in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\widgets.php(1858): do_action('widgets_init')
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): wp_widgets_init('')
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\paczka\wp-settings.php(643): do_action('init')
+#7 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#10 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-02-26T17:51:37+00:00 CRITICAL Out of memory (allocated 117440512) (tried to allocate 155648 bytes) in E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php on line 39
+

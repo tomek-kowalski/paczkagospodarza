@@ -1,0 +1,52 @@
+2024-02-20T09:34:49+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class "WPSEO_Replace_Vars" not found in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-settings.php(643): do_action('init')
+#3 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-blog-header.php(13): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#7 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-02-20T09:34:49+00:00 CRITICAL Uncaught Error: Class "WPSEO_Admin_Bar_Menu" not found in E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\inc\wpseo-non-ajax-functions.php:20
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): wpseo_initialize_admin_bar('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-settings.php(665): do_action('wp_loaded')
+#4 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\wp-blog-header.php(13): require_once('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#8 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\inc\wpseo-non-ajax-functions.php on line 20
+
+2024-02-20T09:34:50+00:00 CRITICAL Uncaught Error: Class "Yoast\WP\Lib\Model" not found in E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\repositories\indexable-repository.php:102
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\repositories\indexable-repository.php(310): Yoast\WP\SEO\Repositories\Indexable_Repository->query()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\repositories\indexable-repository.php(141): Yoast\WP\SEO\Repositories\Indexable_Repository->find_for_system_page('404')
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\memoizers\meta-tags-context-memoizer.php(97): Yoast\WP\SEO\Repositories\Indexable_Repository->for_current_page()
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end\wp-robots-integration.php(87): Yoast\WP\SEO\Memoizers\Meta_Tags_Context_Memoizer->for_current_page()
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end\wp-robots-integration.php(73): Yoast\WP\SEO\Integrations\Front_End\WP_Robots_Integration->get_robots_value()
+#5 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End\WP_Robots_Integration->add_robots(Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#7 E:\xampp\htdocs\paczka\wp-includes\robots-template.php(32): apply_filters('wp_robots', Array)
+#8 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): wp_robots('')
+#9 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#10 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#11 E:\xampp\htdocs\paczka\wp-includes\general-template.php(3052): do_action('wp_head')
+#12 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(19): wp_head()
+#13 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#15 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#16 E:\xampp\htdocs\paczka\wp-content\themes\burge\404.php(9): get_header()
+#17 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#18 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#19 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#20 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\repositories\indexable-repository.php on line 102
+
+2024-02-20T15:27:02+00:00 CRITICAL Cannot declare class Custom_Menu_Walker, because the name is already in use in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\nav\walker\extend-footer-menu.php on line 2
+

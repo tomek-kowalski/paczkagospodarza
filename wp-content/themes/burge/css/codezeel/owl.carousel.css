@@ -1,0 +1,186 @@
+.owl-theme .owl-buttons div{
+	position: absolute;
+    display: inline-block;
+    font-size: 0;
+    height: 35px;
+    margin: 0 2px;
+    text-align: center;
+    width: 35px;
+    top: 32%;
+    line-height: 35px;
+    border: 1px solid transparent;
+    background: #f2f2f2;
+    color: #000000;
+    padding: 0px;
+    float: left;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.owl-theme .owl-buttons div.owl-prev{left:0px;}
+.owl-theme .owl-buttons div.owl-next{right:0px;}
+.owl-theme .owl-buttons div:before,
+#horizontalTab .owl-theme .owl-buttons div:before{
+	content: '';
+    font-family: 'FontAwesome';
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.owl-theme .owl-buttons div:hover,
+#horizontalTab .owl-theme .owl-buttons div:hover{ color:#ffffff; background-color: #917545;  border-color: #917545;
+    color: #ffffff;}
+.owl-theme .owl-buttons div.owl-prev:before,
+#horizontalTab .owl-theme .owl-buttons div.owl-prev:before{
+	content: '\f104';
+}
+.owl-theme .owl-buttons div.owl-next:before,
+#horizontalTab .owl-theme .owl-buttons div.owl-next:before{
+	content: '\f105';
+}
+.brand-carousel.owl-theme .owl-buttons div.owl-next:before{border:none;}
+#brand-products .owl-theme .owl-buttons {
+    position: static;
+}
+#brand-products .owl-carousel{width:100%;margin:0px auto 20px;}
+#brand-products .owl-theme .owl-buttons div{
+	top:30%;    
+	position: absolute;
+	opacity:0;
+	-khtml-opacity: 0;
+	-webkit-opacity: 0;
+	-moz-opacity:0;
+	 -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+#brand-products:hover .owl-theme .owl-buttons div{
+	opacity:1;
+	-khtml-opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity:1;
+}
+.owl-theme .owl-page{display:inline-block;margin:0 5px;vertical-align:top;}
+.owl-pagination .owl-page span{
+	height:10px;width:10px;
+	background-color:#000000;
+	display:block;
+	border-radius:50%;
+	-webkit-border-radius:50%;
+	-khtml-border-radius:50%;
+	-moz-border-radius:50%;
+	-webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.owl-pagination .owl-page:hover span,.owl-pagination .owl-page.active:hover span,.owl-pagination .owl-page.active span{
+	background:#917545;
+	-webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+}
+.owl-pagination .owl-page.active span{cursor:default;}
+.owl-pagination .owl-page span:before{font-family:'FontAwesome';font-size:13px;color:#000;}
+.product-page .owl-pagination{margin:10px 0;}
+.owl-theme .owl-page span.owl-numbers{height:auto;width:auto;color:#FFF;padding:2px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;}
+.owl-pagination{margin:0;text-align:center;}
+.owl-item.loading{min-height:150px;background:url(../../images/owl/AjaxLoader.gif) no-repeat center center;}
+.owl-carousel .owl-wrapper:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.owl-carousel{display:none;position:relative;width:100%;-ms-touch-action:pan-y;}
+.owl-carousel .owl-wrapper{display:none;position:relative;-webkit-transform:translate3d(0px, 0px, 0px);}
+.owl-carousel .owl-wrapper-outer{overflow:hidden;position:relative;width:100%;}
+.owl-carousel .owl-wrapper-outer.autoHeight{-webkit-transition:height 500ms ease-in-out;-moz-transition:height 500ms ease-in-out;-ms-transition:height 500ms ease-in-out;-o-transition:height 500ms ease-in-out;transition:height 500ms ease-in-out;}
+.owl-carousel .owl-item{float:left;}
+.owl-page,
+.owl-buttons div{cursor:pointer;}
+.grabbing{cursor:url("../../images/owl/grabbing.png") 8 8, move;}
+.owl-carousel .owl-wrapper,
+.owl-carousel .owl-item{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);}
+.owl-carousel{position:relative;}
+.flex-control-thumbs{margin-top:20px;margin-left:0;}
+.portfolio-container, #latest_news{margin:0 auto;}
+.woocommerce-product-gallery .owl-theme .owl-buttons div{
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+.owl-theme .owl-buttons ,
+.upsells .owl-theme .owl-buttons, .related .owl-theme .owl-buttons, .cross-sells .owl-theme .owl-buttons {
+    position: absolute;
+    top: -55px;
+    right: 15px;
+    width: 80px;
+}
+#horizontalTab .owl-buttons {
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 34%;
+    opacity:0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity:0;
+}
+.custom-testimonial .owl-pagination{
+    opacity:0;
+    -khtml-opacity: 0;
+    -webkit-opacity: 0;
+    -moz-opacity:0;
+}
+#horizontalTab:hover .owl-buttons,
+.custom-testimonial:hover .owl-pagination {
+    opacity:1;
+    -khtml-opacity: 1;
+    -webkit-opacity: 1;
+    -moz-opacity:1;
+}
+.owl-theme .owl-buttons div {
+    bottom: auto;
+    margin: auto 0;
+}
+.custom-testimonial .owl-theme .owl-controls .owl-buttons,
+.woocommerce-product-gallery .owl-theme.owl-carousel  .owl-buttons{
+    top: 0;
+	opacity:1;
+	-khtml-opacity: 1;
+	-webkit-opacity: 1;
+	-moz-opacity:1;
+}
+.team-carousel.owl-theme.owl-carousel  .owl-buttons,
+.woocommerce-product-gallery .owl-theme.owl-carousel  .owl-buttons{position: static;}
+.custom-testimonial .owl-theme .owl-buttons div{
+	display:block;
+	font-size:0;
+	color:#000;
+	height:30px;
+	position:relative;
+	text-align:center;
+	width:20px;
+	top:32%;
+	line-height:38px;
+	background:rgba(0, 0, 0, 0) url("../../images/codezeel/testimonial-arrow.png") no-repeat scroll left 0;
+	-webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.custom-testimonial .owl-theme .owl-buttons div:hover{border-color: transparent;}
+.custom-testimonial .owl-theme .owl-buttons div.owl-prev{    background-position: 0 5px;}
+.custom-testimonial .owl-theme .owl-buttons div.owl-next{    background-position: -26px 5px;}
+.custom-testimonial .owl-theme .owl-buttons div.owl-prev:hover{        background-position: 0 -22px;}
+.custom-testimonial .owl-theme .owl-buttons div.owl-next:hover{        background-position: -26px -22px;}
+.custom-testimonial .owl-theme .owl-buttons div:before{display:none;}
+#sb_instagram #sbi_images .owl-item .sbi_item {
+    width: 100% !important;
+}

@@ -1,0 +1,152 @@
+2024-02-14T13:53:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class PM does not have a method "plugin_styles" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\script-loader.php(2262): do_action('wp_enqueue_scri...')
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\general-template.php(3052): do_action('wp_head')
+#7 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(19): wp_head()
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#10 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#12 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#13 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#15 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-02-14T15:51:00+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "custom_menu_walker" not found or invalid function name in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:326
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<a href="#">Pom...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php(293): apply_filters('walker_nav_menu...', '<a href="#">Pom...', Object(WP_Post), 0, Object(stdClass))
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(147): Walker_Nav_Menu->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#4 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(616): Walker->walk(Array, 0, Object(stdClass))
+#5 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#6 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#7 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#9 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#10 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#11 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#13 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#14 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 326
+
+2024-02-14T15:59:52+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array must have exactly two members in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:326
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<a href="#">Pom...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php(293): apply_filters('walker_nav_menu...', '<a href="#">Pom...', Object(WP_Post), 0, Object(stdClass))
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(147): Walker_Nav_Menu->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#4 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(616): Walker->walk(Array, 0, Object(stdClass))
+#5 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#6 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#7 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#9 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#10 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#11 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#13 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#14 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 326
+
+2024-02-14T16:01:16+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, array must have exactly two members in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:326
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<a href="#">Pom...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php(293): apply_filters('walker_nav_menu...', '<a href="#">Pom...', Object(WP_Post), 0, Object(stdClass))
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(147): Walker_Nav_Menu->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#4 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(616): Walker->walk(Array, 0, Object(stdClass))
+#5 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#6 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#7 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#9 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#10 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#11 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#13 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#14 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 326
+
+2024-02-14T16:01:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Menu::custom_menu_walker(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 326 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\nav\custom-menu.php:50
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(326): Menu->custom_menu_walker('<a href="#">Pom...')
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<a href="#">Pom...', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php(293): apply_filters('walker_nav_menu...', '<a href="#">Pom...', Object(WP_Post), 0, Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(147): Walker_Nav_Menu->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#5 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(616): Walker->walk(Array, 0, Object(stdClass))
+#6 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#7 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#10 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#12 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#13 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#15 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\nav\custom-menu.php on line 50
+
+2024-02-14T16:18:52+00:00 CRITICAL Uncaught Error: Object of class Walker_Extend_Menu could not be converted to string in E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php:293
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(147): Walker_Nav_Menu->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#2 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(616): Walker->walk(Array, 0, Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#4 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#5 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#7 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#8 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#9 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#11 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#12 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php on line 293
+
+2024-02-14T17:56:10+00:00 CRITICAL Uncaught TypeError: array_slice(): Argument #1 ($array) must be of type array, string given in E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php:232
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(232): array_slice('<div id="navbar...', 0, 1)
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\page-management\nav\custom-menu.php(56): Walker->walk('<div id="navbar...', 0)
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Menu->custom_menu_walker('<div id="navbar...', Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<div id="navbar...', Array)
+#4 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(302): apply_filters('wp_nav_menu', '<div id="navbar...', Object(stdClass))
+#5 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#6 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#8 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#9 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#10 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#11 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#13 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php on line 232
+
+2024-02-14T20:21:59+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Menu::custom_menu_walker(), 2 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 326 and exactly 4 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\nav\custom-menu.php:50
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(326): Menu->custom_menu_walker('<a href="#">Pom...', Object(WP_Post))
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<a href="#">Pom...', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\class-walker-nav-menu.php(293): apply_filters('walker_nav_menu...', '<a href="#">Pom...', Object(WP_Post), 0, Object(stdClass))
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(147): Walker_Nav_Menu->start_el('<li id="menu-it...', Object(WP_Post), 0, Object(stdClass))
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-walker.php(247): Walker->display_element(Object(WP_Post), Array, 0, 0, Array, '<li id="menu-it...')
+#5 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(616): Walker->walk(Array, 0, Object(stdClass))
+#6 E:\xampp\htdocs\paczka\wp-includes\nav-menu-template.php(236): walk_nav_menu_tree(Array, 0, Object(stdClass))
+#7 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(45): wp_nav_menu(Object(stdClass))
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#10 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#11 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(5): get_header()
+#12 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#13 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#15 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\nav\custom-menu.php on line 50
+
