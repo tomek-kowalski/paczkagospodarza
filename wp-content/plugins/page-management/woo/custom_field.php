@@ -1,5 +1,6 @@
 <?php
 
+
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
@@ -9,33 +10,53 @@ class My_woo {
 function __construct() {
 
 
+    $this->woo_load_files();
     add_action('woocommerce_product_options_general_product_data', [$this,'recommended_this_week']);
     add_action('woocommerce_product_options_general_product_data', [$this,'todays_promo']);
     add_action('woocommerce_process_product_meta', [$this,'save_custom_field_value']);
     add_action('product_cat_edit_form_fields', [$this,'add_category_custom_fields']);
     add_action('edited_term', [$this, 'save_category_custom_fields'], 10, 3);
-    add_shortcode('recommended_products', [$this, 'recommended_products_shortcode']);
-    add_shortcode('recommended_products_today', [$this, 'recommended_products_today_shortcode']);
-    add_shortcode('selected_category', [$this, 'selected_category_shortcode']);
     add_filter('vc_grid_item_shortcodes', [$this, 'my_module_add_grid_shortcodes'], 10);
-    add_shortcode('category_button', [$this, 'selected_category_button_shortcode'], 10);
     add_action('vc_grid_item_shortcodes', [$this,'this_week_add_grid_shortcodes'],10);
-    add_shortcode('button_recommended_this_week', [$this,'button_recommended_this_week_function'],10);
     add_action('vc_grid_item_shortcodes', [$this,'today_add_grid_shortcodes'],10);
-    add_shortcode('button_recommended_today', [$this,'button_recommended_today_function'],10);
-    add_shortcode('button_certified', [$this,'button_certified_function'],10);
     add_action('wp_ajax_adding_item', [$this,'adding_item']);
     add_action('wp_ajax_nopriv_adding_item', [$this,'adding_item']);
     add_action('wp_enqueue_scripts', [$this,'ajax_script']);
+    add_shortcode('button_recommended_this_week', [$this,'button_recommended_this_week_function'],10);
+    add_shortcode('category_button', [$this, 'selected_category_button_shortcode'], 10);
+    add_shortcode('button_recommended_today', [$this,'button_recommended_today_function'],10);
+    add_shortcode('button_blog', [$this,'button_blog_function'],10);
+    add_shortcode('button_certified', [$this,'button_certified_function'],10);
+    add_shortcode('recommended_products', [$this, 'recommended_products_shortcode']);
+    add_shortcode('recommended_products_today', [$this, 'recommended_products_today_shortcode']);
+    add_shortcode('recommended_products_2', [$this, 'recommended_products_shortcode_2']);
+    add_shortcode('recommended_products_today_2', [$this, 'recommended_products_today_shortcode_2']);
+    add_shortcode('selected_category', [$this, 'selected_category_shortcode']);
     add_shortcode('front_certified',[$this, 'my_certified_front']);
+    add_shortcode('front_certified_mobile',[$this, 'my_certified_mobile']);
     add_shortcode('front_images',[$this, 'my_images_front']);
+    add_filter('woocommerce_loop_add_to_cart_link', [$this,'remove_add_to_cart_button'], 10, 2);
+}
+
+function remove_add_to_cart_button($link, $product) {
+    if ($product->is_type('simple')) {
+        return '';
+    }
+    return $link;
+}
+
+public function woo_load_files() 
+{
+    require_once( PM_PATH. 'woo/templates.php');
 }
 
 public function my_images_front() {
     require_once( PM_PATH. 'extra-functions/my-images.php' );
 }
 
-
+public function my_certified_mobile() {
+    require_once( PM_PATH. 'extra-functions/certified_front_mobile.php' );
+}
 public function my_certified_front() {
     require_once( PM_PATH. 'extra-functions/custom_functions.php' );
 }
@@ -56,7 +77,7 @@ public function adding_item() {
     if (isset($_POST['product_id'])) {
         $product_id = absint($_POST['product_id']);
         $product = wc_get_product($product_id);
-        error_log($product_id);
+        //error_log($product_id);
 
         if ($product) {
             WC()->cart->add_to_cart($product_id);
@@ -81,10 +102,19 @@ public function today_add_grid_shortcodes( $shortcodes ) {
     return $shortcodes;
 }
 
+public function button_blog_function() {
+    $template_link = site_url('/blog');
+    $output = '<div class="button-frame-blog">';
+    $output .= '<h3>' . __('Poczytaj naszego bloga','burge') . '</h3>';
+    $output .= '<a class="button-front" href="' . $template_link . '">' . __('Zobacz wszystko', 'woocommerce') . '</a>';
+    $output .= '</div>';
+
+    return $output;
+}
+
 
 public function button_recommended_today_function() {
-    $template_link = '';
-
+    $template_link = get_post_type_archive_link('dzis-w-promocji');
     $output = '<div class="button-frame">';
     $output .= '<h3>' . __('Dziś w promocji','burge') . '</h3>';
     $output .= '<a class="button-front" href="' . $template_link . '">' . __('Zobacz wszystko', 'woocommerce') . '</a>';
@@ -105,7 +135,7 @@ public function button_certified_function() {
 public function this_week_add_grid_shortcodes( $shortcodes ) {
     $shortcodes['button_recommended_this_week'] = array(
         'name'         => __( 'Selected this week products button', 'burge' ),
-        'base'         => 'button_recommended_this_week',
+        'base'         =>   'button_recommended_this_week',
         'category'     => __( 'Content', 'burge' ),
         'description'  => __( 'Button for selected products this week', 'burge' ),
         'post_type'    => Vc_Grid_Item_Editor::postType(),
@@ -115,11 +145,10 @@ public function this_week_add_grid_shortcodes( $shortcodes ) {
 
 
 public function button_recommended_this_week_function() {
-    $template_link = '';
-
+    $template_link = get_post_type_archive_link('polecane-w-tygodniu');
     $output = '<div class="button-frame">';
     $output .= '<h3>' . __('Polecane w tym tygodniu','burge') . '</h3>';
-    $output .= '<a class="button-front" href="' . $template_link . '">' . __('Zobacz wszystko', 'woocommerce') . '</a>';
+    $output .= '<a class="button-front" href="' . esc_url($template_link) . '">' . __('Zobacz wszystko', 'woocommerce') . '</a>';
     $output .= '</div>';
 
     return $output;
@@ -271,22 +300,20 @@ public static function modify_recommended_today_products_query($query_args, $att
 }
 
 public function selected_category_shortcode($atts) {
+    $category_id = $this->get_category_id_with_custom_field();
+
     $atts = shortcode_atts(
         array(
-            'limit'        => '12',
-            'columns'      => '4',
-            'cat_operator' => 'IN',
+            'columns' => '2',
         ),
         $atts,
         'selected_category'
     );
 
-    $category_id = $this->get_category_id_with_custom_field();
-
     if ($category_id) {
-        add_filter('woocommerce_shortcode_before_selected_category', function ($output, $atts) {
+        add_filter('woocommerce_shortcode_before_selected_category', function ($output, $shortcode_atts) {
             ob_start();
-            echo '<ul class="products columns-' . esc_attr($atts['columns']) . '">';
+            echo '<ul class="products columns-' . esc_attr($shortcode_atts['columns']) . '">';
             return ob_get_clean();
         }, 10, 2);
 
@@ -297,43 +324,30 @@ public function selected_category_shortcode($atts) {
         });
 
         $args = array(
-            'post_type'      => 'product',
-            'posts_per_page' => intval($atts['limit']),
             'columns'        => intval($atts['columns']),
-            'cat_operator'   => $atts['cat_operator'],
+            'post_type'      => 'product',
+            'limit'          => '12',
+            'category'       => $category_id,
         );
 
-        add_filter('woocommerce_shortcode_products_query', function ($query_args) use ($category_id) {
-            $query_args['tax_query'] = array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field'    => 'id',
-                    'terms'    => array($category_id),
-                    'operator' => 'IN',
-                ),
-            );
-
-            return $query_args;
-        }, 10, 1);
+        error_log('args: ' . print_r($args,true));
 
         $shortcode = new WC_Shortcode_Products($args, 'selected_category');
-
-        remove_filter('woocommerce_shortcode_products_query', function ($query_args) use ($category_id) {
-            $query_args['tax_query'] = array(); 
-            return $query_args;
-        }, 10, 1);
-
         $content = $shortcode->get_content();
         $modified_content = $this->add_to_cart_button_to_products($content);
 
+        // Remove filters
         remove_filter('woocommerce_shortcode_before_selected_category', function () {});
         remove_filter('woocommerce_shortcode_after_selected_category', function () {});
+
+        //error_log('modified_content: ' . print_r($modified_content, true));
 
         return $modified_content;
     } else {
         return 'No category found.';
     }
 }
+
 
 
 private function get_category_id_with_custom_field() {
@@ -387,7 +401,34 @@ public function recommended_products_shortcode($atts) {
 
     $args = array(
         'post_type'      => 'product',
-        'posts_per_page' => intval($atts['limit']),
+        'limit' => intval($atts['limit']),
+        'columns'        => intval($atts['columns']),
+        'cat_operator'   => $atts['cat_operator'],
+    );
+
+    add_filter('woocommerce_shortcode_products_query', [$this, 'modify_recommended_products_query'], 10, 2);
+    $shortcode = new WC_Shortcode_Products($args, 'recommended_products');
+    remove_filter('woocommerce_shortcode_products_query', [$this, 'modify_recommended_products_query'], 10, 2);
+    $content = $shortcode->get_content();
+    $modified_content = $this->add_to_cart_button_to_products($content);
+
+    return $modified_content;
+}
+
+public function recommended_products_shortcode_2($atts) {
+    $atts = shortcode_atts(
+        array(
+            'limit'        => '12',
+            'columns'      => '2',
+            'cat_operator' => 'IN',
+        ),
+        $atts,
+        'recommended_products'
+    );
+
+    $args = array(
+        'post_type'      => 'product',
+        'limit' => intval($atts['limit']),
         'columns'        => intval($atts['columns']),
         'cat_operator'   => $atts['cat_operator'],
     );
@@ -414,7 +455,37 @@ public function recommended_products_today_shortcode($atts) {
 
     $args = array(
         'post_type'      => 'product',
-        'posts_per_page' => intval($atts['limit']),
+        'limit' => intval($atts['limit']),
+        'columns'        => intval($atts['columns']),
+        'cat_operator'   => $atts['cat_operator'],
+    );
+
+    add_filter('woocommerce_shortcode_products_query', [$this, 'modify_recommended_today_products_query'], 10, 2);
+
+    $shortcode = new WC_Shortcode_Products($args, 'recommended_products_today');
+
+    remove_filter('woocommerce_shortcode_products_query', [$this, 'modify_recommended_today_products_query'], 10, 2);
+
+    $content = $shortcode->get_content();
+    $modified_content = $this->add_to_cart_button_to_products($content);
+
+    return $modified_content;
+}
+
+public function recommended_products_today_shortcode_2($atts) {
+    $atts = shortcode_atts(
+        array(
+            'limit'        => '12',
+            'columns'      => '2',
+            'cat_operator' => 'IN',
+        ),
+        $atts,
+        'recommended_products_today'
+    );
+
+    $args = array(
+        'post_type'      => 'product',
+        'limit' => intval($atts['limit']),
         'columns'        => intval($atts['columns']),
         'cat_operator'   => $atts['cat_operator'],
     );

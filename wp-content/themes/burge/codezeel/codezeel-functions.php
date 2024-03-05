@@ -1261,25 +1261,6 @@ function tmpmela_hex_to_rgba($color, $opacity = false) {
         //Return rgb(a) color string
         return $output;
 }
-// Display the additional product images
-function tmpmela_second_product_thumbnail() {
-	global $product, $woocommerce,$id;
-	$attachment_ids = $product->get_gallery_image_ids();
-	$id =	get_post_thumbnail_id( $product->get_id() );
-	if(get_option( 'tmpmela_secondaryimage' ) == "yes"){
-		if ( count($attachment_ids) > 0 ) {
-			$secondary_image_id = $attachment_ids['0'];		
-			echo wp_get_attachment_image( $secondary_image_id, 'shop_catalog', '', $attr = array( 'class' => 'secondary-image attachment-shop-catalog' ) );
-		}
-		else{				
-			echo wp_get_attachment_image( $id, 'shop_catalog', '', $attr = array( 'class' => 'secondary-image attachment-shop-catalog' ) );		
-		}
-	}
-	else{				
-		echo wp_get_attachment_image( $id, 'shop_catalog', '', $attr = array( 'class' => 'secondary-image attachment-shop-catalog' ) );		
-	}
-}
-add_action( 'woocommerce_before_shop_loop_item_title', 'tmpmela_second_product_thumbnail');
 /* for escaping i.e wp_kses( __()); the html element update to WP 4.3.1 */
   function tmpmela_allowed_html() {
    $tmpmela_allowed_html = array(

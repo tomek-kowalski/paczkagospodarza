@@ -868,14 +868,11 @@ span + .edit-link:before,
 	float: none;
 }
 .page-title-inner,
-.main-content-inner,
-.theme-container,
 .full-width .inner-container,
 .main-content.left-sidebar,
 .site-footer .inner-container,
 .main-inner-container,
-.full-width .page-title,
-.main-content.box-page {
+.full-width .page-title {
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -8520,9 +8517,6 @@ body.mobile-menu-open {
 .offer-block { margin-top:20px!important;}
 }
 .tag-cloud-link {background:#917545!important;}
-.wpb_wrapper ul {display:block!important;list-style: none!important;padding-left:20px;}
-.wpb_wrapper ul li {
- list-style: square!important;}
 @media only screen and (max-width: 979px){
 #mobile-cart { display:block!important;}
 .header-contact, .whislist-counter {display:none!important;}

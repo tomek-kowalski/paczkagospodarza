@@ -233,6 +233,10 @@ if ( ! defined( 'WPINC' ) ) {
 	public function plugin_styles() {
 		wp_enqueue_style('header-footer-style', PM_URL . '/assets/css/frontend.css', array(), 'all');
         wp_enqueue_script('pm-script', PM_URL . '/assets/js/pm-script.js', array('jquery'), null, false);
+
+		if(is_front_page()) {
+			wp_enqueue_script('pm-front', PM_URL . '/assets/js/pm-front.js', array('jquery'), null, false);
+		}
 	}
 
 

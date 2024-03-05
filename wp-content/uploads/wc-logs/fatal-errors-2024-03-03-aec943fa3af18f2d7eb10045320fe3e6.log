@@ -1,0 +1,144 @@
+2024-03-03T00:03:34+00:00 CRITICAL Uncaught Error: Class "Template" not found in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:122
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): My_woo->button_recommended_this_week_function('', '', 'button_recommen...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[button_recomme...')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(247): do_shortcode('[button_recomme...')
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\templates\shortcodes\vc_column.php(94): wpb_js_remove_wpautop('[button_recomme...')
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(451): require('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(424): WPBakeryShortCode->loadTemplate(Array, '[button_recomme...')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(546): WPBakeryShortCode->content(Array, '[button_recomme...')
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(1324): WPBakeryShortCode->output('', '[button_recomme...')
+#9 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): vc_do_shortcode('', '[button_recomme...', 'vc_column')
+#10 [internal function]: do_shortcode_tag(Array)
+#11 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[vc_column][but...')
+#12 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(247): do_shortcode('[vc_column][but...')
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\templates\shortcodes\vc_row.php(156): wpb_js_remove_wpautop('[vc_column][but...')
+#14 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(451): require('E:\\xampp\\htdocs...')
+#15 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\vc-row.php(40): WPBakeryShortCode->loadTemplate(Array, '[vc_column][but...')
+#16 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(546): WPBakeryShortCode_Vc_Row->content(Array, '[vc_column][but...')
+#17 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(1324): WPBakeryShortCode->output('', '[vc_column][but...')
+#18 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): vc_do_shortcode('', '[vc_column][but...', 'vc_row')
+#19 [internal function]: do_shortcode_tag(Array)
+#20 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(recomm...', 'do_shortcode_ta...', '<p>[vc_row][vc_...')
+#21 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): do_shortcode('<p>[vc_row][vc_...')
+#22 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>[vc_row][vc_...', Array)
+#23 E:\xampp\htdocs\paczka\wp-includes\post-template.php(256): apply_filters('the_content', '[vc_row][vc_col...')
+#24 E:\xampp\htdocs\paczka\wp-content\themes\burge\content-page.php(16): the_content()
+#25 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#26 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', false, Array)
+#27 E:\xampp\htdocs\paczka\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#28 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(47): get_template_part('content', 'page')
+#29 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#30 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#31 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#32 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 122
+
+2024-03-03T00:25:35+00:00 CRITICAL Uncaught Error: Class "Template" not found in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:122
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): My_woo->button_recommended_this_week_function('', '', 'button_recommen...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[button_recomme...')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(247): do_shortcode('[button_recomme...')
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\templates\shortcodes\vc_column.php(94): wpb_js_remove_wpautop('[button_recomme...')
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(451): require('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(424): WPBakeryShortCode->loadTemplate(Array, '[button_recomme...')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(546): WPBakeryShortCode->content(Array, '[button_recomme...')
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(1324): WPBakeryShortCode->output('', '[button_recomme...')
+#9 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): vc_do_shortcode('', '[button_recomme...', 'vc_column')
+#10 [internal function]: do_shortcode_tag(Array)
+#11 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[vc_column][but...')
+#12 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(247): do_shortcode('[vc_column][but...')
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\templates\shortcodes\vc_row.php(156): wpb_js_remove_wpautop('[vc_column][but...')
+#14 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(451): require('E:\\xampp\\htdocs...')
+#15 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\vc-row.php(40): WPBakeryShortCode->loadTemplate(Array, '[vc_column][but...')
+#16 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(546): WPBakeryShortCode_Vc_Row->content(Array, '[vc_column][but...')
+#17 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(1324): WPBakeryShortCode->output('', '[vc_column][but...')
+#18 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): vc_do_shortcode('', '[vc_column][but...', 'vc_row')
+#19 [internal function]: do_shortcode_tag(Array)
+#20 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(recomm...', 'do_shortcode_ta...', '<p>[vc_row][vc_...')
+#21 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): do_shortcode('<p>[vc_row][vc_...')
+#22 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>[vc_row][vc_...', Array)
+#23 E:\xampp\htdocs\paczka\wp-includes\post-template.php(256): apply_filters('the_content', '[vc_row][vc_col...')
+#24 E:\xampp\htdocs\paczka\wp-content\themes\burge\content-page.php(16): the_content()
+#25 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#26 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', false, Array)
+#27 E:\xampp\htdocs\paczka\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#28 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(47): get_template_part('content', 'page')
+#29 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#30 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#31 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#32 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 122
+
+2024-03-03T00:26:51+00:00 CRITICAL Uncaught Error: Class "Template" not found in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:122
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): My_woo->button_recommended_this_week_function('', '', 'button_recommen...')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[button_recomme...')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(247): do_shortcode('[button_recomme...')
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\templates\shortcodes\vc_column.php(94): wpb_js_remove_wpautop('[button_recomme...')
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(451): require('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(424): WPBakeryShortCode->loadTemplate(Array, '[button_recomme...')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(546): WPBakeryShortCode->content(Array, '[button_recomme...')
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(1324): WPBakeryShortCode->output('', '[button_recomme...')
+#9 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): vc_do_shortcode('', '[button_recomme...', 'vc_column')
+#10 [internal function]: do_shortcode_tag(Array)
+#11 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(button...', 'do_shortcode_ta...', '[vc_column][but...')
+#12 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(247): do_shortcode('[vc_column][but...')
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\templates\shortcodes\vc_row.php(156): wpb_js_remove_wpautop('[vc_column][but...')
+#14 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(451): require('E:\\xampp\\htdocs...')
+#15 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\vc-row.php(40): WPBakeryShortCode->loadTemplate(Array, '[vc_column][but...')
+#16 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\classes\shortcodes\core\class-wpbakeryshortcode.php(546): WPBakeryShortCode_Vc_Row->content(Array, '[vc_column][but...')
+#17 E:\xampp\htdocs\paczka\wp-content\plugins\js_composer\include\helpers\helpers.php(1324): WPBakeryShortCode->output('', '[vc_column][but...')
+#18 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): vc_do_shortcode('', '[vc_column][but...', 'vc_row')
+#19 [internal function]: do_shortcode_tag(Array)
+#20 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(recomm...', 'do_shortcode_ta...', '<p>[vc_row][vc_...')
+#21 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): do_shortcode('<p>[vc_row][vc_...')
+#22 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('<p>[vc_row][vc_...', Array)
+#23 E:\xampp\htdocs\paczka\wp-includes\post-template.php(256): apply_filters('the_content', '[vc_row][vc_col...')
+#24 E:\xampp\htdocs\paczka\wp-content\themes\burge\content-page.php(16): the_content()
+#25 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#26 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', false, Array)
+#27 E:\xampp\htdocs\paczka\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#28 E:\xampp\htdocs\paczka\wp-content\themes\burge\page-templates\home.php(47): get_template_part('content', 'page')
+#29 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#30 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#31 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#32 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 122
+
+2024-03-03T00:33:29+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class My_woo does not have a method "create_this_week" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-settings.php(643): do_action('init')
+#3 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-03T00:33:29+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class My_woo does not have a method "create_this_week" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-settings.php(643): do_action('init')
+#3 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-03T00:33:30+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class My_woo does not have a method "create_this_week" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-settings.php(643): do_action('init')
+#3 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#6 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+

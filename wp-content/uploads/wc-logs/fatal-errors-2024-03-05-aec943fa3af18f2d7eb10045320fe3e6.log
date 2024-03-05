@@ -1,0 +1,8 @@
+2024-03-05T14:23:20+00:00 CRITICAL Cannot redeclare woocommerce_before_selected_category_output() (previously declared in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:312) in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 312
+
+2024-03-05T14:25:06+00:00 CRITICAL Cannot redeclare my_woocommerce_before_selected_category_output() (previously declared in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:312) in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 312
+
+2024-03-05T14:38:23+00:00 CRITICAL Cannot redeclare my_woocommerce_before_selected_category_output() (previously declared in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:312) in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 312
+
+2024-03-05T14:38:59+00:00 CRITICAL Cannot redeclare woocommerce_before_selected_category_output() (previously declared in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:312) in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 312
+

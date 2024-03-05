@@ -222,7 +222,7 @@ jQuery(document).ready(function() {
     jQuery(".accordion.style5 .single_accordion").each(function(e) { jQuery(this).addClass("accord-" + (e + 1)) });
     jQuery(".quantity.buttons_added").find("input.input-text").attr({ type: "text" });
     jQuery(".nav-menu:first > li").each(function(e) {  jQuery(this).addClass("main-li")});
-    jQuery("#woo-small-products p img").each(function(e) { jQuery(this).wrap("<div class='image-block'> </div>") });
+    //jQuery("#woo-small-products p img").each(function(e) { jQuery(this).wrap("<div class='image-block'> </div>") });
 	jQuery(".primary-sidebar .widget .widget-title,.content-sidebar .widget .widget-title,.site-footer .widget-title").each(function(e) { jQuery(this).wrap("<div class='title-outer'> </div>") });
 	jQuery(".quantity.buttons_added").find("input.input-text").attr({type: "text"});
     jQuery(".sub-container .inner-image").each(function(e) {  jQuery(this).addClass("image-" + (e + 1)) });
@@ -803,50 +803,7 @@ jQuery(function($){
     }
 });
 
-jQuery(window).load(function() {
-    "use strict";
-	jQuery(".shop-image").insertAfter(".mega-menu ul li.shop .sub li.mega-hdr.last-element");
-	jQuery(".products .container-inner .product-detail-wrapper").find(".yith-wcwl-add-to-wishlist").each(function(i){
-		jQuery(this).appendTo(jQuery(this).parent().parent().parent().find(".product-button-hover"));
-	});
-    jQuery(".products .container-inner .product-detail-wrapper").find(".yith-wcqv-button").each(function(i){
-        jQuery(this).appendTo(jQuery(this).parent().parent().parent().find(".product-button-hover"));
-    });
-	jQuery(".products .container-inner .product-detail-wrapper").find(".compare-button").each(function(i){
-		jQuery(this).appendTo(jQuery(this).parent().parent().parent().find(".product-button-hover"));
-	});	
-    jQuery(".products .container-inner .product-detail-wrapper").find(".add_to_cart_button,.product_type_external,.product_type_grouped,.product_type_simple,.product_type_variable").each(function(i){
-        jQuery(this).appendTo(jQuery(this).parent().parent().parent().find(".product-button-hover"));
-    });
-});
-// add to cart button added
-jQuery(document).ready(function() {
-"use strict";					
-jQuery(".add_to_cart_button").click(function() {
-		 var rows = jQuery(".product-block-hover .add_to_cart_button");
-		  setTimeout(function() {
-		 rows.removeClass("added");
-   },6000);
-	});
-});
-// Zoom Gallary
-function singleproductcarousel() {
-	"use strict";
-	jQuery('.product .flex-control-thumbs').addClass('owl-carousel');
-	jQuery(".product .flex-control-thumbs").owlCarousel({
-		navigation: true,
-		pagination: false,
-		items : 4, //10 items above 1000px browser width
-		itemsDesktop : [1200,3], 
-		itemsDesktopSmall : [991,3], 
-		itemsTablet: [480,2], 
-		itemsMobile : [320,1] 
-	});	
-}
-jQuery(window).load(function() {
-    "use strict";
-    singleproductcarousel()
-});
+
 // JS for product loading			
 jQuery(window).load(function() {
     "use strict";

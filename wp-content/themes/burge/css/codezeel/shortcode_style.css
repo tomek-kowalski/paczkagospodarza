@@ -1784,9 +1784,6 @@ Blogpost style 2nd Start
 i.fa.fa-calendar {
     float: left;
 }
-.blog-posts-content .item.container.style-2 .post-title a:hover{
-    color: #e99811;
-}
 .style-2 .post-detail {
     padding: 0px;
     background: #fff;

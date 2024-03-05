@@ -44,16 +44,15 @@ if (empty($product) || !$product->is_visible()) {
                 <?php
                 // Display Brand
                 $brand = get_the_terms($product->get_id(), 'pwb-brand');
-                if ($brand && !is_wp_error($brand)) {
-                    echo '<div class="pwb-brands-in-loop">';
-                    echo '<span><a href="' . esc_url(get_term_link($brand[0])) . '">' . esc_html($brand[0]->name) . '</a></span>';
-                    echo '</div>';
-                }
                 ?>
-                <div class="product-button-hover"></div>
             </div>
             <div class="product-detail-wrapper">
                 <?php
+                if ($brand && !is_wp_error($brand)) {
+                        echo '<div class="pwb-brands-in-loop">';
+                        echo '<span><a href="' . esc_url(get_term_link($brand[0])) . '">' . esc_html($brand[0]->name) . '</a></span>';
+                        echo '</div>';
+                    }
                 // Display Rating
                 echo wc_get_rating_html($product->get_average_rating());
                 ?>
