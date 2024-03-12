@@ -47,7 +47,7 @@ class Search extends PM {
 
         $query = new WP_Query($args);
 
-        //error_log('query: '. print_r($query,true));
+        //error_log('query search: '. print_r($query,true));
 
         if ($query->have_posts()) {
             $results = array();

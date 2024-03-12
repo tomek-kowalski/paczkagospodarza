@@ -1,0 +1,63 @@
+2024-03-09T13:29:39+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php:83
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php on line 83
+
+2024-03-09T13:53:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_woo::display_pagination(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:148
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->display_pagination('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 148
+
+2024-03-09T13:56:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_woo::display_pagination(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:148
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->display_pagination('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 148
+
+2024-03-09T20:33:31+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "my_custom_add_to_cart_button" not found or invalid function name in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\loop\add-to-cart.php(35): apply_filters('woocommerce_loo...', '<a href="?add-t...', Object(WC_Product_Simple), Array)
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1383): wc_get_template('loop/add-to-car...', Array)
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): woocommerce_template_loop_add_to_cart(Array)
+#5 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#7 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\content-product.php(62): do_action('woocommerce_aft...')
+#8 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('E:\\xampp\\htdocs...', false)
+#10 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php(51): wc_get_template_part('content', 'product')
+#11 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\xampp\\htdocs...')
+#12 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#13 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#14 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#15 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#16 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-09T20:53:39+00:00 CRITICAL Uncaught Error: Class "Custom_Menu_Footer_Walker" not found in E:\xampp\htdocs\paczka\wp-content\themes\burge\footer.php:28
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once()
+#1 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\general-template.php(92): locate_template(Array, true, true, Array)
+#3 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php(38): get_footer()
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#6 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#9 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\footer.php on line 28
+

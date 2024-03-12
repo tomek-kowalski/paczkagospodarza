@@ -1,4 +1,4 @@
-/*
+/*.woocommerce  .woo
 Theme Name: Burge
 Theme URI: http://capricathemes.com/wordpress/WCM01/WCM0120031
 Author: Codezeel
@@ -1600,25 +1600,6 @@ a.post-thumbnail:hover {
  * 6.2 Entry Header
  * -----------------------------------------------------------------------------
  */
-.page-title {
-	margin-bottom: 25px;
-    padding: 0px;
-    display: inline-block;
-    width: 100%;
-    box-sizing: border-box;
-    vertical-align: top;
-    background: transparent;
-}
-.page-title .entry-title-main {
-	color: #000000;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 700;
-    letter-spacing: 0.2px;
-    text-transform: capitalize;
-    text-align: center;
-    margin: 0;
-}
 .breadcrumbs,
 .woocommerce .woocommerce-breadcrumb,
 .woocommerce-page .woocommerce-breadcrumb {
@@ -1632,27 +1613,10 @@ a.post-thumbnail:hover {
 .breadcrumbs p {
 	margin: 0;
 }
-.woocommerce .woocommerce-breadcrumb span a,
-.woocommerce-page .woocommerce-breadcrumb span a,
-.breadcrumbs a {
-	color: #000000;
-	font-weight: normal;
-	padding: 0 0px;
-	letter-spacing:0.6px;
-}
 .woocommerce .woocommerce-breadcrumb span a:hover,
 .woocommerce-page .woocommerce-breadcrumb span a:hover,
 .breadcrumbs a:hover {
 	color: #917545;
-}
-.page-title .entry-title-main,
-.breadcrumbs,
-.woocommerce .woocommerce-breadcrumb,
-.woocommerce-page .woocommerce-breadcrumb {
-	width: auto;
-}
-.page-title .entry-title-main {
-	float: left;
 }
 .single-product .entry-title-main {
     display: none;
@@ -2837,12 +2801,7 @@ article.sticky.hentry .post-content {
 	width: 100%;
 }
 #primary {
-	float: right;
-	width: 894px;
 	margin: 0;
-}
-.left-sidebar #primary {
-	float: right;
 }
 .right-sidebar #primary {
 	float: left;

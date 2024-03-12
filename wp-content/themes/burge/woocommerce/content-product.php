@@ -59,7 +59,9 @@ if (empty($product) || !$product->is_visible()) {
                 <a href="<?php esc_url(the_permalink()); ?>">
                     <h3 class="product-name"><?php the_title(); ?></h3>
                 </a>
-                <?php do_action('woocommerce_after_shop_loop_item'); ?>
+                <?php
+                do_action('woocommerce_after_shop_loop_item');
+                ?>
             </div>
         </div>
     </div>

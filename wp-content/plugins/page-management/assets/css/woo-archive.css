@@ -1,0 +1,236 @@
+/*------------------------------------------------------------------
+[Table of contents]
+1. Woo archive
+-------------------------------------------------------------------*/
+
+.pwb-brands-in-loop span a {
+    letter-spacing: 0px;
+}
+ul.products li.product .product-detail-wrapper {
+    padding-bottom: 1px !important;
+    padding-top: 1px !important;
+}
+ul.products.columns-4 li {
+    float: left;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+ul.products.columns-4 li .container-inner{
+    clear: both;
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 0;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+}
+span.onsale {
+    width: auto;
+    text-align: center;
+    margin: 0;
+    padding: 0px 5px 8px;
+    display: inline-block;
+    position: absolute;
+    left: auto;
+    right: 0px;
+    top: 20px;
+    z-index: 6;
+    color: #fff;
+    background-color: #ff0000;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 20px;
+    min-width: 40px;
+    box-sizing: border-box;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 55% 0%, 100% 75%, 0% 75%);
+}
+.star-rating {
+    overflow: hidden;
+    position: relative;
+    font-size: 10px;
+    height: 18px;
+    line-height: 18px;
+    width: 7em;
+    font-family: star;
+    letter-spacing: 3px;
+    margin: 4px 0 10px;
+    font-size: 13px;
+}
+.star-rating span:before {
+    color: #eaaf20 !important;
+    content: "\53\53\53\53\53";
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+.star-rating:before {
+    color: #d4d4d4;
+}
+
+.star-rating:before {
+    content: "\53\53\53\53\53";
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.product-detail-wrapper {
+    min-height: 120px;
+    position: relative;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    padding: 13px 5px;
+    box-sizing: border-box;
+    transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+}
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
+    color: #333;
+}
+.product-name {
+    margin: 0;
+    text-decoration: none;
+    text-transform: initial;
+    line-height: 1.1;
+    font-size: 14px;
+    color: #888888;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+}
+.price {
+    float: left;
+    font-size: 16px;
+    color: #000000;
+    letter-spacing: 0px;
+    padding: 0px;
+    position: relative;
+    line-height: 20px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+nav.woocommerce-pagination ul {
+    white-space: nowrap;
+    padding: 0;
+    clear: both;
+    margin: 1px;
+}
+.woocommerce-pagination ul.page-numbers li {
+    display: inline-block;
+}
+.woocommerce-result-count {
+    float: left;
+    line-height: 25px;
+    color: #000000;
+    letter-spacing: 0px;
+}
+@media (min-width: 980px) {
+ul.products.columns-4 {
+    margin: 0px -15px;
+    padding: 0;
+    clear: both;
+    zoom: 1;
+    background: #fff;
+}
+.woocommerce-breadcrumb {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    position: absolute;
+    right: 35px;
+    top: 171px;
+    line-height: 26px;
+}
+.woocommerce-breadcrumb span {
+    line-height: 26px;
+    margin: 0px;
+    color: #000000;
+    text-align: right;
+    font-size: 13px !important;
+    letter-spacing: 0px;
+}
+}
+@media (max-width: 979px) {
+   ul.products {
+        display: grid;
+        grid-template-columns: auto auto;
+        padding: 0;
+        clear: both;
+        zoom: 1;
+        background: #fff;
+    }
+    ul.products li.product {
+        width: 100% !important;
+    }
+    ul.products li.product {
+        overflow: visible !important;
+    }
+    .woocommerce ul.products li.product {
+        letter-spacing: 0px;
+    }
+    .woocommerce-breadcrumb {
+        align-items: center;
+        display: flex;
+        height: 48px;
+        position: absolute;
+        left: 15px;
+        top: 75px;
+        line-height: 26px;
+    }
+    .woocommerce-breadcrumb span {
+        line-height: 26px;
+        margin: 0px;
+        color: #000000;
+        text-align: right;
+        font-size: 10px !important;
+        letter-spacing: 0px;
+    }
+    .woocommerce-result-count {
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+    ul.products li .container-inner {
+        margin: 10px 8px !important;
+    }
+    ul.products li .container-inner {
+        margin: 10px 8px !important;
+    }
+    ul.products li .container-inner, .woocommerce-page ul.products li .container-inner {
+        margin: 10px 8px !important;
+    }
+    ul.products li .container-inner .product-block-inner {
+        padding: 0px;
+        margin: 0;
+        position: relative;
+        overflow: hidden;
+        border: none;
+        transition: all 0.5s ease 0s;
+    }
+    ul.products {
+        margin: 0 -10px !important;
+    }
+    .pwb-brands-in-loop {
+        order: 4;
+    }
+    ul.products li.product .product-detail-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    ul.products li.product .product-detail-wrapper {
+        padding-bottom: 1px !important;
+        padding-top: 1px !important;
+    }
+    ul.products li.product .price {
+        font-size: 13px;
+    }
+}

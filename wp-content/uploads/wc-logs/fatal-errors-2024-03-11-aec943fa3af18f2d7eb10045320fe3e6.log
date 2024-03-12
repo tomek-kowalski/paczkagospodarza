@@ -1,0 +1,155 @@
+2024-03-11T15:53:22+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Template does not have a method "week_archive_title" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('Posts Archive -...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(278): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->filter_title('')
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(52): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(406): Yoast\WP\SEO\Presenters\Title_Presenter->present()
+#10 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->present_head('')
+#11 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#12 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(377): do_action('wpseo_head')
+#14 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->call_wpseo_head('')
+#15 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#16 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 E:\xampp\htdocs\paczka\wp-includes\general-template.php(3052): do_action('wp_head')
+#18 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(19): wp_head()
+#19 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#20 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#21 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#22 E:\xampp\htdocs\paczka\wp-content\themes\burge\archive-polecane-w-tygodniu.php(15): get_header()
+#23 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#24 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#25 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#26 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-11T15:54:01+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Template does not have a method "week_archive_title" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('Posts Archive -...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(278): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->filter_title('')
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(52): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(406): Yoast\WP\SEO\Presenters\Title_Presenter->present()
+#10 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->present_head('')
+#11 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#12 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(377): do_action('wpseo_head')
+#14 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->call_wpseo_head('')
+#15 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#16 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 E:\xampp\htdocs\paczka\wp-includes\general-template.php(3052): do_action('wp_head')
+#18 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(19): wp_head()
+#19 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#20 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#21 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#22 E:\xampp\htdocs\paczka\wp-content\themes\burge\archive-polecane-w-tygodniu.php(15): get_header()
+#23 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#24 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#25 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#26 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-11T16:35:19+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "customize_woocommerce_breadcrumb" not found or invalid function name in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters(Array, Array)
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2333): apply_filters('woocommerce_bre...', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(322): woocommerce_breadcrumb()
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 E:\xampp\htdocs\paczka\wp-content\themes\burge\archive-polecane-w-tygodniu.php(43): do_action('woocommerce_bef...')
+#6 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#9 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-11T16:42:03+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function Template::custom_change_breadcrumb_home_url(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\templates.php:13
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Template->custom_change_breadcrumb_home_url('http://localhos...')
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('http://localhos...', Array)
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2341): apply_filters('woocommerce_bre...', 'http://localhos...')
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(322): woocommerce_breadcrumb()
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#6 E:\xampp\htdocs\paczka\wp-content\themes\burge\archive-polecane-w-tygodniu.php(43): do_action('woocommerce_bef...')
+#7 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#10 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\templates.php on line 13
+
+2024-03-11T16:49:19+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Template does not have a method "week_archive_title" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('Dania gotowe Ar...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(278): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->filter_title('')
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(52): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(406): Yoast\WP\SEO\Presenters\Title_Presenter->present()
+#10 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->present_head('')
+#11 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#12 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(377): do_action('wpseo_head')
+#14 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->call_wpseo_head('')
+#15 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#16 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 E:\xampp\htdocs\paczka\wp-includes\general-template.php(3052): do_action('wp_head')
+#18 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(19): wp_head()
+#19 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#20 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#21 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#22 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php(15): get_header()
+#23 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\xampp\\htdocs...')
+#24 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#25 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#26 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#27 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#28 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-11T16:49:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Template does not have a method "week_archive_title" in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('Posts Archive -...', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(278): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->filter_title('')
+#5 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\general-template.php(1178): apply_filters('pre_get_documen...', '')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(41): wp_get_document_title()
+#8 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\presenters\title-presenter.php(52): Yoast\WP\SEO\Presenters\Title_Presenter->get()
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(406): Yoast\WP\SEO\Presenters\Title_Presenter->present()
+#10 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->present_head('')
+#11 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#12 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\src\integrations\front-end-integration.php(377): do_action('wpseo_head')
+#14 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): Yoast\WP\SEO\Integrations\Front_End_Integration->call_wpseo_head('')
+#15 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#16 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#17 E:\xampp\htdocs\paczka\wp-includes\general-template.php(3052): do_action('wp_head')
+#18 E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php(19): wp_head()
+#19 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once('E:\\xampp\\htdocs...')
+#20 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#21 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#22 E:\xampp\htdocs\paczka\wp-content\themes\burge\archive-polecane-w-tygodniu.php(15): get_header()
+#23 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#24 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#25 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#26 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+

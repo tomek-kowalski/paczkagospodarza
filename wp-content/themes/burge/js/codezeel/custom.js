@@ -646,8 +646,8 @@ jQuery(function(){
 });
 document.createElement("div");
 document.createElement("section");
-jQuery(window).load(function() {  "use strict";  isotopAutoSet()});
-jQuery(window).resize(function() { "use strict"; isotopAutoSet()});
+//jQuery(window).load(function() {  "use strict";  isotopAutoSet()});
+//jQuery(window).resize(function() { "use strict"; isotopAutoSet()});
 // JS toggle for sidebar and footer
 function SidebarFooterToggle(){	
 "use strict";	
@@ -807,7 +807,7 @@ jQuery(function($){
 // JS for product loading			
 jQuery(window).load(function() {
     "use strict";
-    var delay = 500; //1 second
+    var delay = 500;
     setTimeout(function() {
         jQuery("ul.products li span.product-loading").hide();
     }, delay);

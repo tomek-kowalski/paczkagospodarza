@@ -1162,12 +1162,9 @@ if( ! function_exists( 'tmpmela_add_to_compare_in_product' ) ){
 }
 add_action( 'woocommerce_after_shop_loop_item', 'tmpmela_add_to_compare_in_product', 11 );
 endif;
-/* Move the price div */
-remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10 );
+
 add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_price', 5 );
-/* Move the rating div */
-/*remove_action( 'woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5 );
-add_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_rating', 10 );*/
+
 
 
 
@@ -1404,23 +1401,7 @@ add_action('wp_print_styles', 'tmpmela_dequeue_css_from_plugins', 100);
 function tmpmela_dequeue_css_from_plugins()  {
 wp_dequeue_style('newsletter');
 }	
-/* Show an Counter in Single product page. 
-if ( ! function_exists( 'tmpmela_sale_counter' ) ) {
-	function tmpmela_sale_counter() {
-		global $post,$product , $today;
-		$ids =  $product->get_id();
-		$today = date('Y-m-d');
-		$sale_price_dates_from = ( $date = get_post_meta( $post->ID, '_sale_price_dates_from', true ) ) ? date_i18n( 'Y-m-d', $date ) : '';
-		$sale_price_dates_to = ( $date = get_post_meta( $post->ID, '_sale_price_dates_to', true ) ) ? date_i18n( 'Y-m-d', $date ) : '';
-			if ($today >= $sale_price_dates_from  && $today <= $sale_price_dates_to){
-			 if($product->is_type( 'simple' ) && $sale_price_dates_to != "" )
-			 {	echo '<div class="count-down"><div class="countbox hastime" data-time="'.$sale_price_dates_to.'"></div></div>';	}
-			}
-	}
-}
-add_action( 'woocommerce_single_product_summary', 'tmpmela_sale_counter');*/
-  //Percentage sale badge
-  if (!function_exists('tmpmela_sale_percentage')) {
+if (!function_exists('tmpmela_sale_percentage')) {
       function tmpmela_sale_percentage()
       {
           global $product;
@@ -1477,7 +1458,7 @@ function woo_custom_hide_sales_flash()
 add_filter('woocommerce_product_get_rating_html', 'your_get_rating_html', 10, 2);
 
 function your_get_rating_html($rating_html, $rating) {
-		if(is_front_page()) {
+
         global $product;
         $product_id = $product->get_id();
         $total_votes = get_post_meta($product_id, '_wc_review_count', true);
@@ -1497,7 +1478,7 @@ function your_get_rating_html($rating_html, $rating) {
         $rating_html .= '<span style="width:' . (( $rating / 5 ) * 100) . '%"><strong class="rating">' . $rating  . '</strong> ' . __('out of 5', 'burge') . '</span>';
         $rating_html .= '</div>';
         $rating_html .= '<span class="votes">' . $votes . '</span>';
-	}
+	
 
     return $rating_html;
 }

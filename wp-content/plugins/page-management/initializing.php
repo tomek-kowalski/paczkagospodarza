@@ -35,6 +35,7 @@ if ( ! defined( 'WPINC' ) ) {
 		add_action('wp_enqueue_scripts', [$this,'plugin_styles']);
 		add_action( 'widgets_init', [$this,'pm_register_sidebars'] );
 	}
+	
 
 	function pm_register_sidebars() {
 		register_sidebar( array(
@@ -231,11 +232,29 @@ if ( ! defined( 'WPINC' ) ) {
 	}
 
 	public function plugin_styles() {
-		wp_enqueue_style('header-footer-style', PM_URL . '/assets/css/frontend.css', array(), 'all');
-        wp_enqueue_script('pm-script', PM_URL . '/assets/js/pm-script.js', array('jquery'), null, false);
 
+		wp_enqueue_style('header-footer-style', PM_URL . '/assets/css/header-footer.css', array(), 'all');
+		wp_enqueue_script('pm-script', PM_URL . '/assets/js/pm-script.js', array('jquery'), null, false);
+		
 		if(is_front_page()) {
+			wp_enqueue_style('front-style', PM_URL . '/assets/css/frontend.css', array(), 'all');
 			wp_enqueue_script('pm-front', PM_URL . '/assets/js/pm-front.js', array('jquery'), null, false);
+		}
+		if (is_product_category() || is_tax('product_tag') || is_post_type_archive('product') || is_post_type_archive('polecane-w-tygodniu')
+		|| is_post_type_archive('dzis-w-promocji')) {
+			wp_enqueue_style('woo-category', PM_URL . '/assets/css/woo-category.css', array(), null, false);
+		}
+		if (is_post_type_archive('polecane-w-tygodniu') || is_post_type_archive('dzis-w-promocji')) {
+			wp_enqueue_style('woo-archive', PM_URL . '/assets/css/woo-archive.css', array(), null, false);
+		}
+		if (is_post_type_archive('polecane-w-tygodniu') && !is_search()) {
+			wp_enqueue_script('recommended-this-week', PM_URL . '/assets/js/this-week.js', array('jquery'), null, false);
+		}
+		if (is_post_type_archive('dzis-w-promocji') && !is_search()) {
+			wp_enqueue_script('today', PM_URL . '/assets/js/today.js', array('jquery'), null, false);
+		}
+		if (is_search()) {
+			wp_enqueue_script('search', PM_URL . '/assets/js/search.js', array('jquery'), null, false);
 		}
 	}
 

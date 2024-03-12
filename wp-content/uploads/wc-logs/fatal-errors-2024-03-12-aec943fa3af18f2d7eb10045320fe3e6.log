@@ -1,0 +1,108 @@
+2024-03-12T12:19:12+00:00 CRITICAL Out of memory (allocated 113246208) (tried to allocate 40960 bytes) in E:\xampp\htdocs\paczka\wp-content\plugins\wordpress-seo\inc\options\class-wpseo-option.php on line 784
+
+2024-03-12T14:34:17+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, cannot access private method My_woo::get_product_query_search_args() in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#3 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-12T14:38:27+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, cannot access private method My_woo::get_product_query_search_args() in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#3 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-12T14:39:57+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, cannot access private method My_woo::get_product_query_search_args() in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#3 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-12T14:58:20+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, cannot access private method My_woo::get_product_query_search_args() in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#3 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+
+2024-03-12T15:00:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_woo::get_product_query_search_args(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:163
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->get_product_query_search_args('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 163
+
+2024-03-12T15:01:42+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_woo::get_product_query_search_args(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:163
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->get_product_query_search_args('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 163
+
+2024-03-12T15:05:37+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_woo::get_product_query_search_args(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:163
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->get_product_query_search_args('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 163
+
+2024-03-12T15:07:23+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function My_woo::get_product_query_search_args(), 1 passed in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324 and exactly 2 expected in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:163
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->get_product_query_search_args('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 163
+
+2024-03-12T18:50:12+00:00 CRITICAL Out of memory (allocated 113246208) (tried to allocate 20480 bytes) in E:\xampp\htdocs\paczka\wp-includes\class-wp-query.php on line 3173
+
+2024-03-12T21:25:44+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string * int in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:124
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->template_count_ajax_search('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 124
+
+2024-03-12T21:29:40+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string * int in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:124
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->template_count_ajax_search('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 124
+
+2024-03-12T21:32:45+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string * int in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:124
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->template_count_ajax_search('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 124
+
+2024-03-12T21:33:18+00:00 CRITICAL Uncaught TypeError: Unsupported operand types: string * int in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php:124
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): My_woo->template_count_ajax_search('')
+#1 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(203): do_action('wp_ajax_nopriv_...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\page-management\woo\custom_field.php on line 124
+
