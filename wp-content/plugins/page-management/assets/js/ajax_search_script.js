@@ -30,6 +30,15 @@ jQuery(document).ready(function ($) {
         });
     }
 
+    function close_search() {
+
+        $(document).on('click', '.close-serch', function() {
+            const search_data = $('#search-results');
+            search_data.html('');
+        });
+    }
+
+
     $('#searchform').on('input', function (event) {
         event.preventDefault();
 
@@ -41,6 +50,7 @@ jQuery(document).ready(function ($) {
 
         if (searchQuery.length >= 3) {
             performLiveSearch(searchQuery);
+            close_search();
         } else {
             $('#search-results').html('');
         }

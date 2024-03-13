@@ -102,15 +102,13 @@ function footer_mobile() {
         });
     });
 }
-    
-    
+
+
     footer_mobile();
     shuffleLi();
     verticalMenu();
     toggleAccount();
-    searchToggle();
-
-
+    searchToggle(); 
 
 });
 

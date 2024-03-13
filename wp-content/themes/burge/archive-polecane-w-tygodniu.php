@@ -71,9 +71,9 @@ if (!defined('ABSPATH')) {
 			wp_reset_query();
 			?>
 		</div>
-		<?php
+	</div>
+	<?php
 		$woo = new My_woo();
 		$woo->display_pagination_template_archive();
 		?>
-	</div>
 	<?php get_footer(); ?>

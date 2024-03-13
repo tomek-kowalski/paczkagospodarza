@@ -2,6 +2,7 @@
 [Table of contents]
 1. Header / #header
 2. Footer / #footer
+3. Search
 -------------------------------------------------------------------*/
 
 :root {
@@ -1264,4 +1265,141 @@ transition: all 0.3s ease;
 .site-info a:hover {
 	background: none;
 	padding: 0;
+}
+/* search */
+
+
+.search-result {
+    display: flex;
+    flex-direction: row;
+    margin: 1px 10px 1px 10px;
+}
+.col-img {
+    max-width: 80px;
+    align-self: center;
+}
+p.search-title {
+    text-align: center;
+}
+.star-rating span:before {
+    color: #eaaf20 !important;
+}
+.votes {
+    display: inline-block;
+    left: 190px;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+}
+.star-rating {
+    display: inline-block;
+    vertical-align: middle;
+}
+.pwb-brands-in-loop span a {
+    letter-spacing: 0px;
+}
+
+@media(min-width:980px) {
+    .col-content a h2 {
+        color: #000000 !important;
+        font-size: 14px !important;
+        letter-spacing: 0px !important;
+        min-height: 33px;
+        margin: 0;
+        text-decoration: none;
+        text-transform: initial;
+        line-height: 1.1;
+        color: #888888;
+        font-weight: 500;
+    }
+    div#search-results {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 50%;
+        z-index: 10;
+        background-color: #ffffff;
+    }
+}
+@media(max-width:979px) {
+    .col-content a h2 {
+        color: #000000 !important;
+        font-size: 13px !important;
+        letter-spacing: 0px !important;
+        min-height: 33px;
+        margin: 0;
+        text-decoration: none;
+        text-transform: initial;
+        line-height: 1.1;
+        color: #888888;
+        font-weight: 500;
+    }
+    div#search-results {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        z-index: 10;
+        background-color: #ffffff;
+    }
+    .col-content .pwb-brands-in-loop {
+        display:none;
+    }
+}
+.col-content {
+    width: 60%;
+    margin-left:10px;
+}
+.col-action {
+    display: flex;
+    flex-direction: column;
+}
+.my-cart-search:hover {
+    background-color:  rgb(255, 97, 0);
+    color:#ffffff;
+    transition: all 0.3s ease; 
+}
+.my-cart-search {
+    display: flex;
+    justify-content: center;
+    width: calc(100% - 43px);
+    color: rgb(255, 97, 0);
+    font-weight: 600;
+    border: 1px solid rgb(255, 97, 0);
+    border-bottom: 1px solid rgb(255, 97, 0) !important;
+    border-radius: 20px;
+    padding: 1px 19px;
+    margin: 5px 15px 0px auto;
+    z-index: 1;
+    background-color: #ffffff;
+}
+span.title-frame {
+    display: flex;
+}
+p.search-title {
+    text-align: center;
+    display: flex;
+    flex-basis: 90%;
+    justify-content: center;
+}
+span.close-serch {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+.col-action span.price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.search-result:hover .col-content a h2{
+    color:rgb(255, 97, 0)!important;
+}
+.search-result:hover {
+    background-color:#EBEBEB;
+    transition: all 0.3s ease; 
 }
