@@ -1,0 +1,46 @@
+2024-03-17T00:27:16+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Shipping::get_shipping_method() in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product\meta.php:49
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1673): wc_get_template('single-product/...')
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): woocommerce_template_single_meta('')
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\content-single-product.php(64): do_action('woocommerce_sin...')
+#6 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('E:\\xampp\\htdocs...', false)
+#8 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product.php(43): wc_get_template_part('content', 'single-product')
+#9 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#11 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#12 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product\meta.php on line 49
+
+2024-03-17T00:59:29+00:00 CRITICAL Uncaught Error: Cannot use object of type WC_Shipping_Free_Shipping as array in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product\meta.php:43
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(1673): wc_get_template('single-product/...')
+#2 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): woocommerce_template_single_meta('')
+#3 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#4 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#5 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\content-single-product.php(64): do_action('woocommerce_sin...')
+#6 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#7 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('E:\\xampp\\htdocs...', false)
+#8 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product.php(43): wc_get_template_part('content', 'single-product')
+#9 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#11 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#12 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product\meta.php on line 43
+
+2024-03-17T22:41:13+00:00 CRITICAL Uncaught Error: Call to undefined function tmpmela_is_blog() in E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php:280
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\template.php(790): require_once()
+#1 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', true, Array)
+#2 E:\xampp\htdocs\paczka\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product.php(21): get_header('shop')
+#4 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#6 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#7 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\header.php on line 280
+

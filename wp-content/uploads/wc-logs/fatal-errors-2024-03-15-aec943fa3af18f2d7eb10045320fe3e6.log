@@ -1,0 +1,15 @@
+2024-03-15T13:58:49+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::is_first() in E:\xampp\htdocs\paczka\wp-content\themes\burge\codezeel\codezeel-functions.php:1469
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(326): your_get_rating_html('', '0')
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('', Array)
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(3625): apply_filters('woocommerce_pro...', '', '0', 0)
+#3 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\content-single-product.php(49): wc_get_rating_html('0')
+#4 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#5 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(284): load_template('E:\\xampp\\htdocs...', false)
+#6 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\single-product.php(43): wc_get_template_part('content', 'single-product')
+#7 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#8 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#9 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#10 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\codezeel\codezeel-functions.php on line 1469
+

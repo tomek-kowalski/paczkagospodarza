@@ -5,6 +5,16 @@
 3. Search
 -------------------------------------------------------------------*/
 
+li {
+    list-style: none;
+}
+#primary .gridlist-toggle {
+    display: none !important;
+}
+.woocommerce-page .woocommerce-info {
+    color:#ee0d0d;
+}
+
 :root {
     --font-color: rgb(146, 146, 146);
 }
@@ -1281,10 +1291,13 @@ transition: all 0.3s ease;
 p.search-title {
     text-align: center;
 }
+.col-img a img {
+    width:80px;
+}
 .star-rating span:before {
     color: #eaaf20 !important;
 }
-.votes {
+.col-content .votes {
     display: inline-block;
     left: 190px;
     position: absolute;
@@ -1297,6 +1310,9 @@ p.search-title {
 }
 .pwb-brands-in-loop span a {
     letter-spacing: 0px;
+}
+p.stock.in-stock {
+    display: none !important;
 }
 
 @media(min-width:980px) {
@@ -1319,6 +1335,17 @@ p.search-title {
         width: 50%;
         z-index: 10;
         background-color: #ffffff;
+        top:120px;
+    }
+    .col-content .star-rating {
+        margin: 4px 0 10px;
+    }
+    .col-content .votes {
+        display: inline-block;
+        left: 190px;
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
     }
 }
 @media(max-width:979px) {
@@ -1341,13 +1368,34 @@ p.search-title {
         width: 100%;
         z-index: 10;
         background-color: #ffffff;
+        top:80px;
     }
     .col-content .pwb-brands-in-loop {
         display:none;
     }
+    .menu-display {
+        display:none;
+    }
+    .col-content .star-rating {
+        margin: 0px!important;
+    }
+    .search-result {
+        border-bottom: 2px solid #EBEBEB;
+    }
+    .col-content .votes {
+        display: inline-block;
+        position: absolute;
+        margin: 0px;
+        padding: 0px;
+    }
+    .woocommerce-page div.product div.images {
+        float: none;
+        margin: 0 auto 20px;
+        width: 100%;
+    }
 }
 .col-content {
-    width: 60%;
+    width: 80%;
     margin-left:10px;
 }
 .col-action {
@@ -1395,6 +1443,7 @@ span.close-serch {
     justify-content: center;
     align-items: center;
     height: 100%;
+    font-size:13px;
 }
 .search-result:hover .col-content a h2{
     color:rgb(255, 97, 0)!important;
@@ -1402,4 +1451,43 @@ span.close-serch {
 .search-result:hover {
     background-color:#EBEBEB;
     transition: all 0.3s ease; 
+}
+.star-rating {
+    overflow: hidden;
+    position: relative;
+    font-size: 10px;
+    height: 18px;
+    line-height: 18px;
+    width: 7em;
+    font-family: star;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+.star-rating:before {
+    content: "\53\53\53\53\53";
+    color: #bfbfbf;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+.star-rating span {
+    color: #ffaa00;
+}
+.star-rating span:before {
+    content: "\53\53\53\53\53";
+    top: 0;
+    position: absolute;
+    left: 0;
+}
+.star-rating span:before {
+    color: #eaaf20 !important;
+}
+.star-rating span {
+    overflow: hidden;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 1.5em;
 }

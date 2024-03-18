@@ -8,6 +8,7 @@ class Template extends My_woo  {
         add_action( 'init', array( $this, 'create_today' ) );
         add_filter('pre_get_document_title', [$this, 'week_archive_title'], 9999);
         add_filter( 'get_the_archive_title', [$this,'week_archive_title'],9999);
+        add_filter( 'single_term_title', [$this,'get_category_title'],9999);
     }
 
     public function week_archive_title( $title ) {
@@ -22,14 +23,20 @@ class Template extends My_woo  {
             return $title;
         }
         if(is_post_type_archive('dzis-w-promocji')) {
-
             $title = 'Dziś w promocji' .$sep.$site_name;
             return $title;
         }
-            return $title;
     }
 
-    
+    public function get_category_title($title) {
+        if(is_product_category()) {
+            if (strpos($title, 'Archives') !== false) {
+            $title = str_replace(' Archives', '', $title);
+            }
+        }
+        return $title;
+    }
+
     public function create_this_week() {
         register_post_type(
             'polecane-w-tygodniu',

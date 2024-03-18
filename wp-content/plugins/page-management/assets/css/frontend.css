@@ -2,6 +2,9 @@
 [Table of contents]
 1. Frontpage
 -------------------------------------------------------------------*/
+.blog-posts-content .container.style-2 .container-inner {
+    margin: 15px;
+}
 .promo-text {
     background-color:#EBEBEB;
     font-weight:700;
@@ -27,7 +30,7 @@
     margin:0px;
     padding:0px;
 }
-.woocommerce .star-rating span:before, .woocommerce-page .star-rating span:before, .wpb_wl_summary .star-rating span:before {
+.star-rating span:before, .star-rating span:before, .wpb_wl_summary .star-rating span:before {
     color: #eaaf20!important;
 }
 .my-cart {
@@ -111,7 +114,8 @@
     .images-frame, .certified-frame {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        margin-bottom:20px;
     }
     .certified-frame-mobile {
         display:none;

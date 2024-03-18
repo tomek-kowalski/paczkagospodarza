@@ -222,14 +222,12 @@ jQuery(document).ready(function() {
     jQuery(".accordion.style5 .single_accordion").each(function(e) { jQuery(this).addClass("accord-" + (e + 1)) });
     jQuery(".quantity.buttons_added").find("input.input-text").attr({ type: "text" });
     jQuery(".nav-menu:first > li").each(function(e) {  jQuery(this).addClass("main-li")});
-    //jQuery("#woo-small-products p img").each(function(e) { jQuery(this).wrap("<div class='image-block'> </div>") });
 	jQuery(".primary-sidebar .widget .widget-title,.content-sidebar .widget .widget-title,.site-footer .widget-title").each(function(e) { jQuery(this).wrap("<div class='title-outer'> </div>") });
 	jQuery(".quantity.buttons_added").find("input.input-text").attr({type: "text"});
     jQuery(".sub-container .inner-image").each(function(e) {  jQuery(this).addClass("image-" + (e + 1)) });
 	jQuery(".product-categories").addClass('sidebar-category-inner');
 	jQuery(".mega > ul").addClass('mega');
 	jQuery('.singleproduct-sidebar').insertBefore(".woocommerce-tabs");
-	//jQuery(".woocommerce-product-gallery").wrap(" <div class='theme-container'> </div>");
 	jQuery('.widget_nav_menu ul li').filter(function() {return jQuery(this).text() == '';}).remove();
 	
 
@@ -774,35 +772,6 @@ jQuery(document).ready(function() {
     });
 });
 
-/*JS for More link in Sidebar Category block*/
-jQuery(function($){ 
-"use strict"; 
-    if(jQuery(window).width() > 1430) {                 
-        var max_elem = 9;
-        jQuery('.home-category .product-categories > li.cat-item').first().addClass('home_first');
-        var items = jQuery('.home-category .product-categories > li.cat-item');
-        var surplus = items.slice(max_elem, items.length);      
-        surplus.wrapAll('<li class="cat-item level-0 cat-parent hiden_menu2 "><ul class="children">');
-        jQuery('.home-category .product-categories .hiden_menu2').prepend('<a href="#" class="level-0 activSub">Other Products</a>');
-    }
-    if(jQuery(window).width() > 1200 && jQuery(window).width() <= 1430) {                    
-        var max_elem = 8;
-        jQuery('.home-category .sidebar-category-inner > li.cat-item').first().addClass('home_first');
-        var items = jQuery('.home-category .product-categories > li.cat-item');
-        var surplus = items.slice(max_elem, items.length);      
-        surplus.wrapAll('<li class="cat-item level-0 cat-parent hiden_menu2 "><ul class="children">');
-        jQuery('.home-category .product-categories .hiden_menu2').prepend('<a href="#" class="level-0 activSub">Other Products</a>');
-    }
-    if(jQuery(window).width() > 979 && jQuery(window).width() <= 1200) {                    
-        var max_elem = 6;
-        jQuery('.home-category .sidebar-category-inner > li.cat-item').first().addClass('home_first');
-        var items = jQuery('.home-category .product-categories > li.cat-item');
-        var surplus = items.slice(max_elem, items.length);      
-        surplus.wrapAll('<li class="cat-item level-0 cat-parent hiden_menu2 "><ul class="children">');
-        jQuery('.home-category .product-categories .hiden_menu2').prepend('<a href="#" class="level-0 activSub">Other Products</a>');
-    }
-});
-
 
 // JS for product loading			
 jQuery(window).load(function() {
@@ -826,17 +795,22 @@ jQuery(window).resize(function() { sameheight();});
 jQuery(window).load(function() { sameheight();});
 
 
-jQuery(document).ready(function(){
-  if ((jQuery(window).width() >= 980) && (jQuery(window).width() <= 1903)) {              
-    jQuery(".video-button").colorbox({iframe:true, innerWidth:948, innerHeight:532});
-  }
-  if ((jQuery(window).width() >= 540) && (jQuery(window).width() < 980)) {              
-    jQuery(".video-button").colorbox({iframe:true, innerWidth:500, innerHeight:280});
-  }
-  if ((jQuery(window).width() >= 300) && (jQuery(window).width() < 540)) {              
-    jQuery(".video-button").colorbox({iframe:true, innerWidth:250, innerHeight:140});
-  }
+// Zoom Gallary
+function singleproductcarousel() {
+	"use strict";
+	jQuery('.product .flex-control-thumbs').addClass('owl-carousel');
+	jQuery(".product .flex-control-thumbs").owlCarousel({
+		navigation: true,
+		pagination: false,
+		items : 4, //10 items above 1000px browser width
+		itemsDesktop : [1200,3], 
+		itemsDesktopSmall : [991,3], 
+		itemsTablet: [480,2], 
+		itemsMobile : [320,1] 
+	});	
+}
+jQuery(window).load(function() {
+    "use strict";
+    singleproductcarousel()
 });
-
-
 

@@ -1,0 +1,30 @@
+2024-03-18T11:50:19+00:00 CRITICAL Uncaught Error: Call to a member function display_pagination_template() on null in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php:75
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php on line 75
+
+2024-03-18T11:56:25+00:00 CRITICAL Uncaught Error: Call to a member function display_pagination_template() on null in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php:88
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php on line 88
+
+2024-03-18T11:58:28+00:00 CRITICAL Uncaught Error: Call to a member function display_pagination_template() on null in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php:88
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#5 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\archive-product.php on line 88
+

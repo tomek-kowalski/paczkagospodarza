@@ -532,7 +532,7 @@ function tmpmela_load_scripts() {
 		//wp_enqueue_script( 'jqtransform', get_template_directory_uri() . '/js/codezeel/jquery.jqtransform.js', array(), '', false);
 		//wp_enqueue_script( 'jqtransform_script', get_template_directory_uri() . '/js/codezeel/jquery.jqtransform.script.js', array(), '', false);
 		wp_enqueue_script( 'tmpmela_custom_script', get_template_directory_uri() . '/js/codezeel/jquery.custom.min.js', array(), '', false);
-		wp_enqueue_script( 'isotope', get_template_directory_uri() . '/js/jquery.isotope.min.js', array(), '', false);
+		//wp_enqueue_script( 'isotope', get_template_directory_uri() . '/js/jquery.isotope.min.js', array(), '', false);
 		wp_enqueue_script( 'tmpmela_codezeel', get_template_directory_uri() . '/js/codezeel/codezeel.min.js', array(), '', false);
 		wp_enqueue_script( 'carousel', get_template_directory_uri() . '/js/codezeel/carousel.min.js', array(), '', false);
 		//wp_enqueue_script( 'easypiechart', get_template_directory_uri() . '/js/codezeel/jquery.easypiechart.min.js', array(), '', false);
@@ -1135,13 +1135,6 @@ function tmpmela_output_upsells() {
 		$no1 = get_option("tmpmela_upsells_items");	
 	    woocommerce_upsell_display( $no1); 
 }
-remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15 );
-add_action( 'woocommerce_after_single_product_summary', 'tmpmela_output_upsells', 15 );
-/* crosssell Product settings */
-function tmpmela_output_crosssell() {
-		$no1 = get_option("tmpmela_crosssell_items");	
-	   woocommerce_cross_sell_display( $no1);
-}
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display', 10 );
 add_action( 'woocommerce_after_cart', 'tmpmela_output_crosssell', 10 );
 /* To display Wishlist in product block */
@@ -1458,14 +1451,28 @@ function woo_custom_hide_sales_flash()
 add_filter('woocommerce_product_get_rating_html', 'your_get_rating_html', 10, 2);
 
 function your_get_rating_html($rating_html, $rating) {
-
-        global $product;
+    global $product, $is_main_product;
+    if (is_product() && isset($is_main_product) && $is_main_product) {
         $product_id = $product->get_id();
         $total_votes = get_post_meta($product_id, '_wc_review_count', true);
         $votes = '';
+        $reviews_text = '';
+        $reviews_link = '';
+        $review_count = '';
+
+        $reviews_link = get_permalink() . '#reviews';
+        $review_count = $product->get_review_count();
+
+        if ($review_count === 0 || $review_count > 4) {
+            $reviews_text = __(' opinii klienta)', 'burge');
+        } elseif ($review_count === 1) {
+            $reviews_text = __(' opinia klienta)', 'burge');
+        } elseif ($review_count > 1 && $review_count < 4) {
+            $reviews_text = __(' opinie klienta)', 'burge');
+        }
 
         if ($total_votes !== false && $total_votes !== '') {
-            $votes = '(' . $total_votes . ')';
+            $votes = '(' . $total_votes;
         }
 
         if ($rating > 0) {
@@ -1477,11 +1484,34 @@ function your_get_rating_html($rating_html, $rating) {
         $rating_html  = '<div class="star-rating" title="' . esc_attr($title) . '">';
         $rating_html .= '<span style="width:' . (( $rating / 5 ) * 100) . '%"><strong class="rating">' . $rating  . '</strong> ' . __('out of 5', 'burge') . '</span>';
         $rating_html .= '</div>';
-        $rating_html .= '<span class="votes">' . $votes . '</span>';
-	
+        $rating_html .= '<span class="votes">' . $votes . ' ' . '<a class="custom-review-link" href="' . $reviews_link . '">' . $reviews_text  . '</a></span>';
 
-    return $rating_html;
+        return $rating_html;
+    } else {
+		$product_id = $product->get_id();
+        $total_votes = get_post_meta($product_id, '_wc_review_count', true);
+        $votes = '';
+		if ($total_votes !== false && $total_votes !== '') {
+            $votes = '(' . $total_votes . ')';
+        }
+
+        if ($rating > 0) {
+            $title = sprintf(__('Rated %s out of 5', 'burge'), $rating);
+        } else {
+            $title = 'Not yet rated';
+            $rating = 0;
+        }
+	
+		$rating_html  = '<div class="star-rating" title="' . esc_attr($title) . '">';
+        $rating_html .= '<span style="width:' . (( $rating / 5 ) * 100) . '%"><strong class="rating">' . $rating  . '</strong> ' . __('out of 5', 'burge') . '</span>';
+        $rating_html .= '</div>';
+        $rating_html .= '<span class="votes">' . $votes . '</span>';
+        return $rating_html;
+    }
 }
+
+
+
 
  /* for move comment field*/
    function tmpmela_move_comment_field_to_bottom( $fields ) {

@@ -40,6 +40,7 @@ function __construct() {
     add_shortcode('template_count_archive',[$this, 'template_count_archive']);
     add_shortcode('template_count_today',[$this, 'template_count_today']);
     add_shortcode('template_count_search',[$this, 'template_count_search']);
+    add_shortcode('template_count_category_selected',[$this, 'template_count_category_selected']);
     add_filter('woocommerce_loop_add_to_cart_link', [$this,'remove_add_to_cart_button'], 10, 2);
     add_filter('loop_shop_columns', [$this,'custom_wc_category_columns']);
     add_action('woocommerce_loop_add_to_cart_link', [$this,'add_to_cart_button_to_products_template'], 10, 3);
@@ -49,29 +50,128 @@ function __construct() {
     add_action('wp_ajax_nopriv_custom_product_filter', [$this, 'custom_product_filter']);    
     add_action('wp_ajax_display_pagination', [$this, 'display_pagination']);
     add_action('wp_ajax_nopriv_display_pagination', [$this, 'display_pagination']); 
-    add_action('wp_ajax_template_count_ajax', [$this, 'template_count_ajax']);
-    add_action('wp_ajax_nopriv_template_count_ajax', [$this, 'template_count_ajax']); 
+
     add_action('wp_ajax_custom_product_archive_filter', [$this, 'custom_product_archive_filter']);
     add_action('wp_ajax_nopriv_custom_product_archive_filter', [$this, 'custom_product_archive_filter']);    
     add_action('wp_ajax_display_pagination_archive', [$this, 'display_pagination_archive']);
     add_action('wp_ajax_nopriv_display_pagination_archive', [$this, 'display_pagination_archive']); 
     add_action('wp_ajax_template_count_ajax_archive', [$this, 'template_count_ajax_archive']);
     add_action('wp_ajax_nopriv_template_count_ajax_archive', [$this, 'template_count_ajax_archive']); 
-
     add_action('wp_ajax_custom_product_filter_today', [$this, 'custom_product_filter_today']);
     add_action('wp_ajax_nopriv_custom_product_filter_today', [$this, 'custom_product_filter_today']);    
+
+    add_action('wp_ajax_template_count_ajax', [$this, 'template_count_ajax']);
+    add_action('wp_ajax_nopriv_template_count_ajax', [$this, 'template_count_ajax']); 
+    add_action('wp_ajax_custom_product_general_archive_filter', [$this, 'custom_product_general_archive_filter']);
+    add_action('wp_ajax_nopriv_custom_product_general_archive_filter', [$this, 'custom_product_general_archive_filter']);   
+    add_action('wp_ajax_display_pagination_general_archive', [$this, 'display_pagination_general_archive']);
+    add_action('wp_ajax_nopriv_display_pagination_general_archive', [$this, 'display_pagination_general_archive']);
+    
     add_action('wp_ajax_display_pagination_today', [$this, 'display_pagination_today']);
     add_action('wp_ajax_nopriv_display_pagination_today', [$this, 'display_pagination_today']); 
     add_action('wp_ajax_template_count_ajax_today', [$this, 'template_count_ajax_today']);
     add_action('wp_ajax_nopriv_template_count_ajax_today', [$this, 'template_count_ajax_today']); 
 
-
     add_action('wp_ajax_template_count_ajax_search', [$this, 'template_count_ajax_search']);
     add_action('wp_ajax_nopriv_template_count_ajax_search', [$this, 'template_count_ajax_search']); 
+    add_action('wp_ajax_template_count_ajax_category_selected', [$this, 'template_count_ajax_category_selected']);
+    add_action('wp_ajax_nopriv_template_count_ajax_category_selected', [$this, 'template_count_ajax_category_selected']); 
+
     add_action('wp_ajax_custom_product_search_filter', [$this, 'custom_product_search_filter']);
     add_action('wp_ajax_nopriv_custom_product_search_filter', [$this, 'custom_product_search_filter']);    
     add_action('wp_ajax_display_pagination_ajax_search', [$this, 'display_pagination_ajax_search']);
     add_action('wp_ajax_nopriv_display_pagination_ajax_search', [$this, 'display_pagination_ajax_search']);
+
+    add_action('woocommerce_after_quantity_input_field', [$this, 'display_quantity_plus'],10 );
+    add_action('woocommerce_before_quantity_input_field', [$this, 'display_quantity_minus' ],10 );
+    add_action('wp_footer', [$this, 'add_cart_quantity_plus_minus' ]);
+    add_action('init', [$this, 'remove_woocommerce_rating']);
+    add_action( 'woocommerce_after_add_to_cart_button', [$this,'price_based_on_quantity_on_single'] );
+    add_filter( 'woocommerce_product_single_add_to_cart_text', [$this,'change_add_to_cart_button_text'] );
+}
+
+
+public function change_add_to_cart_button_text( $text ) {
+    return __( 'Dodaj do koszyka', 'page_manage' ); 
+}
+
+
+public function price_based_on_quantity_on_single() {
+    if (is_product()) {
+        ?>
+        <script type="text/javascript">
+            jQuery(document).ready(function($) {
+                var originalPriceHtml = $('.summary.entry-summary .price .woocommerce-Price-amount').html();
+                var currencySymbolHtml = $('.summary.entry-summary .price .woocommerce-Price-currencySymbol').html();
+                var originalPrice = parseFloat(originalPriceHtml.replace(/[^\d.,]/g, '').replace(',', '.'));
+
+                var salePriceHtml = $('.summary.entry-summary .price ins .woocommerce-Price-amount').html();
+                var salePrice = salePriceHtml ? parseFloat(salePriceHtml.replace(/[^\d.,]/g, '').replace(',', '.')) : 0;
+
+                var priceToUse = salePrice > 0 ? salePrice : originalPrice;
+                var priceElementToUpdate = salePrice > 0 ? '.summary.entry-summary .price ins .woocommerce-Price-amount' : '.summary.entry-summary .price .woocommerce-Price-amount';
+
+                function updatePriceOnQuantityChange() {
+                    var cxc_qty = parseInt($(this).val());
+
+                    if (isNaN(priceToUse)) {
+                        var toUsePriceHtml = salePrice > 0 ? $('.summary.entry-summary .price ins .woocommerce-Price-amount').html() : $('.summary.entry-summary .price .woocommerce-Price-amount').html();
+                        priceToUse = parseFloat(toUsePriceHtml.replace(/[^\d.,]/g, '').replace(',', '.'));
+                    }
+
+                    var modifiedPrice = (priceToUse * cxc_qty).toFixed(2);
+                    var formattedPrice = '<span class="woocommerce-Price-amount amount"><bdi>' + modifiedPrice.replace('.', ',') + '&nbsp;<span class="woocommerce-Price-currencySymbol">' + currencySymbolHtml + '</span></bdi></span>';
+
+                    $(priceElementToUpdate).html(formattedPrice);
+                }
+
+                $(document).on('change', '.quantity input[name=quantity]', updatePriceOnQuantityChange);
+
+            });
+        </script>
+        <?php
+    }
+}
+
+
+public function remove_woocommerce_rating() {
+    remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+}
+
+public function display_quantity_plus() {
+    echo '<button type="button" class="plus">+</button>';
+}
+
+public function display_quantity_minus() {
+    echo '<button type="button" class="minus">-</button>';
+}
+
+public function add_cart_quantity_plus_minus() {
+    if ( ! is_product() && ! is_cart() ) {
+        return;
+    }
+    wc_enqueue_js(
+        "$(document).on( 'click', 'button.plus, button.minus', function() {
+            var qty = $( this ).parent( '.quantity' ).find( '.qty' );
+            var val = parseFloat(qty.val());
+            var max = parseFloat(qty.attr( 'max' ));
+            var min = parseFloat(qty.attr( 'min' ));
+            var step = parseFloat(qty.attr( 'step' ));
+            if ( $( this ).is( '.plus' ) ) {
+                if ( max && ( max <= val ) ) {
+                qty.val( max ).change();
+                } else {
+                qty.val( val + step ).change();
+                }
+            } else {
+                if ( min && ( min >= val ) ) {
+                qty.val( min ).change();
+                } else if ( val > 1 ) {
+                qty.val( val - step ).change();
+                }
+            }
+        });"
+    );
 }
 
 public function template_count_search() {
@@ -390,6 +490,59 @@ public function template_count_ajax() {
     <p class="woocommerce-result-count">
         <?php
         $current = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+        $this_args = $this->get_product_general_archive_ajax_query_args($current); 
+        $wp_query = new WP_Query($this_args);
+
+        $total_products = $wp_query->found_posts;
+        $per_page = $wp_query->get('posts_per_page');
+        wp_reset_postdata();
+
+        if (1 === intval($total_products)) {
+            _e('Dostępne lokalne produkty', 'woocommerce');
+        } elseif ( $total_products <= $per_page || -1 === $per_page )  {
+            printf(_n('Dostępne lokalne produkty', 'Dostępne %d lokalne produkty', $total_products, 'woocommerce'), $total_products);
+        } else {
+            $first = ($per_page * $current) - $per_page + 1;
+            $last = min($total_products, $per_page * $current);
+            printf(_nx('Dostępne %1$d&ndash;%2$d / %3$d lokalne produkty', 'Dostępne %1$d&ndash;%2$d / %3$d lokalne produkty', $total_products, 'with first and last result', 'woocommerce'), $first, $last, $total_products);
+        }
+        ?>
+    </p>
+    <?php
+    die();
+}
+
+public function template_count() {
+    ?>
+    <p class="woocommerce-result-count">
+        <?php
+        $current = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+        $this_args = $this->get_product_general_archive_query_args($current); 
+        $wp_query = new WP_Query($this_args);
+        $total_products = $wp_query->found_posts;
+        $per_page = $wp_query->get('posts_per_page');
+        wp_reset_postdata();
+
+        if (1 === intval($total_products)) {
+            _e('Dostępne lokalne produkty', 'woocommerce');
+        } elseif ( $total_products <= $per_page || -1 === $per_page )  {
+
+            printf(_n('Dostępne lokalne produkty', 'Dostępne %d lokalne produkty', $total_products, 'woocommerce'), $total_products);
+        } else {
+            $first = ($per_page * $current) - $per_page + 1;
+            $last = min($total_products, $per_page * $current);
+            printf(_nx('Dostępne %1$d&ndash;%2$d / %3$d lokalne produkty', 'Dostępne %1$d&ndash;%2$d / %3$d lokalne produkty', $total_products, 'with first and last result', 'woocommerce'), $first, $last, $total_products);
+        }
+        ?>
+    </p>
+    <?php
+}
+
+public function template_count_ajax_category_selected() {
+    ?>
+    <p class="woocommerce-result-count">
+        <?php
+        $current = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
         $this_args = $this->get_product_query_args($current); 
         $wp_query = new WP_Query($this_args);
         $total_products = $wp_query->found_posts;
@@ -411,7 +564,7 @@ public function template_count_ajax() {
     die();
 }
 
-public function template_count() {
+public function template_count_category_selected() {
     ?>
     <p class="woocommerce-result-count">
         <?php
@@ -460,6 +613,18 @@ public function custom_product_filter() {
     
     die();
 }    
+
+public function custom_product_general_archive_filter() {
+    check_admin_referer('custom_product_filter', 'nonce');
+    $paged = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
+    
+    if (isset($_POST['select'])) {
+        $args = $this->get_product_general_archive_ajax_query_args($paged);
+        $this->process_product_query($args);
+    }
+    
+    die();
+} 
 
 public function custom_product_archive_filter() {
     check_admin_referer('custom_product_filter', 'nonce');
@@ -616,6 +781,103 @@ private function get_product_query_args($paged) {
         );
     }
 }
+
+private function get_product_general_archive_query_args($paged) {
+    global $wp_query;
+    $category = $wp_query->get_queried_object(); 
+    $cat_id = '';
+    if($category) {
+        $cat_id = $category->term_id;
+    }
+    $select = isset($_POST['select']) ? sanitize_text_field($_POST['select']) : 'menu_order';
+    
+    if ($select === 'date') {
+        return array(
+            'post_type'      => 'product',
+            'post_status'    => 'publish',  
+            'paged'          => $paged,
+            'posts_per_page' => 16,
+            'tax_query'      => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => $cat_id,
+                ),
+            ),
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+        );
+    } else {
+        $meta_key = $this->get_meta_key();
+        $order = $this->get_order();
+        
+        return array(
+            'post_type'      => 'product',
+            'post_status'    => 'publish',  
+            'paged'          => $paged,
+            'posts_per_page' => 16,
+            'tax_query'      => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => $cat_id,
+                ),
+            ),
+            'meta_key'       => $meta_key,
+            'orderby'        => array(
+                'menu_order'      => 'ASC',
+                'meta_value_num'  => $meta_key === 'menu_order' ? 'ASC' : $order,
+            ),
+        );
+    }
+}
+
+private function get_product_general_archive_ajax_query_args($paged) {
+    $cat_id = isset($_POST['termId']) ? sanitize_text_field($_POST['termId']) : '0';
+
+    $select = isset($_POST['select']) ? sanitize_text_field($_POST['select']) : 'menu_order';
+    
+    if ($select === 'date') {
+        return array(
+            'post_type'      => 'product',
+            'post_status'    => 'publish',  
+            'paged'          => $paged,
+            'posts_per_page' => 16,
+            'tax_query'      => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => $cat_id,
+                ),
+            ),
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+        );
+    } else {
+        $meta_key = $this->get_meta_key();
+        $order = $this->get_order();
+        
+        return array(
+            'post_type'      => 'product',
+            'post_status'    => 'publish',  
+            'paged'          => $paged,
+            'posts_per_page' => 16,
+            'tax_query'      => array(
+                array(
+                    'taxonomy' => 'product_cat',
+                    'field'    => 'term_id',
+                    'terms'    => $cat_id,
+                ),
+            ),
+            'meta_key'       => $meta_key,
+            'orderby'        => array(
+                'menu_order'      => 'ASC',
+                'meta_value_num'  => $meta_key === 'menu_order' ? 'ASC' : $order,
+            ),
+        );
+    }
+}
+
 
 private function process_product_query($args) {
     $query = new WP_Query($args);
@@ -789,6 +1051,71 @@ public function display_pagination_template_archive() {
     wp_reset_query();
 }
 
+
+public function display_pagination_general_archive() {
+    $paged = isset($_POST['pagedPagination']) ? intval($_POST['pagedPagination']) : 1;
+
+    $this_args = $this-> get_product_general_archive_ajax_query_args($paged);
+    $wp_query = new WP_Query($this_args);
+
+    error_log('1');
+
+    $prev_arrow = '&larr;';
+    $next_arrow = '&rarr;';
+    $big        = 999999999; 
+
+    $args = array(
+        'base'      => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format'    => '?paged=%#%',
+        'current'   => $paged,
+        'aria_current' => 'page',
+        'total'     => $wp_query->max_num_pages,
+        'type'      => 'list',
+        'prev_text' => $prev_arrow,
+        'next_text' => $next_arrow,
+    );
+
+    $pagination = paginate_links($args);
+
+    if (!empty($pagination)) {
+        echo $pagination;
+    }
+    wp_reset_query();
+
+    die();
+}
+
+public function display_pagination_template_general_archive() {
+    $paged = isset($_POST['pagedPagination']) ? intval($_POST['pagedPagination']) : 1;
+
+    $this_args = $this-> get_product_general_archive_query_args($paged);
+    $wp_query = new WP_Query($this_args);
+
+    $prev_arrow = '&larr;';
+    $next_arrow = '&rarr;';
+    $big        = 999999999; 
+
+    $args = array(
+        'base'      => str_replace($big, '%#%', get_pagenum_link($big)),
+        'format'    => '?paged=%#%',
+        'current'   => $paged,
+        'aria_current' => 'page',
+        'total'     => $wp_query->max_num_pages,
+        'type'      => 'list',
+        'prev_text' => $prev_arrow,
+        'next_text' => $next_arrow,
+    );
+
+    $pagination = paginate_links($args);
+
+    if (!empty($pagination)) {
+        echo '<nav class="woocommerce-pagination"><ul class="page-numbers">';
+        echo $pagination;
+        echo '</ul></nav>';
+    }
+    wp_reset_query();
+}
+
 public function display_pagination() {
     $paged = isset($_POST['pagedPagination']) ? intval($_POST['pagedPagination']) : 1;
 
@@ -916,10 +1243,19 @@ public function my_certified_front() {
 
 public function ajax_script() {
 
-    if (is_product_category() || is_tax('product_tag') || is_post_type_archive('product') && !is_search()) {
+    if (is_product_category($this->get_category_id_with_custom_field())) {
 		wp_enqueue_script('woo-category-ajax', PM_URL . '/assets/js/woo-category-ajax.js', array(), null, false);
 
         wp_localize_script('woo-category-ajax', 'filterCat', array(
+            'ajaxurl' => admin_url('admin-ajax.php'),
+            'nonce'   => wp_create_nonce('custom_product_filter'),
+        ));
+	}
+
+    if (is_product_category() && !is_product_category($this->get_category_id_with_custom_field()) ) {
+		wp_enqueue_script('woo-all-category-ajax', PM_URL . '/assets/js/woo-all-category-ajax.js', array(), null, false);
+
+        wp_localize_script('woo-all-category-ajax', 'filterCatAll', array(
             'ajaxurl' => admin_url('admin-ajax.php'),
             'nonce'   => wp_create_nonce('custom_product_filter'),
         ));
@@ -1220,7 +1556,7 @@ public function selected_category_shortcode($atts) {
     }
 }
 
-private function get_category_id_with_custom_field() {
+public function get_category_id_with_custom_field() {
     $categories = get_terms(array(
         'taxonomy'   => 'product_cat',
         'hide_empty' => false,

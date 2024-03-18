@@ -258,7 +258,7 @@ if ( ! defined( 'WPINC' ) ) {
 		}
 		if(is_product()) {
 			wp_enqueue_style('single-product', PM_URL . '/assets/css/single-product.css', array(), null, false);
-			wp_enqueue_script('single-product-script', PM_URL . '/assets/js/script-single-product.js', array('jquery'), null, false);
+			wp_enqueue_script('script-single-product', PM_URL . '/assets/js/script-single-product.js', array('jquery'), null, false);
 		}
 	}
 

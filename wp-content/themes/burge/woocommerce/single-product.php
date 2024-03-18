@@ -14,54 +14,40 @@
  * @package 	WooCommerce/Templates
  * @version     1.6.4
  */
+
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
-get_header( 'shop' ); ?>
+get_header( 'shop' );
+?>
 <div  class="main-content <?php echo esc_attr(tmpmela_page_layout()); ?>">
-<?php if (get_option('tmpmela_shop_sidebar') == 'yes') : ?>
-<div class="single-product-sidebar">
-<?php else: ?>
-<?php if (is_active_sidebar('single-product-side-widget-area')) : ?>
-<div class="main-content-inner-full single-product-full side-widget-area">
-<?php else: ?>
-<div class="main-content-inner-full single-product-full">
-<?php endif; ?>
-<?php endif; ?>
-	<?php
-		/**
-		 * woocommerce_before_main_content hook
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
-	<?php while ( have_posts() ) : the_post(); ?>
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
-		<?php endwhile; // end of the loop. ?>
-	<?php if (is_active_sidebar('single-product-side-widget-area')) : ?>
-	<div class="singleproduct-sidebar">
-			<?php tmpmela_get_widget('single-product-side-widget-area'); ?>
-		</div>
-	<?php endif; ?>
-	<?php
-		/**
-		 * woocommerce_after_main_content hook
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-		?>
-	<?php if (get_option('tmpmela_shop_sidebar') == 'yes') : ?>
-	<?php	
-		/**
-		 * woocommerce_sidebar hook
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>	
-	<?php endif; ?>
-	</div>
+    <?php if (get_option('tmpmela_shop_sidebar') == 'yes') : ?>
+        <div class="single-product-sidebar">
+    <?php else: ?>
+        <?php if (is_active_sidebar('single-product-side-widget-area')) : ?>
+            <div class="main-content-inner-full single-product-full side-widget-area">
+        <?php else: ?>
+            <div class="main-content-inner-full single-product-full">
+        <?php endif; ?>
+    <?php endif; ?>
+    <?php
+    /**
+     * woocommerce_before_main_content hook
+     *
+     * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+     * @hooked woocommerce_breadcrumb - 20
+     */
+    do_action( 'woocommerce_before_main_content' );
+    ?>
+    <?php while ( have_posts() ) : the_post(); ?>
+        <?php wc_get_template_part( 'content', 'single-product' ); ?>
+    <?php endwhile; // end of the loop. ?>
+
+    <?php
+
+    // Output WooCommerce hooks
+    do_action('woocommerce_after_main_content');
+    ?>
+    </div>
+</div>
 <?php get_footer( 'shop' ); ?>

@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const select = document.querySelector('.my-custom-select select');
     const target = document.querySelector('.products');
     const pagination = document.querySelector(".woocommerce-pagination");
@@ -7,26 +6,38 @@ document.addEventListener("DOMContentLoaded", function () {
     let selectedValue;
     let currentPaged = 1;
 
-    if (select && target) {
+var bodyClasses = document.body.className;
+var classArray = bodyClasses.split(' ');
+var termId = null;
 
+for (var i = 0; i < classArray.length; i++) {
+    var currentClass = classArray[i];
+    if (currentClass.match(/^term-\d+$/)) {
+        termId = currentClass.substring(5);
+        break; 
+    }
+}
+termId = parseInt(termId);
+
+    if (select && target) {
         select.addEventListener('change', function (event) {
-            console.log('select');
             selectedValue = select.value;
             const metaKey = getDynamicMetaKey(selectedValue);
 
             jQuery.ajax({
-                url: filterCatToday.ajaxurl,
+                url: filterCatAll.ajaxurl,
                 type: 'post',
                 data: {
-                    action: 'custom_product_filter_today',
+                    action: 'custom_product_general_archive_filter',
                     select: selectedValue,
                     meta_key: metaKey,
-                    nonce: filterCatToday.nonce,
+                    nonce: filterCatAll.nonce,
                     paged: currentPaged,
+                    termId: termId
                 },
                 success: function (response) {
                     target.innerHTML = response;
- 
+
                     var delay = 500;
                     setTimeout(function () {
                         jQuery("ul.products li span.product-loading").hide();
@@ -38,12 +49,13 @@ document.addEventListener("DOMContentLoaded", function () {
             });
             if(pagination) {
                 jQuery.ajax({
-                    url: filterCatToday.ajaxurl,
+                    url: filterCatAll.ajaxurl,
                     type: "post",
                     data: {
-                        action: "display_pagination_today",
+                        action: "display_pagination_general_archive",
                         pagedPagination: currentPaged,
-                        nonce: filterCatToday.nonce,
+                        termId: termId,
+                        nonce: filterCatAll.nonce,
                     },
                     success: function (response) {
                         const trimmedResponse = response.trim();
@@ -51,13 +63,15 @@ document.addEventListener("DOMContentLoaded", function () {
                     },
                 });
             }
+
             jQuery.ajax({
-                url: filterCatToday.ajaxurl,
+                url: filterCatAll.ajaxurl,
                 type: "post",
                 data: {
-                    action: "template_count_ajax_today",
+                    action: "template_count_ajax",
                     paged: currentPaged,
-                    nonce: filterCatToday.nonce,
+                    termId: termId,
+                    nonce: filterCatAll.nonce,
                 },
                 success: function (response) {
                     const trimmedNotice = response.trim();
@@ -75,13 +89,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     const metaKey = getDynamicMetaKey(selectedValue);
     
                     jQuery.ajax({
-                        url: filterCatToday.ajaxurl,
+                        url: filterCatAll.ajaxurl,
                         type: "post",
                         data: {
-                            action: "custom_product_filter_today",
+                            action: "custom_product_general_archive_filter",
                             paged: currentPaged,
                             select: metaKey,
-                            nonce: filterCatToday.nonce,
+                            termId: termId,
+                            nonce: filterCatAll.nonce,
                         },
                         success: function (response) {
                             target.innerHTML = response;
@@ -93,12 +108,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         },
                     });
                     jQuery.ajax({
-                        url: filterCatToday.ajaxurl,
+                        url: filterCatAll.ajaxurl,
                         type: "post",
                         data: {
-                            action: "display_pagination_today",
+                            action: "display_pagination_general_archive",
                             pagedPagination: currentPaged,
-                            nonce: filterCatToday.nonce,
+                            termId: termId,
+                            nonce: filterCatAll.nonce,
                         },
                         success: function (response) {
                             const trimmedResponse = response.trim();
@@ -106,12 +122,13 @@ document.addEventListener("DOMContentLoaded", function () {
                         },
                     });
                     jQuery.ajax({
-                        url: filterCatToday.ajaxurl,
+                        url: filterCatAll.ajaxurl,
                         type: "post",
                         data: {
-                            action: "template_count_ajax_today",
+                            action: "template_count_ajax",
+                            termId: termId,
                             paged: currentPaged,
-                            nonce: filterCatToday.nonce,
+                            nonce: filterCatAll.nonce,
                         },
                         success: function (response) {
                             const trimmedNotice = response.trim();

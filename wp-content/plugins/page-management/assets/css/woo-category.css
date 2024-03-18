@@ -125,6 +125,9 @@ select.select-filter option {
         top: 171px;
         letter-spacing: 0px;
     }
+    .woocommerce .woocommerce-breadcrumb, .woocommerce-page .woocommerce-breadcrumb span {
+        color:#000000;
+    }
 }
 
 @media (min-width: 980px) AND (max-width: 1429px) {
@@ -181,6 +184,9 @@ select.select-filter option {
 }
 
 @media(max-width:979px) {
+    .category-toolbar {
+        margin-left: 10px;
+    }
     .woocommerce .woocommerce-breadcrumb, .woocommerce-page .woocommerce-breadcrumb {
         font-size: 10px!important;
         position: absolute;
@@ -195,7 +201,7 @@ select.select-filter option {
     .my-custom-select {
         font-size: 13px !important;
         position: absolute;
-        left: calc(100% - 140px);
+        left: calc(100% - 150px);
         top: calc(-7px);
         border-radius: 0px;
     }
@@ -226,6 +232,7 @@ select.select-filter option {
     }
     .page-title {
         height: 60px;
+        margin-left:10px;
     }
     .page-title-inner {
         height: 60px;

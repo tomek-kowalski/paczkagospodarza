@@ -49,7 +49,7 @@ class Search extends PM {
         $count = count($query->posts) ? count($query->posts) : '0';
     
         if ($query->have_posts()) {
-            $html = '<span class="title-frame"><p class="search-title">' . __('Szybkie wyszukiwanie - znaleziono produkty(' . $count .'):') . '</p><span class="close-serch">X</span></span>';
+            $html = '<span class="title-frame"><p class="search-title">' . __('Szybkie wyszukiwanie - znaleziono produkty (' . $count .'):') . '</p><span class="close-serch">X</span></span>';
     
             while ($query->have_posts()) {
                 $query->the_post();

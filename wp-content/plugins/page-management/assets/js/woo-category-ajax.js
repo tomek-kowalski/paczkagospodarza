@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 url: filterCat.ajaxurl,
                 type: "post",
                 data: {
-                    action: "template_count_ajax",
+                    action: "template_count_ajax_category_selected",
                     paged: currentPaged,
                     nonce: filterCat.nonce,
                 },
@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         url: filterCat.ajaxurl,
                         type: "post",
                         data: {
-                            action: "template_count_ajax",
+                            action: "template_count_ajax_category_selected",
                             paged: currentPaged,
                             nonce: filterCat.nonce,
                         },

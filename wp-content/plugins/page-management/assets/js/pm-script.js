@@ -4,13 +4,31 @@ jQuery(document).ready(function($) {
     function verticalMenu() {
         $('.menu-toggle').on("click", function() {
             $('.vertical-mobile-menu, .background-overlay, body').addClass('active mobile-menu-open');
+            
+            let search_data = $('#search-results');
+            if (search_data.length) {
+                search_data.html('');
+            }
+
+            let header_fixed = $(".header-main-fixed");
+
+            if (header_fixed.length) {
+                header_fixed.removeClass("header-main-fixed").addClass("header-main");
+            }
         });
 
+        const header_fixed = $(".header-main-fixed");
+
+
+        if (header_fixed.length) {
+            header_fixed.removeClass("header-main-fixed").addClass("header-main");
+        }
+    
         $('.menu-close, .background-overlay').on("click", function() {
             $('.vertical-mobile-menu, .background-overlay, body').removeClass('active mobile-menu-open');
         });
     }
-
+    
     function toggleAccount() {
         $('.account-toggle').click(function() {
             $(".account-container").slideToggle("medium");
@@ -33,13 +51,39 @@ jQuery(document).ready(function($) {
         $('.panel-search-mobile').click(function() {
             const header = $(".header-main");
             const header_fixed = $(".header-main-fixed");
-    
+            const menu =  $('.vertical-mobile-menu, .background-overlay, body');
+            const menu_text = $(".category-toolbar");
+            const select = $(".my-custom-select");
+
+            if(menu.length) {
+                menu.removeClass('active mobile-menu-open');
+            }
+
+            let search_data = $('#search-results');
+            if (search_data.length) {
+                search_data.html('');
+            }
+
+            
+
             if (header.length) {
                 header.removeClass("header-main").addClass("header-main-fixed");
+                if(menu_text.length) {
+                        menu_text.addClass('menu-display');
+                }
+                if(select.length) {
+                    select.addClass('menu-display');
+                }
             }
-    
+
             if (header_fixed.length) {
                 header_fixed.removeClass("header-main-fixed").addClass("header-main");
+                if(menu_text.length) {
+                    menu_text.removeClass('menu-display');
+                }
+                if(select.length) {
+                    select.removeClass('menu-display');
+                }
             }
         });
     }
@@ -102,7 +146,6 @@ function footer_mobile() {
         });
     });
 }
-
 
     footer_mobile();
     shuffleLi();

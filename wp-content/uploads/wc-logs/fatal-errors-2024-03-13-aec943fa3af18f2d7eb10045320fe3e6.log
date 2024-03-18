@@ -1,0 +1,18 @@
+2024-03-13T23:48:53+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\xampp\htdocs\paczka\wp-content\themes\burge\functions.php:420
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-settings.php(611): include()
+#1 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\functions.php on line 420
+
+2024-03-13T23:48:55+00:00 CRITICAL Uncaught Error: Using $this when not in object context in E:\xampp\htdocs\paczka\wp-content\themes\burge\functions.php:420
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-settings.php(611): include()
+#1 E:\xampp\htdocs\paczka\wp-config.php(98): require_once('E:\\xampp\\htdocs...')
+#2 E:\xampp\htdocs\paczka\wp-load.php(50): require_once('E:\\xampp\\htdocs...')
+#3 E:\xampp\htdocs\paczka\wp-admin\admin-ajax.php(22): require_once('E:\\xampp\\htdocs...')
+#4 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\themes\burge\functions.php on line 420
+

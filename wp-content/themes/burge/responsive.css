@@ -7,15 +7,7 @@
 		.site-header:after {
 			display: none;
 		}
-		
-		.owl-theme .owl-buttons div.owl-prev,
-		.products_block .owl-theme .owl-buttons div.owl-prev {
-			left: 0;
-		}
-		.owl-theme .owl-buttons div.owl-next,
-		.products_block .owl-theme .owl-buttons div.owl-next {
-			right: 0;
-		}
+
 	}
 	@media only screen and (max-width: 1430px) {
 		/*.blog-posts-content,*/
@@ -24,112 +16,10 @@
 		}
 
 	}
-	@media only screen and (min-width: 1201px) and (max-width: 1430px) {
-		.site {
-		    width: 1170px;
-		}
-		.page-title-inner,
-		.main-content-inner,
-		.theme-container,
-		.full-width .inner-container,
-		.main-content.left-sidebar,
-		.site-footer .inner-container,
-		.main-inner-container,
-		.full-width .page-title,
-		.middle-container {
-			width: 1110px;
-		}
-		.home-product {
-			margin: 0 15px !important;
-		}
-		.owl-theme .owl-buttons div.owl-prev {
-			left: 0;
-		}
-		.owl-theme .owl-buttons div.owl-next {
-			right: 0;
-		}
-		article.post {
-			margin: 0 0 20px;
-		}
-		.products_block .owl-theme .owl-buttons div.owl-prev {
-			left: 0;
-		}
-		.products_block .owl-theme .owl-buttons div.owl-next {
-			right: 0;
-		}
-		#brand-products .owl-theme .owl-buttons div.owl-next {
-			right: 0;
-		}
-		#brand-products .owl-theme .owl-buttons div.owl-prev {
-			left: 0;
-		}
-		.team-posts-content.staff-page.posts-content .owl-theme .owl-buttons div.owl-prev {
-			left: 0;
-		}
-		.team-posts-content.staff-page.posts-content .owl-theme .owl-buttons div.owl-next {
-			right: 0;
-		}
-		.team-posts-content.staff-page.posts-content {
-			margin: 0;
-		}
-		.single-portfolio .read-more a {
-			padding: 6px 12px;
-		}
-		.woocommerce div.product .woocommerce-tabs,
-		.woocommerce-page div.product .woocommerce-tabs {
-			padding: 30px 15px;
-		}
-		.upsells,
-		.related,
-		.cross-sells {
-			margin: 0;
-		}
-		.cms-text .static-text {
-			font-size: 30px;
-		}
-		/***************cms**************/
-		.cms-banner-item.style-1 .cms-banner-inner .static-wrapper {
-			top: 50px;
-			bottom: auto;
-		}
-		.cms-banner-item.align-right .cms-banner-inner .static-wrapper {
-			left: 50%;
-    		right: 10px;
-		}
-		.cms-banner-item.style-3.align-right .cms-banner-inner .static-wrapper {
-		    left: 54%;
-		}
-		.style-2 .static-wrapper{top:25px}
-		.cms-banner-item.style-3 .cms-banner-inner .static-wrapper .cms-text .static-inner .static-text {
-			font-size: 17px;
-			padding-bottom: 3px;
-		}
-		.cms-banner-item.align-left .cms-banner-inner .static-wrapper{ left: 15px;}
-		.cms-banner-item.style-3 .cms-banner-inner .static-wrapper .cms-text a.link-text{margin-top:5px;}
-		
-	}
-	@media only screen and (max-width: 1430px) {
-		#secondary {
-			width: 262px;
-		}
-		.woocommerce .single-product-full #content .product div.entry-summary{width:49%;}
-		.header-right {
-		    width: 80%;
-		}
-	}
 	@media only screen and (max-width: 1200px) {
 		.site {
 		    width: 960px;
 		}					
-		.page-title-inner,
-		.full-width .inner-container,
-		.main-content.left-sidebar,
-		.site-footer .inner-container,
-		.main-inner-container,
-		.full-width .page-title,
-		.middle-container {
-			width: 900px;
-		}
 		#secondary,
 		.singleproduct-sidebar {
 			width: 207px;
@@ -161,12 +51,6 @@
 		.custom-testimonial .read-more {
 			margin: 15px 0;
 		}
-		.owl-theme .owl-buttons div.owl-prev {
-			left: 0;
-		}
-		.owl-theme .owl-buttons div.owl-next {
-			right: 0;
-		}
 		.products_block .owl-theme .owl-buttons div.owl-prev {
 			left: 0;
 		}
@@ -185,9 +69,7 @@
 		.single-portfolio .read-more a {
 			padding: 10px 10px;
 		}
-		.woocommerce .single-product-full #content .product div.entry-summary {
-			width: 47%;
-		}
+
 		.post-navigation a.prev-post {
 			float: left;
 		}
@@ -331,28 +213,7 @@
 		    margin-bottom: 20px;
 		}
 	}
-	@media only screen and (min-width: 1024px) and (max-width: 1200px) {
-		
-	}
-@media only screen and (min-width: 980px) and (max-width: 1023px) {
-		
-		.woocommerce .single-product-full.side-widget-area #content .product div.entry-summary {
-			width: 68%;
-		}
-		.woocommerce .single-product-full #content .product div.entry-summary {
-			width: 100%;
-		}
-		.woocommerce .single-product-full #content .product div.images,
-		.woocommerce .single-product-sidebar #content div.product div.images,
-		.woocommerce div.product div.images,
-		.woocommerce-page .single-product-sidebar #content div.product div.images,
-		.woocommerce-page div.product div.images {
-			float: none;
-			margin: 0 auto 50px;
-			width: 60%;
-		}
-		.woocommerce .single-product-full #content .product div.images:before{display:none;}
-	}
+
 	@media only screen and (max-width: 979px) {
 		/*header*/
 		.offer-icon {
@@ -441,22 +302,11 @@
 		.cart-text {
 			display: none;
 		}		
-		/****************** Content ******************/
-		
+		/****************** Content ******************/		
 		.page-title-inner,
 		.full-width .inner-container,
-		.main-content.left-sidebar,
-		.site-footer .inner-container,
-		.main-inner-container,
-		.full-width .page-title,
-		.main-content.box-page,
-		.middle-container {
-			width: auto;
-			max-width: 100%;
-			margin: 0px 15px;
-		}
+
 		.main-content-inner{margin:0;}
-		.single-product .main-content-inner{margin: 0px 15px;}
 		#secondary,
 		#primary {
 			width: 100%;
@@ -480,20 +330,10 @@
 		.col-main {
 			width: 100%;
 		}
-		.breadcrumbs,
-		.woocommerce .woocommerce-breadcrumb,
-		.woocommerce-page .woocommerce-breadcrumb {
-			font-size: 12px;
-		}
 		.woocommerce .single-product-full #content .product div.images,
 		.woocommerce .single-product-sidebar #content div.product div.images,
 		.woocommerce div.product div.images,
 		.woocommerce-page .single-product-sidebar #content div.product div.images,
-		.woocommerce-page div.product div.images {
-			float: none;
-			margin: 0 auto 20px;
-			width: 74%;
-		}
 		.primary-sidebar .widget_top_rated_products .amount {
 			display: block;
 		}
@@ -887,15 +727,7 @@
 		.testmonial-text:before{    right: 0px;}
 		/****************** Start Primary navigation ******************/
 		#primary-sidebar .toggled-on .toggle-block,
-		#primary-sidebar .toggled-on .widget_shopping_cart_content {
-			display: block;
-			padding: 10px 0px;
-		}
-		#primary-sidebar .toggled-off .toggle-block,
-		#primary-sidebar .toggled-off .widget_shopping_cart_content,
-		.primary-sidebar .widget .toggle-block,
-		.custom_category,
-		.textbox .text1,
+		#primary-sidebar .toggled-on .widget_shopping_cart_content
 		#primary-sidebar .toggled-off .textwidget {
 			display: none;
 		}
@@ -909,9 +741,6 @@
 		/****Header****/
 		.header-logo {
 			display: none;
-		}
-		.admin-bar .mobile-menu {
-			margin-top: 32px;
 		}
 		#site-navigation:before{display:none;}
 		.main-navigation {
