@@ -479,10 +479,6 @@
 		.site-content .entry-thumbnail img {
 			width: 100%;
 		}
-		.woocommerce ul.products li.first,
-		.woocommerce-page ul.products li.first {
-			clear: none;
-		}
 		.team-posts-content.posts-content .container {
 			width: 50%;
 		}

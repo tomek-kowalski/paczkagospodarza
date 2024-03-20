@@ -88,7 +88,7 @@ if ($variable == 'left') {
         $woo->display_pagination_search();
     } elseif(is_product_category($cat_slug)) {
         $woo->display_pagination_template();
-    } elseif(is_product_category() && !is_search() && !is_product_category($cat_slug)) {
+    } elseif(is_product_category() || is_shop() && !is_search() && !is_product_category($cat_slug)) {
 		$woo->display_pagination_template_general_archive();
 	}
     

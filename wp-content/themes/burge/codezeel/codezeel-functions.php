@@ -1136,7 +1136,6 @@ function tmpmela_output_upsells() {
 	    woocommerce_upsell_display( $no1); 
 }
 remove_action( 'woocommerce_cart_collaterals', 'woocommerce_cross_sell_display', 10 );
-add_action( 'woocommerce_after_cart', 'tmpmela_output_crosssell', 10 );
 /* To display Wishlist in product block */
    if ( in_array( 'woocommerce/woocommerce.php' ,apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) )  && in_array( 'yith-woocommerce-wishlist/init.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ):
 if( ! function_exists( 'tmpmela_add_to_wishlist_in_product' ) ){

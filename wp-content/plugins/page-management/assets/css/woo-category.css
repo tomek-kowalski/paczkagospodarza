@@ -3,17 +3,15 @@
 1. Woo tag, categories, archive
 2. My cart button
 -------------------------------------------------------------------*/
-
+.woocommerce-result-count {
+    letter-spacing: 0px;
+}
 
 .page-title-inner { 
     display:flex;
     justify-content: space-between;
     height: 48px;
     margin: 20px;
-}
-.woocommerce-result-count {
-    margin: 0px !important;
-    letter-spacing: 0px;
 }
 .category-toolbar {
     padding: 0px !important;
@@ -128,6 +126,13 @@ select.select-filter option {
     .woocommerce .woocommerce-breadcrumb, .woocommerce-page .woocommerce-breadcrumb span {
         color:#000000;
     }
+    #content {
+        margin-left: -15px;
+        width: 1230px;
+    }
+    .woocommerce-result-count {
+        margin-left: 13px !important;
+    }
 }
 
 @media (min-width: 980px) AND (max-width: 1429px) {
@@ -137,6 +142,9 @@ select.select-filter option {
         right: 35px;
         top: 245px;
         letter-spacing: 0px;
+    }
+    .woocommerce-result-count {
+        margin: 0px 15px !important;
     }
 }
 
@@ -304,5 +312,8 @@ select.select-filter option {
     }
     .woocommerce ul.products li .container-inner, .woocommerce-page ul.products li .container-inner {
         margin: 10px 8px!important;
+    }
+    .woocommerce-result-count {
+        margin: 0px !important;
     }
 }

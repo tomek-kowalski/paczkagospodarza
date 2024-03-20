@@ -186,7 +186,7 @@ do_action( 'woocommerce_before_cart' ); ?>
 </form>
 
 <?php do_action( 'woocommerce_before_cart_collaterals' ); ?>
-
+<div class="collateral-frame">
 <div class="cart-collaterals">
 	<?php
 		/**
@@ -198,7 +198,9 @@ do_action( 'woocommerce_before_cart' ); ?>
 		do_action( 'woocommerce_cart_collaterals' );
 	?>
 </div>
-
-<?php ?>
-
+</div>
 <?php do_action( 'woocommerce_after_cart' ); ?>
+<?php
+    echo do_shortcode('[button_recommended_today]');
+    echo '<section class="custom-single-slider">' . do_shortcode('[recommended_products_today]') . '</section>';
+?>

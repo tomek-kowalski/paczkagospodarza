@@ -19,6 +19,10 @@ for (var i = 0; i < classArray.length; i++) {
 }
 termId = parseInt(termId);
 
+if (isNaN(termId)) {
+    termId = null;
+}
+
     if (select && target) {
         select.addEventListener('change', function (event) {
             selectedValue = select.value;

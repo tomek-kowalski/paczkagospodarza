@@ -258,7 +258,16 @@ if ( ! defined( 'WPINC' ) ) {
 		}
 		if(is_product()) {
 			wp_enqueue_style('single-product', PM_URL . '/assets/css/single-product.css', array(), null, false);
+		}
+		if(is_product() || is_cart()) {
 			wp_enqueue_script('single-product-script', PM_URL . '/assets/js/script-single-product.js', array('jquery'), null, false);
+		}
+		if(is_cart()) {
+			wp_enqueue_style('cart-style', PM_URL . '/assets/css/cart-style.css', array(), null, false);
+		}
+		if(is_checkout()) {
+			wp_enqueue_style('checkout-style', PM_URL . '/assets/css/checkout-style.css', array(), null, false);
+			wp_enqueue_script('checkout-script', PM_URL . '/assets/js/checkout-script.js', array('jquery'), null, false);
 		}
 	}
 

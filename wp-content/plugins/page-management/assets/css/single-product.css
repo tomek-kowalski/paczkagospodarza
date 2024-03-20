@@ -2,8 +2,13 @@
 [Table of contents]
 1. Single Product Template
 -------------------------------------------------------------------*/
-
-
+.iworks-omnibus .woocommerce-Price-amount bdi span {
+    display:none;
+}
+.woocommerce ul.products li.product .product-name, .woocommerce-page ul.products li.product .product-name {
+    letter-spacing: 0px;
+    color:#000000!important;
+}
 ul.methods li .delivery {
     font-weight:bold;
     color:#000000;
@@ -66,11 +71,11 @@ ul.methods li .delivery-text {
     color: rgb(255, 97, 0)!important;
     font-weight: 600!important;
     border:1px solid rgb(255, 97, 0)!important;
-    border-bottom: 1px solid rgb(255, 97, 0)!important;
     border-radius: 20px;
     margin: 0px auto 0px auto;
     z-index: 1;
     background-color: #ffffff!important;
+    padding: 10px 40px !important;
 }
 .my-cart:hover, .single_add_to_cart_button:hover {
     background-color:  rgb(255, 97, 0)!important;
@@ -520,7 +525,7 @@ span.pwb-text-before-brands-links {
         left:10px!important;
     }
     p.price {
-        margin: 0px!important;
+        margin: 10px!important;
         letter-spacing: 0px;
     }
     .woocommerce div.product form.cart .button, .woocommerce-page div.product form.cart .button {
@@ -547,7 +552,7 @@ span.pwb-text-before-brands-links {
         font-size: 12px;
         font-weight: 500;
         letter-spacing: 0px;
-        margin: 0px 5px 0px 5px !important;
+        margin: 0px 5px 0px 0px !important;
         color: #000000;
         line-height: 16px;
     }
@@ -579,6 +584,7 @@ span.pwb-text-before-brands-links {
         float: none;
         margin: 0px;
         width: 100%!important;
+        min-height:375px!important;
     }
     .button-front {
         color: rgb(82, 190, 50);
@@ -607,8 +613,8 @@ span.pwb-text-before-brands-links {
     .pwb-brands-in-loop {
         line-height: normal;
         text-align: left;
-        order:2;
-        min-height:40px;
+        min-height:34px;
+        font-size:11px;
     }
     span.votes {
         grid-area: star-votes;
@@ -719,15 +725,12 @@ span.pwb-text-before-brands-links {
     .iworks-omnibus .woocommerce-Price-amount bdi {
         margin:0px;
     }
-    .iworks-omnibus .woocommerce-Price-amount bdi span {
-        display:none;
-    }
     .summary .price del span {
         font-size: 22px!important;
         color: #878787;
     }
     .type-product .summary.entry-summary p {
-        margin: 10px 7px!important;
+        margin: 10px 7px;
     }
     .woocommerce div.product div.summary, .woocommerce-page div.product div.summary {
         margin-bottom: 7px!important;
@@ -777,6 +780,7 @@ span.pwb-text-before-brands-links {
     }
     .woocommerce ul.products li.product .product-name, .woocommerce-page ul.products li.product .product-name  {
         min-height:50px;
+        font-weight:13px;
     }
     .button-frame {
         margin: 40px 10px 10px 10px!important;
@@ -797,5 +801,11 @@ span.pwb-text-before-brands-links {
         background-color: #f2f2f2;
         padding: 0px;
         top: 70px;
+    }
+    h3.product-name {
+        color: #000000!important;
+        font-size: 13px!important;
+        letter-spacing: 0px!important;
+        min-height: 33px;
     }
 }

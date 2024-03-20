@@ -792,14 +792,7 @@ span + .edit-link:before,
 .features_table_wrapper #primary {
 	float: none;
 }
-.page-title-inner,
-.full-width .inner-container,
-.site-footer .inner-container,
-.main-inner-container,
-.full-width .page-title {
-	width: 1200px;
-	margin: 0 auto;
-}
+
 .middle-container {
 	width: 1600px;
 }

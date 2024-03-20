@@ -135,6 +135,13 @@ nav.woocommerce-pagination ul {
     letter-spacing: 0px;
 }
 @media (min-width: 980px) {
+.woocommerce-result-count {
+    margin: 0px !important;
+}
+#content {
+    margin-left: 0px!important;
+    width: 1200px!important;
+}
 ul.products.columns-4 {
     margin: 0px -15px;
     padding: 0;

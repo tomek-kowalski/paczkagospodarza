@@ -18,6 +18,7 @@
       <g:title>Łosoś Teryaki 200g</g:title>
       <g:price>19,99 PLN</g:price>
       <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:sale_price>11,00 PLN</g:sale_price>
       <g:gtin>2200000000121</g:gtin>
     </item>
     <item>
@@ -29,7 +30,7 @@
       <g:link>http://localhost:8080/paczka/produkt/roladki-z-makreli/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=12222</g:link>
       <g:title>Roladki z makreli 200g</g:title>
       <g:price>19,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000120</g:gtin>
     </item>
     <item>
@@ -41,7 +42,7 @@
       <g:link>http://localhost:8080/paczka/produkt/matias-w-octcie/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=12221</g:link>
       <g:title>Matias w octcie 200g</g:title>
       <g:price>19,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000119</g:gtin>
     </item>
     <item>
@@ -53,7 +54,7 @@
       <g:link>http://localhost:8080/paczka/produkt/tatar-z-matiasa/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=12220</g:link>
       <g:title>Tatar z Matiasa 200g</g:title>
       <g:price>19,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000117</g:gtin>
     </item>
     <item>
@@ -65,7 +66,7 @@
       <g:link>http://localhost:8080/paczka/produkt/matias-sloneczny-raj/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=12218</g:link>
       <g:title>Matias słoneczny raj 200g</g:title>
       <g:price>19,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000116</g:gtin>
     </item>
     <item>
@@ -77,7 +78,7 @@
       <g:link>http://localhost:8080/paczka/produkt/matias-w-oleju/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=12217</g:link>
       <g:title>Matias w oleju 200g</g:title>
       <g:price>19,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000115</g:gtin>
     </item>
     <item>
@@ -89,7 +90,7 @@
       <g:link>http://localhost:8080/paczka/produkt/matias-na-ostro/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=12204</g:link>
       <g:title>Matias na ostro 200g</g:title>
       <g:price>19,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000114</g:gtin>
     </item>
     <item>
@@ -113,7 +114,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-w-ziolach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11171</g:link>
       <g:title>Szynka w ziołach bez azotynu 300g</g:title>
       <g:price>21,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000343</g:gtin>
     </item>
     <item>
@@ -125,7 +126,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-starowiejska-w-plasterkach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11169</g:link>
       <g:title>Szynka starowiejska w plasterkach 150g</g:title>
       <g:price>21,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000342</g:gtin>
     </item>
     <item>
@@ -137,7 +138,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-starowiejska/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11167</g:link>
       <g:title>Szynka starowiejska 300g</g:title>
       <g:price>21,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000341</g:gtin>
     </item>
     <item>
@@ -149,7 +150,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-slowianska-w-plasterkach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11165</g:link>
       <g:title>Szynka słowiańska w plasterkach 150g</g:title>
       <g:price>11,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000340</g:gtin>
     </item>
     <item>
@@ -161,7 +162,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-slowianska/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11163</g:link>
       <g:title>Szynka słowiańska 300g</g:title>
       <g:price>21,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000339</g:gtin>
     </item>
     <item>
@@ -173,7 +174,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-debowa-w-plastrach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11160</g:link>
       <g:title>Szynka dębowa w plastrach 150g</g:title>
       <g:price>11,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000338</g:gtin>
     </item>
     <item>
@@ -185,7 +186,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-debowa/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11158</g:link>
       <g:title>Szynka dębowa 350g</g:title>
       <g:price>25,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000337</g:gtin>
     </item>
     <item>
@@ -197,7 +198,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-bez-e-i-azotynow-w-plastrach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11156</g:link>
       <g:title>Szynka bez "E" i bez azotynu w plastrach 120g</g:title>
       <g:price>9,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000336</g:gtin>
     </item>
     <item>
@@ -209,7 +210,7 @@
       <g:link>http://localhost:8080/paczka/produkt/smalec-domowy/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11154</g:link>
       <g:title>Smalec domowy z Kuznocina 250g</g:title>
       <g:price>10,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000335</g:gtin>
     </item>
     <item>
@@ -221,7 +222,7 @@
       <g:link>http://localhost:8080/paczka/produkt/serdelki-wolowe/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11152</g:link>
       <g:title>Serdelki wołowe 400g</g:title>
       <g:price>16,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000334</g:gtin>
     </item>
     <item>
@@ -233,7 +234,7 @@
       <g:link>http://localhost:8080/paczka/produkt/schab-na-szaro-w-plasterkach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11150</g:link>
       <g:title>Schab na szaro w czosnku w plasterkach bez azotynu150g</g:title>
       <g:price>10,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000333</g:gtin>
     </item>
     <item>
@@ -245,7 +246,7 @@
       <g:link>http://localhost:8080/paczka/produkt/poledwica-w-ziolach-bez-azotynu-w-plastrach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11144</g:link>
       <g:title>Polędwica w ziołach bez azotynu w plastrach 150g</g:title>
       <g:price>11,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000332</g:gtin>
     </item>
     <item>
@@ -257,7 +258,7 @@
       <g:link>http://localhost:8080/paczka/produkt/poledwica-w-ziolach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11142</g:link>
       <g:title>Polędwica w ziołach bez azotynu 300g</g:title>
       <g:price>22,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000331</g:gtin>
     </item>
     <item>
@@ -269,7 +270,7 @@
       <g:link>http://localhost:8080/paczka/produkt/poledwica-drobiowa-w-plasterkach/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11140</g:link>
       <g:title>Polędwica drobiowa w plasterkach 150g</g:title>
       <g:price>10,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000330</g:gtin>
     </item>
     <item>
@@ -281,7 +282,7 @@
       <g:link>http://localhost:8080/paczka/produkt/poledwica-drobiowa/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11138</g:link>
       <g:title>Polędwica drobiowa 300g</g:title>
       <g:price>20,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000329</g:gtin>
     </item>
     <item>
@@ -497,7 +498,7 @@
       <g:link>http://localhost:8080/paczka/produkt/kaszanka-kuznocin/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11066</g:link>
       <g:title>Kaszanka 300g</g:title>
       <g:price>9,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Wędliny</g:product_type>
       <g:gtin>2200000000311</g:gtin>
     </item>
     <item>
@@ -509,7 +510,7 @@
       <g:link>http://localhost:8080/paczka/produkt/kabanosy-z-jelenia-200g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11059</g:link>
       <g:title>Kabanosy z jelenia 200g</g:title>
       <g:price>16,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Wędliny</g:product_type>
       <g:gtin>2200000000310</g:gtin>
     </item>
     <item>
@@ -521,7 +522,7 @@
       <g:link>http://localhost:8080/paczka/produkt/kabanosy-wieprzowe/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=11056</g:link>
       <g:title>Kabanosy wieprzowe 120g</g:title>
       <g:price>7,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Wędliny</g:product_type>
       <g:gtin>2200000000309</g:gtin>
     </item>
     <item>
@@ -726,7 +727,7 @@
       <g:link>http://localhost:8080/paczka/produkt/pierogi-ruskie-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10479</g:link>
       <g:title>Pierogi ruskie 500g</g:title>
       <g:price>19,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000505</g:gtin>
     </item>
     <item>
@@ -738,7 +739,7 @@
       <g:link>http://localhost:8080/paczka/produkt/pierogi-ze-szpinakiem-i-serem-feta-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10478</g:link>
       <g:title>Pierogi ze szpinakiem i serem feta 500g</g:title>
       <g:price>19,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000504</g:gtin>
     </item>
     <item>
@@ -750,7 +751,7 @@
       <g:link>http://localhost:8080/paczka/produkt/pierogi-z-kapusta-i-grzybami-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10477</g:link>
       <g:title>Pierogi z kapustą i grzybami 500g</g:title>
       <g:price>18,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000503</g:gtin>
     </item>
     <item>
@@ -762,7 +763,7 @@
       <g:link>http://localhost:8080/paczka/produkt/pierogi-z-miesem-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10476</g:link>
       <g:title>Pierogi z mięsem 500g</g:title>
       <g:price>19,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000502</g:gtin>
     </item>
     <item>
@@ -774,7 +775,7 @@
       <g:link>http://localhost:8080/paczka/produkt/pierogi-z-serem-na-slodko-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10461</g:link>
       <g:title>Pierogi z Serem na słodko 500g</g:title>
       <g:price>19,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000501</g:gtin>
     </item>
     <item>
@@ -786,7 +787,7 @@
       <g:link>http://localhost:8080/paczka/produkt/pyszne-sniadanie-dla-dzieci-z-kociewia/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10074</g:link>
       <g:title>Pyszne śniadania dla dzieci z Kociewia</g:title>
       <g:price>174,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>162,99 PLN</g:sale_price>
       <g:gtin>2200000000238</g:gtin>
     </item>
@@ -799,7 +800,7 @@
       <g:link>http://localhost:8080/paczka/produkt/duze-rodzinne-sniadania-z-kociewia/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10072</g:link>
       <g:title>Duże Rodzinne śniadania z Kociewia</g:title>
       <g:price>224,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>209,99 PLN</g:sale_price>
       <g:gtin>2200000000237</g:gtin>
     </item>
@@ -812,7 +813,7 @@
       <g:link>http://localhost:8080/paczka/produkt/rodzinne-sniadania-z-kociewia/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10070</g:link>
       <g:title>Rodzinne śniadania z Kociewia</g:title>
       <g:price>124,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>114,99 PLN</g:sale_price>
       <g:gtin>2200000000236</g:gtin>
     </item>
@@ -825,7 +826,7 @@
       <g:link>http://localhost:8080/paczka/produkt/paczka-dziczyzny-z-zagrody-szledakow-2-6kg/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10048</g:link>
       <g:title>Paczka dziczyzny z Zagrody Szlędaków (2.5kg)</g:title>
       <g:price>276,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>255,99 PLN</g:sale_price>
       <g:gtin>2200000000030</g:gtin>
     </item>
@@ -838,7 +839,7 @@
       <g:link>http://localhost:8080/paczka/produkt/na-dobry-poczatek-paczka-wedlin-z-zagrody-szledakow-2-9kg/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10043</g:link>
       <g:title>Na Dobry Początek Paczka Wędlin z Zagrody Szlędaków (3.0kg)</g:title>
       <g:price>279,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>265,99 PLN</g:sale_price>
       <g:gtin>2200000000030</g:gtin>
     </item>
@@ -851,7 +852,7 @@
       <g:link>http://localhost:8080/paczka/produkt/srednia-paczka-wedlin-z-zagrody-szledakow-3-7kg/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10041</g:link>
       <g:title>Średnia Paczka Wędlin z Zagrody Szlędaków (4.0kg)</g:title>
       <g:price>379,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>355,99 PLN</g:sale_price>
       <g:gtin>2200000000029</g:gtin>
     </item>
@@ -864,7 +865,7 @@
       <g:link>http://localhost:8080/paczka/produkt/duza-paczka-wedlin-z-zagrody-szledakow/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=10030</g:link>
       <g:title>Duża Paczka Wędlin z Zagrody Szlędaków (5.5kg)</g:title>
       <g:price>526,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:sale_price>492,99 PLN</g:sale_price>
       <g:gtin>2200000000028</g:gtin>
     </item>
@@ -913,7 +914,7 @@
       <g:link>http://localhost:8080/paczka/produkt/kiszka-ziemniaczana-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9847</g:link>
       <g:title>Kiszka Ziemniaczana 500g</g:title>
       <g:price>19,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000413</g:gtin>
     </item>
     <item>
@@ -925,7 +926,7 @@
       <g:link>http://localhost:8080/paczka/produkt/babka-ziemniaczana-400g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9845</g:link>
       <g:title>Babka ziemniaczana 400g</g:title>
       <g:price>19,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000412</g:gtin>
     </item>
     <item>
@@ -1069,7 +1070,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-wiejska-700g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9817</g:link>
       <g:title>Szynka Wiejska 700g</g:title>
       <g:price>44,90 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000316</g:gtin>
     </item>
     <item>
@@ -1081,7 +1082,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-w-ziolach-700g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9815</g:link>
       <g:title>Szynka w Ziołach 700g</g:title>
       <g:price>44,90 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000315</g:gtin>
     </item>
     <item>
@@ -1093,7 +1094,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szyneczka-wojta-600g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9813</g:link>
       <g:title>Szyneczka Wójta 450g</g:title>
       <g:price>29,49 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000314</g:gtin>
     </item>
     <item>
@@ -1105,7 +1106,7 @@
       <g:link>http://localhost:8080/paczka/produkt/poledwica-wiejska-800g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9811</g:link>
       <g:title>Polędwica Wiejska 500g</g:title>
       <g:price>33,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000313</g:gtin>
     </item>
     <item>
@@ -1117,7 +1118,7 @@
       <g:link>http://localhost:8080/paczka/produkt/baleron-wiejski-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9809</g:link>
       <g:title>Baleron Wiejski 500g</g:title>
       <g:price>31,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000312</g:gtin>
     </item>
     <item>
@@ -1201,7 +1202,7 @@
       <g:link>http://localhost:8080/paczka/produkt/chipsy-wieprzowe-suszone-100g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9794</g:link>
       <g:title>Chipsy wieprzowe suszone 100g</g:title>
       <g:price>24,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Kasze, mąki</g:product_type>
       <g:gtin>2200000000305</g:gtin>
     </item>
     <item>
@@ -1874,7 +1875,7 @@
       <g:link>http://localhost:8080/paczka/produkt/szynka-z-dzika-300g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9540</g:link>
       <g:title>Szynka z dzika 500g</g:title>
       <g:price>68,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000024</g:gtin>
     </item>
     <item>
@@ -1934,7 +1935,7 @@
       <g:link>http://localhost:8080/paczka/produkt/poledwica-dojrzewajaca-z-jelenia-300g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9529</g:link>
       <g:title>Polędwica dojrzewająca z jelenia 500g</g:title>
       <g:price>154,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000019</g:gtin>
     </item>
     <item>
@@ -2078,7 +2079,7 @@
       <g:link>http://localhost:8080/paczka/produkt/karkowka-marynowana-na-grilla-500g/?utm_source=facebook&amp;utm_campaign=productfeed&amp;utm_medium=cpc&amp;utm_term=9504</g:link>
       <g:title>Karkówka marynowana na grilla 500g</g:title>
       <g:price>31,99 PLN</g:price>
-      <g:product_type>Home &amp;gt; Paczki Gospodarza</g:product_type>
+      <g:product_type>Home &amp;gt; Dania gotowe</g:product_type>
       <g:gtin>2200000000008</g:gtin>
     </item>
     <item>

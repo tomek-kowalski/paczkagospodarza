@@ -1,0 +1,62 @@
+.breadcrumb_last, #breadcrumbs span span {
+    color: #000000 !important;
+}
+.woocommerce-form-coupon-toggle {
+    display:none;
+}
+.woocommerce .woocommerce-info:before, .woocommerce-page .woocommerce-info:before {
+    display:none!important
+}
+.woocommerce .woocommerce-info, .woocommerce-page .woocommerce-info {
+    border-top:none;
+}
+@media(max-width:979px) {
+    .page-title-inner {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        background-color: #EBEBEB;
+    }
+    form.checkout.woocommerce-checkout {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10px;
+    }
+    h3.entry-title-main {
+        display: flex;
+        color: #000000;
+        font-size: 22px;
+        line-height: 25px;
+        font-weight: 700;
+        letter-spacing: 0px;
+        text-transform: capitalize;
+        float: left;
+        width: auto;
+        opacity: 1;
+        align-items: center;
+        margin: 10px 15px 10px 15px;
+        order: 2;
+    }
+    .breadcrumbs {
+        order: 1;
+        background-color: #ffffff;
+    }
+    .breadcrumbs p {
+        margin-left: 15px !important;
+        letter-spacing: 0px;
+    }
+    .breadcrumbs:before {
+        content: '';
+        position: absolute;
+        border-top: 1px solid #eeeeee;
+        width: 100%;
+    }
+    .woocommerce {
+        margin: 0 10px;
+    }
+    .info-text {
+        font-size:16px!important;
+        font-weight:600!important;
+
+    }
+}

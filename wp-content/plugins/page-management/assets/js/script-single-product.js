@@ -1,7 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
     function slider_today_products(sliderContainer) {
         const find_frame = document.querySelector('.custom-single-slider .woocommerce .columns-4');
+
+        if(find_frame ) {
         const columns = sliderContainer.querySelectorAll('ul.products.columns-4 li');
+
+
         const prev = document.createElement('div');
         const next = document.createElement('div');
 
@@ -11,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         find_frame.appendChild(prev);
         find_frame.appendChild(next);
 
-        let elementsToShow = 4; // Default number of elements to show
+        let elementsToShow = 4; 
 
         const transitionDuration = 1000; 
         const transitionTimingFunction = 'ease'; 
@@ -51,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }
             updateVisibility();
         });
+    }
     }
 
     const find_trigger = document.querySelector('.custom-single-slider');

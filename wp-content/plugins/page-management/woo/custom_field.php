@@ -785,10 +785,20 @@ private function get_product_query_args($paged) {
 private function get_product_general_archive_query_args($paged) {
     global $wp_query;
     $category = $wp_query->get_queried_object(); 
-    $cat_id = '';
-    if($category) {
+
+    if ($category instanceof WP_Term) {
         $cat_id = $category->term_id;
+    } else {
+        return array(
+            'post_type'      => 'product',
+            'post_status'    => 'publish',  
+            'paged'          => $paged,
+            'posts_per_page' => 16,
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+        );
     }
+
     $select = isset($_POST['select']) ? sanitize_text_field($_POST['select']) : 'menu_order';
     
     if ($select === 'date') {
@@ -831,26 +841,31 @@ private function get_product_general_archive_query_args($paged) {
         );
     }
 }
+
 
 private function get_product_general_archive_ajax_query_args($paged) {
-    $cat_id = isset($_POST['termId']) ? sanitize_text_field($_POST['termId']) : '0';
+    $cat_id = isset($_POST['termId']) ? sanitize_text_field($_POST['termId']) : '';
 
     $select = isset($_POST['select']) ? sanitize_text_field($_POST['select']) : 'menu_order';
-    
+
+    $tax_query = array();
+
+    if (!empty($cat_id)) {
+        $tax_query = array(
+            array(
+                'taxonomy' => 'product_cat',
+                'field'    => 'term_id',
+                'terms'    => $cat_id,
+            ),
+        );
+    }
     if ($select === 'date') {
         return array(
             'post_type'      => 'product',
             'post_status'    => 'publish',  
             'paged'          => $paged,
             'posts_per_page' => 16,
-            'tax_query'      => array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field'    => 'term_id',
-                    'terms'    => $cat_id,
-                ),
-            ),
-            'orderby'        => 'date',
+            'tax_query'      => $tax_query,
             'order'          => 'DESC',
         );
     } else {
@@ -862,13 +877,7 @@ private function get_product_general_archive_ajax_query_args($paged) {
             'post_status'    => 'publish',  
             'paged'          => $paged,
             'posts_per_page' => 16,
-            'tax_query'      => array(
-                array(
-                    'taxonomy' => 'product_cat',
-                    'field'    => 'term_id',
-                    'terms'    => $cat_id,
-                ),
-            ),
+            'tax_query'      => $tax_query,
             'meta_key'       => $meta_key,
             'orderby'        => array(
                 'menu_order'      => 'ASC',
@@ -877,6 +886,7 @@ private function get_product_general_archive_ajax_query_args($paged) {
         );
     }
 }
+
 
 
 private function process_product_query($args) {
@@ -1057,8 +1067,6 @@ public function display_pagination_general_archive() {
 
     $this_args = $this-> get_product_general_archive_ajax_query_args($paged);
     $wp_query = new WP_Query($this_args);
-
-    error_log('1');
 
     $prev_arrow = '&larr;';
     $next_arrow = '&rarr;';
@@ -1252,7 +1260,7 @@ public function ajax_script() {
         ));
 	}
 
-    if (is_product_category() && !is_product_category($this->get_category_id_with_custom_field()) ) {
+    if (is_product_category() || is_shop() && !is_product_category($this->get_category_id_with_custom_field()) ) {
 		wp_enqueue_script('woo-all-category-ajax', PM_URL . '/assets/js/woo-all-category-ajax.js', array(), null, false);
 
         wp_localize_script('woo-all-category-ajax', 'filterCatAll', array(
@@ -1293,6 +1301,15 @@ public function ajax_script() {
 
         wp_localize_script( 'woo-scripts', 'toTheCart', array(
             'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        ) );
+    }
+
+    if(is_cart()) {
+        wp_enqueue_script('cart-scripts', PM_URL . 'assets/js/cart_script.js',array(),null, false);
+
+        wp_localize_script( 'cart-scripts', 'inTheCart', array(
+            'ajaxurl' => admin_url( 'admin-ajax.php' ),
+             'nonce'   => wp_create_nonce('custom_product_filter'),
         ) );
     }
 }
