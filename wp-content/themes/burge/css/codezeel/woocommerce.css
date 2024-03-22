@@ -727,8 +727,8 @@ p.demo_store {
 .woocommerce-page .woocommerce-error,
 .woocommerce-page .woocommerce-info,
 .woocommerce-page .woocommerce-message {
-	padding:1em 1em 1em 3.5em!important;
-	margin:0 0 2em!important;
+	padding:1em 1em 1em 3.5em;
+	margin:0 0 2em;
 	position:relative;
 	background:#fff;
 	border:1px solid #e5e5e5;
@@ -2668,7 +2668,6 @@ ul.products .yith-wcwl-add-to-wishlist {
 .woocommerce form .form-row,
 .woocommerce-page form .form-row {
 	padding:3px 0;
-	margin:0 0 6px;
 }
 .woocommerce form .form-row[placeholder]:focus::-webkit-input-placeholder,
 .woocommerce-page form .form-row[placeholder]:focus::-webkit-input-placeholder {
@@ -2679,12 +2678,6 @@ ul.products .yith-wcwl-add-to-wishlist {
 	-khtml-opacity:0;
 	-webkit-opacity:0;
 	-moz-opacity:0;
-}
-.woocommerce form .form-row label,
-.woocommerce-page form .form-row label {
-	line-height: 2em;
-    color: #000000;
-    font-weight: 500;
 }
 .woocommerce form .form-row label.hidden,
 .woocommerce-page form .form-row label.hidden {
@@ -2781,13 +2774,6 @@ ul.products .yith-wcwl-add-to-wishlist {
 	margin:0;
 	padding:0;
 }
-.woocommerce ul#shipping_method li,
-.woocommerce-page ul#shipping_method li {
-	margin:0;
-	padding:.25em 22px .25em;
-	text-indent:-22px;
-	list-style:none outside;
-}
 .woocommerce ul#shipping_method .amount,
 .woocommerce-page ul#shipping_method .amount {
 	font-weight:700;
@@ -2829,8 +2815,8 @@ ul.products .yith-wcwl-add-to-wishlist {
 	zoom:1;
 	border:1px solid #e5e5e5;
 	list-style:outside none none;
-	margin:0;
-	padding:30px;
+	margin: 39px 0px 0px 0px;
+	padding:10px;
 	text-align:left;
 }
 .woocommerce #payment ul.payment_methods:after,

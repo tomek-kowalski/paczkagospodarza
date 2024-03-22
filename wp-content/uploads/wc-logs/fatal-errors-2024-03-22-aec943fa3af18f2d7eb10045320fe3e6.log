@@ -1,0 +1,33 @@
+2024-03-22T01:25:41+00:00 CRITICAL Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "add_mailpoet_checkbox" not found or invalid function name in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php:324
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#2 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\checkout\payment.php(21): do_action('woocommerce_rev...')
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\xampp\\htdocs...')
+#4 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-template-functions.php(2392): wc_get_template('checkout/paymen...', Array)
+#5 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): woocommerce_checkout_payment('')
+#6 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#7 E:\xampp\htdocs\paczka\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#8 E:\xampp\htdocs\paczka\wp-content\themes\burge\woocommerce\checkout\form-checkout.php(59): do_action('woocommerce_che...')
+#9 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include('E:\\xampp\\htdocs...')
+#10 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(316): wc_get_template('checkout/form-c...', Array)
+#11 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\shortcodes\class-wc-shortcode-checkout.php(67): WC_Shortcode_Checkout::checkout()
+#12 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(72): WC_Shortcode_Checkout::output('')
+#13 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\includes\class-wc-shortcodes.php(95): WC_Shortcodes::shortcode_wrapper(Array, '')
+#14 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(433): WC_Shortcodes::checkout('', '', 'woocommerce_che...')
+#15 [internal function]: do_shortcode_tag(Array)
+#16 E:\xampp\htdocs\paczka\wp-includes\shortcodes.php(273): preg_replace_callback('/\\[(\\[?)(woocom...', 'do_shortcode_ta...', '[woocommerce_ch...')
+#17 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): do_shortcode('[woocommerce_ch...')
+#18 E:\xampp\htdocs\paczka\wp-includes\plugin.php(205): WP_Hook->apply_filters('[woocommerce_ch...', Array)
+#19 E:\xampp\htdocs\paczka\wp-includes\post-template.php(256): apply_filters('the_content', '<!-- wp:shortco...')
+#20 E:\xampp\htdocs\paczka\wp-content\themes\burge\content-page.php(16): the_content()
+#21 E:\xampp\htdocs\paczka\wp-includes\template.php(792): require('E:\\xampp\\htdocs...')
+#22 E:\xampp\htdocs\paczka\wp-includes\template.php(725): load_template('E:\\xampp\\htdocs...', false, Array)
+#23 E:\xampp\htdocs\paczka\wp-includes\general-template.php(206): locate_template(Array, true, false, Array)
+#24 E:\xampp\htdocs\paczka\wp-content\themes\burge\page.php(27): get_template_part('content', 'page')
+#25 E:\xampp\htdocs\paczka\wp-includes\template-loader.php(106): include('E:\\xampp\\htdocs...')
+#26 E:\xampp\htdocs\paczka\wp-blog-header.php(19): require_once('E:\\xampp\\htdocs...')
+#27 E:\xampp\htdocs\paczka\index.php(17): require('E:\\xampp\\htdocs...')
+#28 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php on line 324
+

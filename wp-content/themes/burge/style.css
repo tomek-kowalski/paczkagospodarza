@@ -234,10 +234,6 @@ strong {
 strong {
 	color: #262626;
 }
-label {
-    color: #262626;
-    font-weight: 500;
-}
 cite,
 dfn,
 em,
@@ -6140,10 +6136,6 @@ input::-webkit-inner-spin-button {
 	-webkit-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	-ms-transition: all 0.3s ease 0s;
-}
-.woocommerce-checkout h3 {
-	text-transform: uppercase;
-	font-weight: 600;
 }
 #order_review_heading {
 	margin-top: 30px;

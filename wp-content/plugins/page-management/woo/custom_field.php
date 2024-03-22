@@ -88,7 +88,54 @@ function __construct() {
     add_action('init', [$this, 'remove_woocommerce_rating']);
     add_action( 'woocommerce_after_add_to_cart_button', [$this,'price_based_on_quantity_on_single'] );
     add_filter( 'woocommerce_product_single_add_to_cart_text', [$this,'change_add_to_cart_button_text'] );
+
+	add_filter( 'woocommerce_order_button_html', [$this,'wc_remove_woocommerce_order_button_html'] );   
+    add_action( 'woocommerce_review_order_before_payment',[$this, 'wc_output_payment_button'] );
+    add_action('woocommerce_review_order_before_payment', [$this, 'zn_kc_move_terms_and_conditions'], 90);
+    
+    remove_action('woocommerce_after_checkout_billing_form', [$this,'mailpoet_checkbox_field_for_woocommerce']);
+    add_action('woocommerce_review_order_before_payment', [$this,'add_mailpoet_checkbox']);
 }
+
+
+
+function add_mailpoet_checkbox() {
+    ?>
+    <p class="form-row woocommerce-validated" id="mailpoet_woocommerce_checkout_optin_field" data-priority="">
+    <span class="woocommerce-input-wrapper">				
+    <label class="checkbox woocommerce-form__label woocommerce-form__label-for-checkbox checkbox" data-automation-id="woo-commerce-subscription-opt-in">
+    <input type="checkbox" class="input-checkbox woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="mailpoet_woocommerce_checkout_optin" id="mailpoet_woocommerce_checkout_optin" value="1">
+    <span class="optional">Chcę otrzymywać newsletter od Gospodarza z promocjami.&nbsp;(opcjonalne)</span>
+    </label>
+    </span>
+    </p>
+    <?php
+}
+
+function wc_output_payment_button() 
+	{
+	    $order_button_text = apply_filters( 'woocommerce_order_button_text', __( 'Place order', 'woocommerce' ) );
+        echo '<div class="btn-order">';
+	    echo '<input id="place_order" class="button alt" name="woocommerce_checkout_place_order" type="submit" value="' . esc_attr( $order_button_text ) . '" data-value="' . esc_attr( $order_button_text ) . '" />';
+        echo '</div>';
+	}
+
+	function wc_remove_woocommerce_order_button_html() 
+	{
+	    return '';
+	}
+      
+
+    function zn_kc_move_terms_and_conditions()
+    {
+       ?>
+       <p class="form-row terms wc-terms-and-conditions">
+          <input type="checkbox" class="input-checkbox" name="terms" <?php checked( apply_filters( 'woocommerce_terms_is_checked_default', isset( $_POST['terms'] ) ), true ); ?> id="terms" />
+          <label for="terms" class="checkbox"><?php printf( __( 'I&rsquo;ve read and accept the <a href="%s" target="_blank">terms &amp; conditions</a>', 'woocommerce' ), esc_url( wc_get_page_permalink( 'terms' ) ) ); ?> <span class="required">*</span></label>
+          <input type="hidden" name="terms-field" value="1" />
+       </p>
+       <?php
+    }
 
 
 public function change_add_to_cart_button_text( $text ) {

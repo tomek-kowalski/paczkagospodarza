@@ -57,6 +57,8 @@ if (!defined('ABSPATH')) {
 
             $product_loop = new WP_query($args);
 
+			error_log('polecane: ' . print_r($product_loop, true));
+
 			if ($product_loop->have_posts()) {
 				do_action('woocommerce_before_shop_loop');
 				woocommerce_product_loop_start();
