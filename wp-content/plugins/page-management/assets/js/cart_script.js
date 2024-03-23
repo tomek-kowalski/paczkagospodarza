@@ -1,21 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
-    document.querySelectorAll('.quantity .plus').forEach(function (button) {
-        button.addEventListener('click', function () {
+    function setupCartQuantityButtons() {
+        jQuery(document.body).on('click', '.quantity .plus', function () {
+            var button = this;
             setTimeout(function () {
                 calculatePrices(button.closest('.cart_item'));
                 updateCartTotal();
             }, 100);
         });
-    });
 
-    document.querySelectorAll('.quantity .minus').forEach(function (button) {
-        button.addEventListener('click', function () {
+        jQuery(document.body).on('click', '.quantity .minus', function () {
+            var button = this;
             setTimeout(function () {
                 calculatePrices(button.closest('.cart_item'));
                 updateCartTotal();
             }, 100); 
         });
-    });
+    }
 
     function calculatePrices(cartItem) {
         var price = parseFloat(cartItem.querySelector('.product-price .woocommerce-Price-amount').innerText.replace(',', '.'));
@@ -48,15 +48,18 @@ document.addEventListener("DOMContentLoaded", function () {
     var breadcrumbSpan = document.querySelector('#breadcrumbs span');
     breadcrumbSpan.innerHTML = breadcrumbSpan.innerHTML.replace('»', '/');
 
-    var tr = document.querySelector('.shop_table tbody tr:last-child');
+    function tr () {
 
-    if(tr) {
-        var fragment = document.createDocumentFragment();
-        while (tr.firstChild) {
-            fragment.appendChild(tr.firstChild);
+        var tr = document.querySelector('.shop_table tbody tr:last-child');
+
+        if (tr) {
+            var fragment = document.createDocumentFragment();
+            while (tr.firstChild) {
+                fragment.appendChild(tr.firstChild);
+            }
+            
+            tr.parentNode.replaceChild(fragment, tr);
         }
-        
-        tr.parentNode.replaceChild(fragment, tr);
     }
 
     function add_total_text(subtotalElement) {
@@ -67,5 +70,22 @@ document.addEventListener("DOMContentLoaded", function () {
         subtotalElement.insertBefore(newElement, subtotalElement.firstChild);
     }
 
-    updateCartTotal();
+    function reloadRazem() {
+        var subtotalElements = document.querySelectorAll('.product-subtotal .woocommerce-Price-amount');
+        subtotalElements.forEach(function (element) {
+            if (!element.closest('.product-subtotal').querySelector('.total-text')) {
+                add_total_text(element.closest('.product-subtotal'));
+            }
+        });
+    }
+    setupCartQuantityButtons();
+
+    jQuery(document).ajaxComplete(function() {
+        reloadRazem();
+        tr();
+    });
+
+    reloadRazem();
+    tr();
+
 });

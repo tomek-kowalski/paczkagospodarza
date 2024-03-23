@@ -46,6 +46,7 @@ function __construct() {
     add_action('woocommerce_loop_add_to_cart_link', [$this,'add_to_cart_button_to_products_template'], 10, 3);
     add_filter('loop_shop_per_page', [$this,'product_pagination_by_category']);
     add_filter('woocommerce_breadcrumb_defaults', [$this,'custom_change_breadcrumb_home_text']);
+
     add_action('wp_ajax_custom_product_filter', [$this, 'custom_product_filter']);
     add_action('wp_ajax_nopriv_custom_product_filter', [$this, 'custom_product_filter']);    
     add_action('wp_ajax_display_pagination', [$this, 'display_pagination']);
@@ -57,8 +58,7 @@ function __construct() {
     add_action('wp_ajax_nopriv_display_pagination_archive', [$this, 'display_pagination_archive']); 
     add_action('wp_ajax_template_count_ajax_archive', [$this, 'template_count_ajax_archive']);
     add_action('wp_ajax_nopriv_template_count_ajax_archive', [$this, 'template_count_ajax_archive']); 
-    add_action('wp_ajax_custom_product_filter_today', [$this, 'custom_product_filter_today']);
-    add_action('wp_ajax_nopriv_custom_product_filter_today', [$this, 'custom_product_filter_today']);    
+  
 
     add_action('wp_ajax_template_count_ajax', [$this, 'template_count_ajax']);
     add_action('wp_ajax_nopriv_template_count_ajax', [$this, 'template_count_ajax']); 
@@ -67,16 +67,20 @@ function __construct() {
     add_action('wp_ajax_display_pagination_general_archive', [$this, 'display_pagination_general_archive']);
     add_action('wp_ajax_nopriv_display_pagination_general_archive', [$this, 'display_pagination_general_archive']);
     
+    add_action('wp_ajax_custom_product_filter_today', [$this, 'custom_product_filter_today']);
+    add_action('wp_ajax_nopriv_custom_product_filter_today', [$this, 'custom_product_filter_today']);  
     add_action('wp_ajax_display_pagination_today', [$this, 'display_pagination_today']);
     add_action('wp_ajax_nopriv_display_pagination_today', [$this, 'display_pagination_today']); 
     add_action('wp_ajax_template_count_ajax_today', [$this, 'template_count_ajax_today']);
     add_action('wp_ajax_nopriv_template_count_ajax_today', [$this, 'template_count_ajax_today']); 
 
-    add_action('wp_ajax_template_count_ajax_search', [$this, 'template_count_ajax_search']);
-    add_action('wp_ajax_nopriv_template_count_ajax_search', [$this, 'template_count_ajax_search']); 
+
     add_action('wp_ajax_template_count_ajax_category_selected', [$this, 'template_count_ajax_category_selected']);
     add_action('wp_ajax_nopriv_template_count_ajax_category_selected', [$this, 'template_count_ajax_category_selected']); 
 
+
+    add_action('wp_ajax_template_count_ajax_search', [$this, 'template_count_ajax_search']);
+    add_action('wp_ajax_nopriv_template_count_ajax_search', [$this, 'template_count_ajax_search']); 
     add_action('wp_ajax_custom_product_search_filter', [$this, 'custom_product_search_filter']);
     add_action('wp_ajax_nopriv_custom_product_search_filter', [$this, 'custom_product_search_filter']);    
     add_action('wp_ajax_display_pagination_ajax_search', [$this, 'display_pagination_ajax_search']);
@@ -1307,14 +1311,16 @@ public function ajax_script() {
         ));
 	}
 
-    if (is_product_category() || is_shop() && !is_product_category($this->get_category_id_with_custom_field()) ) {
-		wp_enqueue_script('woo-all-category-ajax', PM_URL . '/assets/js/woo-all-category-ajax.js', array(), null, false);
-
+    if ((is_product_category() || is_shop()) && !is_product_category($this->get_category_id_with_custom_field()) && !is_search() && !is_post_type_archive('dzis-w-promocji') 
+    && !(is_post_type_archive('polecane-w-tygodniu'))) {
+        wp_enqueue_script('woo-all-category-ajax', PM_URL . '/assets/js/woo-all-category-ajax.js', array(), null, false);
+    
         wp_localize_script('woo-all-category-ajax', 'filterCatAll', array(
             'ajaxurl' => admin_url('admin-ajax.php'),
             'nonce'   => wp_create_nonce('custom_product_filter'),
         ));
-	}
+    }
+    
 
     if (is_post_type_archive('polecane-w-tygodniu')) {
 		wp_enqueue_script('woo-archive-ajax', PM_URL . '/assets/js/woo-archive-ajax.js', array(), null, false);

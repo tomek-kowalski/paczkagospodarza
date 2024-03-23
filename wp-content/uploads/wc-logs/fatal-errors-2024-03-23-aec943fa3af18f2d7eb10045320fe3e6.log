@@ -1,0 +1,13 @@
+2024-03-23T11:04:10+00:00 CRITICAL Uncaught InvalidArgumentException: Unidentified action 1192236 in E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php:1001
+Stack trace:
+#0 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueCleaner.php(127): ActionScheduler_DBStore->mark_failure('1192236')
+#1 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueCleaner.php(141): ActionScheduler_QueueCleaner->mark_failures(300)
+#2 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\abstracts\ActionScheduler_Abstract_QueueRunner.php(160): ActionScheduler_QueueCleaner->clean(300)
+#3 E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\ActionScheduler_QueueRunner.php(130): ActionScheduler_Abstract_QueueRunner->run_cleanup()
+#4 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(324): ActionScheduler_QueueRunner->run('WP Cron')
+#5 E:\xampp\htdocs\paczka\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#6 E:\xampp\htdocs\paczka\wp-includes\plugin.php(565): WP_Hook->do_action(Array)
+#7 E:\xampp\htdocs\paczka\wp-cron.php(191): do_action_ref_array('action_schedule...', Array)
+#8 {main}
+  thrown in E:\xampp\htdocs\paczka\wp-content\plugins\woocommerce\packages\action-scheduler\classes\data-stores\ActionScheduler_DBStore.php on line 1001
+
