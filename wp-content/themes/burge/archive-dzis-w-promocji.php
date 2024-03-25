@@ -1,4 +1,4 @@
-<?php
+	<?php
 /**
  * The Template for displaying product archives, including the main shop page which is a post type archive.
  *
@@ -72,8 +72,9 @@ if (!defined('ABSPATH')) {
 			?>
 		</div>
 	</div>
+
 	<?php
-		$woo = new My_woo();
+		$woo = new My_woo(); 
 		$woo->display_pagination_template_today();
 		?>
 	<?php get_footer(); ?>

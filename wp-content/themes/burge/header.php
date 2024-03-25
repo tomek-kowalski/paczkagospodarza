@@ -179,7 +179,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 										<?php if (get_option('tm_show_topbar_contact') == 'yes') : ?>
 										<div class="header-contact-cms">
 			
-											<div class="header-cart headercart-block">
+											<div class="header-cart headercart-block header-cart-trigger">
 											<?php 
 
 											if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) && is_active_sidebar('header-widget') ) : ?>											

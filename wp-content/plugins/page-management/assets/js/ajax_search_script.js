@@ -1,14 +1,17 @@
 jQuery(document).ready(function ($) {
     var liveSearchActivated = false;
-    var resultsAppended = false;
+    var xhr; 
 
     function activateLiveSearch() {
-        console.log('Live search activated!');
         liveSearchActivated = true;
     }
 
     function performLiveSearch(searchQuery) {
-        $.ajax({
+        if (xhr && xhr.readyState !== 4) {
+            xhr.abort();
+        }
+
+        xhr = $.ajax({
             type: 'POST',
             url: toSearch.ajaxurl,
             data: {
@@ -17,27 +20,22 @@ jQuery(document).ready(function ($) {
                 nonce: toSearch.nonce,
             },
             success: function (response) {
-                console.log('AJAX Response:', response);
-    
                 if (response.success) {
                     var resultsHTML = response.data.results;
-    
-                    $('#search-results').html(resultsHTML);
-                } else {
-                    console.error('AJAX Error:', response.data);
+
+                    if (resultsHTML.includes('No products found')) {
+                        $('#search-results').html('<p>No products found</p>');
+                    } else {
+                        $('#search-results').html(resultsHTML);
+                    }
                 }
             },
         });
     }
 
     function close_search() {
-
-        $(document).on('click', '.close-serch', function() {
-            const search_data = $('#search-results');
-            search_data.html('');
-        });
+        $('#search-results').html('');
     }
-
 
     $('#searchform').on('input', function (event) {
         event.preventDefault();
@@ -48,12 +46,14 @@ jQuery(document).ready(function ($) {
             activateLiveSearch();
         }
 
-        if (searchQuery.length >= 3) {
+        if (searchQuery.length >= 4) {
             performLiveSearch(searchQuery);
-            close_search();
         } else {
-            $('#search-results').html('');
+            close_search(); 
         }
     });
-});
 
+    $(document).on('click', '.close-serch', function() {
+        close_search();
+    });
+});

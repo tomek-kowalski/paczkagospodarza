@@ -99,6 +99,147 @@ function __construct() {
     
     remove_action('woocommerce_after_checkout_billing_form', [$this,'mailpoet_checkbox_field_for_woocommerce']);
     add_action('woocommerce_review_order_before_payment', [$this,'add_mailpoet_checkbox']);
+
+    add_action('wp_ajax_update_mini_cart', [$this,'update_mini_cart']);
+    add_action('wp_ajax_nopriv_update_mini_cart', [$this,'update_mini_cart']);
+
+    add_action('wp_ajax_update_mini_cart_mobile', [$this,'update_mini_cart_mobile']);
+    add_action('wp_ajax_nopriv_update_mini_cart_mobile', [$this,'update_mini_cart_mobile']);
+
+    add_action('wp_ajax_add_to_cart_button_to_products_template_ajax', [$this,'add_to_cart_button_to_products_template_ajax']);
+    add_action('wp_ajax_nopriv_add_to_cart_button_to_products_template_ajax', [$this,'add_to_cart_button_to_products_template_ajax']);
+
+    add_action('wp_ajax_substracting_item', [$this,'substracting_item']);
+    add_action('wp_ajax_nopriv_substracting_item', [$this,'substracting_item']);
+}
+
+function update_mini_cart_mobile() {
+    ob_start();
+
+    $mobile_data	= wp_get_recent_posts(array(
+        'post_type'		   => 'mobile',
+        'numberposts'	   =>  1,
+        'post_status' 	   => 'publish',
+        'orderby'          => 'post_date',
+        'order'            => 'DESC',
+));
+
+    ob_start();
+    ?>
+    <div class="header-cart headercart-block footer-cart-trigger">
+        <div class="cart togg">
+            <?php
+            global $woocommerce;
+            $cart_count = $woocommerce->cart->cart_contents_count;
+            $cart_total = $woocommerce->cart->get_cart_total();
+            ?>
+            <div class="shopping_cart tog" title="<?php esc_html_e('View your shopping cart', 'burge'); ?>">
+                <a class="cart-content" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php esc_html_e('View your shopping cart', 'burge'); ?>">
+                    <div class="cart-price">
+                        <?php
+                        foreach ($mobile_data as $data) :
+                            $postid = $data['ID'];
+                            $image_cart_url = get_post_meta($postid, 'mobile_ic_3', true);
+                            $text_cart      = get_post_meta($postid, 'mobile_text_3', true);
+                            $output = '';
+
+
+                            if ($image_cart_url) {
+                                $output .= '<img class="img-cart" src="' . esc_url($image_cart_url) . '" alt="Koszyk" >';
+                            }
+                            if ($text_cart) {
+                                $output .= '<div class="text-cart">'  . $text_cart . '</div>';
+                            }
+
+                            echo $output;
+                        endforeach;
+                        ?>
+                        <div class="cart-total"><?php echo $cart_total; ?></div>
+                        <div class="cart-qty"><?php echo sprintf(_n('%d', '%d', $cart_count, 'burge'), $cart_count); ?></div>
+                    </div>
+                </a>
+            </div>
+            <?php
+            ob_start();
+            woocommerce_mini_cart();
+            $cart_widget_html = ob_get_clean();
+            ?>
+            <aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content">
+            <div class="widget_shopping_cart_content">
+                <?php echo $cart_widget_html; ?>
+            </div>
+            </aside>
+        </div>
+    </div>
+    <?php
+    $mini_cart_html = ob_get_clean();
+    wp_send_json_success(array(
+        'mini_cart_html' => $mini_cart_html,
+        'cart_widget_html' => $cart_widget_html
+    ));
+    die();
+}
+
+function update_mini_cart() {
+    ob_start();
+
+    $header_data = wp_get_recent_posts(array(
+        'post_type' => 'header',
+        'numberposts' => 1,
+        'post_status' => 'publish',
+        'orderby' => 'post_date',
+        'order' => 'DESC',
+    ));
+
+    ob_start();
+    ?>
+    <div class="header-cart headercart-block header-cart-trigger">
+        <div class="cart togg">
+            <?php
+            global $woocommerce;
+            $cart_count = $woocommerce->cart->cart_contents_count;
+            $cart_total = $woocommerce->cart->get_cart_total();
+            ?>
+            <div class="shopping_cart tog" title="<?php esc_html_e('View your shopping cart', 'burge'); ?>">
+                <a class="cart-content" href="<?php echo esc_url(wc_get_cart_url()); ?>" title="<?php esc_html_e('View your shopping cart', 'burge'); ?>">
+                    <div class="cart-price">
+                        <?php
+                        foreach ($header_data as $data) :
+                            $postid = $data['ID'];
+                            $image_cart_url = get_post_meta($postid, 'header_ndt_2', true);
+                            if ($image_cart_url) {
+                                $image_cart_id = attachment_url_to_postid($image_cart_url);
+                                $image_cart_size = wp_get_attachment_image_src($image_cart_id, 'my-icon-size');
+                                if ($image_cart_size) {
+                                    echo '<img class="img-cart" src="' . esc_url($image_cart_size[0]) . '" alt="Koszyk" width="' . esc_attr($image_cart_size[1]) . '" height="' . esc_attr($image_cart_size[2]) . '">';
+                                }
+                            }
+                        endforeach;
+                        ?>
+                        <div class="cart-total"><?php echo $cart_total; ?></div>
+                        <div class="cart-qty"><?php echo sprintf(_n('%d', '%d', $cart_count, 'burge'), $cart_count); ?></div>
+                    </div>
+                </a>
+            </div>
+            <?php
+            ob_start();
+            woocommerce_mini_cart();
+            $cart_widget_html = ob_get_clean();
+            ?>
+            <aside id="woocommerce_widget_cart-1" class="widget woocommerce widget_shopping_cart tab_content">
+            <div class="widget_shopping_cart_content">
+                <?php echo $cart_widget_html; ?>
+            </div>
+            </aside>
+        </div>
+    </div>
+    <?php
+    $mini_cart_html = ob_get_clean();
+    wp_send_json_success(array(
+        'mini_cart_html' => $mini_cart_html,
+        'cart_widget_html' => $cart_widget_html
+    ));
+    die();
 }
 
 
@@ -1044,6 +1185,7 @@ public function display_pagination_template_today() {
 
     if (!empty($pagination)) {
         echo '<nav class="woocommerce-pagination"><ul class="page-numbers">';
+        echo '<div  class="template-height"></div>';
         echo $pagination;
         echo '</ul></nav>';
     }
@@ -1105,7 +1247,9 @@ public function display_pagination_template_archive() {
     $pagination = paginate_links($args);
 
     if (!empty($pagination)) {
+       
         echo '<nav class="woocommerce-pagination"><ul class="page-numbers">';
+        echo '<div  class="template-height"></div>';
         echo $pagination;
         echo '</ul></nav>';
     }
@@ -1320,7 +1464,6 @@ public function ajax_script() {
             'nonce'   => wp_create_nonce('custom_product_filter'),
         ));
     }
-    
 
     if (is_post_type_archive('polecane-w-tygodniu')) {
 		wp_enqueue_script('woo-archive-ajax', PM_URL . '/assets/js/woo-archive-ajax.js', array(), null, false);
@@ -1349,7 +1492,9 @@ public function ajax_script() {
         ));
 	}
 
-    if(is_front_page()) {
+    
+    if (is_post_type_archive('polecane-w-tygodniu') || is_post_type_archive('dzis-w-promocji') || is_product_category($this->get_category_id_with_custom_field())
+    || is_product_category() || is_shop() || is_search() || is_front_page() || is_cart() || is_product()) {
         wp_enqueue_script('woo-scripts', PM_URL . 'assets/js/ajax_script.js',array(),null, false);
 
         wp_localize_script( 'woo-scripts', 'toTheCart', array(
@@ -1366,25 +1511,59 @@ public function ajax_script() {
         ) );
     }
 }
-
-public function adding_item() {
-
+public function substracting_item() {
     if (isset($_POST['product_id'])) {
         $product_id = absint($_POST['product_id']);
         $product = wc_get_product($product_id);
-        //error_log($product_id);
+
+        if ($product) {
+            foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+                if ($product_id == $cart_item['product_id']) {
+                    $quantity = $cart_item['quantity'];
+                    $new_quantity = max(0, $quantity - 1);
+                    WC()->cart->set_quantity($cart_item_key, $new_quantity);
+
+                    $cart_count = WC()->cart->get_cart_contents_count();
+                    wp_send_json_success(array('message' => 'Product quantity subtracted successfully.', 'cart_count' => $cart_count, 'new_quantity' => $new_quantity));
+                    exit(); 
+                }
+            }
+            wp_send_json_error(array('message' => 'Product is not in the cart.'));
+            exit();
+        } else {
+            wp_send_json_error(array('message' => 'Invalid product ID.'));
+            exit(); 
+        }
+    } else {
+        wp_send_json_error(array('message' => 'Product ID not provided.'));
+        exit(); 
+    }
+}
+
+
+
+
+
+public function adding_item() {
+    if (isset($_POST['product_id'])) {
+        $product_id = absint($_POST['product_id']);
+        $product = wc_get_product($product_id);
 
         if ($product) {
             WC()->cart->add_to_cart($product_id);
-            wp_send_json_success(array('message' => 'Product added to cart successfully.'));
+            ob_start();
+            woocommerce_mini_cart();
+            $mini_cart_html = ob_get_clean();
+            wp_send_json_success(array('message' => 'Product added to cart successfully.', 'mini_cart_html' => $mini_cart_html));
         } else {
             wp_send_json_error(array('message' => 'Product cannot be added to cart.'));
         }
     } else {
-            wp_send_json_error(array('message' => 'Invalid request. Product ID not provided.'));
+        wp_send_json_error(array('message' => 'Invalid request. Product ID not provided.'));
     }
     die();
 }
+
 
 public function today_add_grid_shortcodes( $shortcodes ) {
     $shortcodes['button_recommended_today'] = array(
@@ -1563,9 +1742,42 @@ public function add_to_cart_button_to_products_template(){
 
     $product_id = get_the_ID();
 
-    $addToCartButton = '<a data-product-id="' . $product_id . '" class="my-cart" href="">' . __('Dodaj do koszyka', 'burge') . '</a>';
+    $product_count = 0;
+    foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+        if ($cart_item['product_id'] == $product_id) {
+            $product_count += $cart_item['quantity'];
+        }
+    }
+
+    if ($product_count === 0) {
+        $addToCartButton = '<div data-product-id="' . $product_id . '" class="my-cart">' . __('Dodaj do koszyka', 'burge') . '<span class="loader-1 spinner-hide"></span></div>';
+    } else {
+        $addToCartButton = '<div data-product-id="' . $product_id . '" class="cart-icon">' . $product_count . '<span class="loader-1 spinner-hide"></span></div>';
+    }
+
 
     echo '<div class="woocommerce-product-item">' . $addToCartButton . '</div>';
+}
+
+public function add_to_cart_button_to_products_template_ajax(){
+
+    $product_id = absint($_POST['product_id']);
+
+    $product_count = 0;
+    foreach (WC()->cart->get_cart() as $cart_item_key => $cart_item) {
+        if ($cart_item['product_id'] == $product_id) {
+            $product_count += $cart_item['quantity'];
+        }
+    }
+
+    if ($product_count === 0) {
+        $addToCartButton = '<div data-product-id="' . $product_id . '" class="my-cart" >' . __('Dodaj do koszyka', 'burge') . '<span class="loader-1 spinner-hide"></span></div>';
+    } else {
+        $addToCartButton = '<div data-product-id="' . $product_id . '" class="cart-icon">' . $product_count . '<span class="loader-1 spinner-hide"></span></div>';
+    }
+
+    echo '<div class="woocommerce-product-item">' . $addToCartButton . '</div>';
+    die();
 }
 
 public static function modify_recommended_today_products_query($query_args, $attributes) {

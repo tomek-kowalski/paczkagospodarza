@@ -36,7 +36,7 @@
 .my-cart {
     display: flex;
     justify-content: center;
-    width: calc(100% - 37px);
+    width: calc(100% - 10px);
     color: rgb(255, 97, 0);
     font-weight: 600;
     border:1px solid rgb(255, 97, 0);
